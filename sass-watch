@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "compile sass to css"
+sass --watch css/styles.scss:css/styles.css
