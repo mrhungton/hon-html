@@ -1,25 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home | Heart of Nature</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <title>Home | Heart of Nature</title>
+  <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="libs/popperjs/popper.min.js"></script>
+  <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            Them noi dung nav
-        </nav>
-        <div class="slides">
+  <div id="site-header-wrap">
+    <header id="site-header">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 mb-4">
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img src="images/logo/light.svg" height="70px" />
+          </a>
 
+          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-4 text-white">About Us</a></li>
+            <li><a href="#" class="nav-link px-4 text-white">Product</a></li>
+            <li><a href="#" class="nav-link px-4 text-white">Applications</a></li>
+            <li><a href="#" class="nav-link px-4 text-white">Media</a></li>
+            <li><a href="#" class="nav-link px-4 text-white">Documentation</a></li>
+          </ul>
+
+          <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-primary">Contact Us</button>
+          </div>
         </div>
+
+      </div>
     </header>
+  </div>
 
-    <section></section>
+  <section>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img" src="images/home/Image HON mine - By Sonny - May 8 2023 - 01.jpg" width="100%" height="100%" />
 
-    <section></section>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Example headline.</h1>
+              <p>Some representative placeholder content for the first slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" src="images/home/Image HON mine - By Sonny - May 8 2023 - 01.jpg" width="100%" height="100%" />
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Some representative placeholder content for the second slide of the carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" src="images/home/Image HON mine - By Sonny - May 8 2023 - 01.jpg" width="100%" height="100%" />
 
-    <footer>
-        Them noi dung phan cuoi trang
-    </footer>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>One more for good measure.</h1>
+              <p>Some representative placeholder content for the third slide of this carousel.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="py-2 text-center container">
+    <div class="row py-lg-2">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Best soil amendment in the world</h1>
+        <p class="lead text-muted">We are proud to announce that as of January 2018, the management team has re-acquired Heart of Nature. This happened with the help of an outside financier familiar with Agriculture. This strategic move will help us launch our award-winning company into the future with more resources and specialists to better serve the Agricultural, Environmental and Confined Animal industries!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-2 text-center container">
+    <div class="row py-lg-2">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Join us on a tour of the Heart of Nature mine</h1>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+      Them noi dung phan cuoi trang
+  </footer>
 </body>
 </html>
