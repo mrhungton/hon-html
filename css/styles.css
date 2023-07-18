@@ -2,118 +2,141 @@
   font-family: "HON-Regular";
   src: url("../fonts/SVN-Avant Garde Gothic ExtraLight.otf");
   font-weight: lighter;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "HON-Regular";
   src: url("../fonts/SVN-Avant Garde Gothic ExtraLight Italic.otf");
   font-weight: lighter;
-  font-style: italic; }
+  font-style: italic;
+}
 @font-face {
   font-family: "HON-Regular";
   src: url("../fonts/SVN-Avant Garde Gothic Book.otf");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "HON-Regular";
   src: url("../fonts/SVN-Avant Garde Gothic Book Italic.otf");
   font-weight: normal;
-  font-style: italic; }
+  font-style: italic;
+}
 @font-face {
   font-family: "HON-Regular";
   src: url("../fonts/SVN-Avant Garde Gothic Medium.otf");
   font-weight: 600;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "HON-Regular";
   src: url("../fonts/SVN-Avant Garde Gothic Medium Italic.otf");
   font-weight: 600;
-  font-style: italic; }
+  font-style: italic;
+}
 @font-face {
   font-family: "HON-Regular";
   src: url("../fonts/SVN-Avant Garde Gothic Demi.otf");
   font-weight: bold;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "HON-Regular";
   src: url("../fonts/SVN-Avant Garde Gothic Demi Italic.otf");
   font-weight: bold;
-  font-style: italic; }
+  font-style: italic;
+}
 @font-face {
   font-family: "HON-Regular";
   src: url("../fonts/SVN-Avant Garde Gothic Bold.otf");
   font-weight: bolder;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "HON-Regular";
   src: url("../fonts/SVN-Avant Garde Gothic Bold Italic.otf");
   font-weight: bolder;
-  font-style: italic; }
+  font-style: italic;
+}
 @font-face {
   font-family: "HON-Condensed";
   src: url("../fonts/SVN-Avant Garde Gothic Condensed ExtraLight.otf");
   font-weight: lighter;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "HON-Condensed";
   src: url("../fonts/SVN-Avant Garde Gothic Condensed ExtraLight Italic.otf");
   font-weight: lighter;
-  font-style: italic; }
+  font-style: italic;
+}
 @font-face {
   font-family: "HON-Condensed";
   src: url("../fonts/SVN-Avant Garde Gothic Condensed Book.otf");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "HON-Condensed";
   src: url("../fonts/SVN-Avant Garde Gothic Condensed Book Italic.otf");
   font-weight: normal;
-  font-style: italic; }
+  font-style: italic;
+}
 @font-face {
   font-family: "HON-Condensed";
   src: url("../fonts/SVN-Avant Garde Gothic Condensed Medium.otf");
   font-weight: 600;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "HON-Condensed";
   src: url("../fonts/SVN-Avant Garde Gothic Condensed Medium Italic.otf");
   font-weight: 600;
-  font-style: italic; }
+  font-style: italic;
+}
 @font-face {
   font-family: "HON-Condensed";
   src: url("../fonts/SVN-Avant Garde Gothic Condensed Demi.otf");
   font-weight: bold;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "HON-Condensed";
   src: url("../fonts/SVN-Avant Garde Gothic Condensed Demi Italic.otf");
   font-weight: bold;
-  font-style: italic; }
+  font-style: italic;
+}
 @font-face {
   font-family: "HON-Condensed";
   src: url("../fonts/SVN-Avant Garde Gothic Condensed Bold.otf");
   font-weight: bolder;
-  font-style: normal; }
+  font-style: normal;
+}
 @font-face {
   font-family: "HON-Condensed";
   src: url("../fonts/SVN-Avant Garde Gothic Condensed Bold Italic.otf");
   font-weight: bolder;
-  font-style: italic; }
+  font-style: italic;
+}
 html,
 body {
   font-size: 14px;
   font-family: "HON-Regular", sans-serif;
   font-style: normal;
   font-weight: normal;
-  background: #ffffff; }
+  background: #ffffff;
+}
 
 header {
   font-weight: 600;
-  color: #ffffff; }
-  header .btn-primary {
-    font-weight: 600;
-    background: linear-gradient(to right, #2a2b24, #434d47);
-    border-color: #2a2b24;
-    box-shadow: none; }
+  color: #ffffff;
+}
+header .btn-primary {
+  font-weight: 600;
+  background: linear-gradient(to right, #2a2b24, #434d47);
+  border-color: #2a2b24;
+  box-shadow: none;
+}
 
 #site-header-wrap {
   position: absolute;
@@ -121,29 +144,278 @@ header {
   top: 0;
   width: 100%;
   background-color: transparent;
-  z-index: 999; }
+  z-index: 999;
+}
 
 #site-header {
-  position: relative; }
+  position: relative;
+}
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem; }
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10; }
+  margin-bottom: 4rem;
+}
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 50rem; }
+  height: 50rem;
+}
 
 .carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 50rem; }
+  height: 70rem;
+}
 
-/*# sourceMappingURL=styles.css.map */
+/* Since positioning the image, we need to help out the caption */
+.custom-caption {
+  z-index: 10;
+  right: 0;
+  top: 26%;
+  left: 7%;
+}
+.custom-caption .title-carousel {
+  font-size: 100px;
+  font-weight: 600;
+}
+.custom-caption .sub-title {
+  font-size: 48px;
+  font-weight: 300;
+}
+.custom-caption .explore-button {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: 3px solid #937b3d;
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 40px 30px 40px 17px;
+  background: linear-gradient(to right, #2a2b24, #434d47);
+  line-height: 2rem;
+}
+.custom-caption .explore-button .note-icon {
+  background: #514935;
+  border: 3px solid #937b3d;
+  width: 50px;
+  height: 50px;
+  line-height: 40px;
+  top: -12px;
+  right: -5px;
+}
+.custom-caption .btn-date {
+  background: linear-gradient(to right, #2a2b24, #434d47);
+  border: none;
+  color: #ffffff;
+}
+.custom-caption .footer-carousel .commit-text {
+  font-size: 20px;
+}
+.custom-caption .footer-carousel .custom-description {
+  border-left: 1px solid #6e6e6e;
+  padding-left: 20px;
+  font-size: 14px;
+}
+.custom-caption .footer-carousel .custom-social {
+  width: 34px;
+  height: 34px;
+  border: 0.5px solid #ffffff;
+  line-height: 30px;
+}
+
+.carousel-indicators {
+  left: 45%;
+  bottom: 30px;
+  z-index: 99;
+}
+.carousel-indicators .number-text {
+  color: #ffffff;
+}
+.carousel-indicators .active {
+  background: #ecc256;
+  background-clip: padding-box;
+}
+
+section {
+  font-family: sans-serif;
+}
+
+.section-best-soil h1 {
+  font-size: 50px;
+}
+
+.section-video {
+  margin-top: 80px;
+}
+.section-video .modal-dialog {
+  max-width: 75% !important;
+}
+.section-video .modal-dialog .modal-content iframe {
+  height: 500px;
+}
+.section-video .wrap-content .background-join {
+  width: 100%;
+  height: 45rem;
+}
+.section-video .wrap-content h2 {
+  bottom: 30px;
+  color: #cdcdcd;
+  left: 100px;
+  font-size: 40px;
+}
+.section-video .wrap-content .play-button {
+  cursor: pointer;
+  bottom: 50%;
+  left: 50%;
+}
+
+.section-story {
+  margin-top: 80px;
+}
+.section-story .left-item .image-hon {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: 1;
+  position: inherit;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.section-story .left-item .text-custom {
+  color: #ffffff;
+  top: 0;
+  padding: 40px;
+  z-index: 1;
+}
+.section-story .left-item .text-custom .title {
+  font-size: 60px;
+  font-weight: 600;
+}
+.section-story .left-item .text-custom .title span {
+  font-size: 34px;
+  font-weight: 400;
+}
+.section-story .left-item .text-custom .description {
+  font-size: 16px;
+  width: 70%;
+}
+.section-story .right-item .hon-title {
+  font-size: 80px;
+  font-weight: 500;
+  color: #8f7250;
+}
+.section-story .right-item .description {
+  font-size: 26px;
+  color: #8f7250;
+}
+.section-story .bg-absolute {
+  background: #ddd;
+  padding: 50px;
+  width: 50%;
+  border-bottom-left-radius: 20px;
+  bottom: -20%;
+  z-index: 0;
+}
+.section-story .text-story {
+  background: #383838;
+  color: #fff;
+  padding: 30px;
+  font-size: 24px;
+  width: 52%;
+}
+
+.section-tabs {
+  margin-top: 80px;
+  background: #434d47;
+  padding: 40px;
+}
+.section-tabs .tabs-custom .tabs-lists .nav-link {
+  font-weight: 600;
+  font-size: 28px;
+  border-radius: 0;
+  color: #ffffff;
+  opacity: 0.5;
+  padding: 30px 0;
+}
+.section-tabs .tabs-custom .tabs-lists .nav-link .number {
+  font-size: 14px;
+}
+.section-tabs .tabs-custom .tabs-lists .nav-link.active {
+  color: #ffffff;
+  opacity: 1;
+  background: none;
+}
+.section-tabs .tabs-custom .tabs-lists .border-bottom {
+  border-bottom: 1px solid #ffffff;
+  width: 60%;
+}
+.section-tabs .tabs-custom .tabs-lists img {
+  left: -50px;
+  top: 44%;
+}
+.section-tabs .tabs-custom .tab-content {
+  margin-top: 30px;
+  color: #ffffff;
+}
+.section-tabs .tabs-custom .tab-content .card {
+  background: #4f5c54;
+  border-radius: 10px;
+}
+.section-tabs .tabs-custom .tab-content .card .card-header {
+  font-size: 26px;
+  font-weight: 400;
+  background: #58655e;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 20px 40px;
+}
+.section-tabs .tabs-custom .tab-content .card .card-body {
+  padding: 20px 40px;
+}
+.section-tabs .tabs-custom .tab-content .card .card-body .card-title {
+  font-size: 26px;
+  font-weight: 600;
+}
+.section-tabs .tabs-custom .tab-content .card .card-body .card-text {
+  opacity: 0.6;
+}
+.section-tabs .tabs-custom .tab-content .card .card-body .action .btn-see-more {
+  background: #ecc256;
+  color: #2a2b24;
+  border: none;
+  padding: 5px 20px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.section-tabs .tabs-custom .tab-content .card .card-body .action .avatar img {
+  border: 4px solid #cecece;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.section-contact {
+  margin-top: 80px;
+}
+.section-contact .button-contact {
+  background: #ecc256;
+  color: #2a2b24;
+  border: none;
+  padding: 10px 40px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+footer {
+  font-family: sans-serif;
+  font-size: 12px;
+  border-top: 2px solid #c3c3c3;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #898989;
+  margin-top: 80px;
+}
+footer .social {
+  width: 34px;
+  height: 34px;
+  border: 0.5px solid #ffffff;
+  line-height: 30px;
+  background: #2a2b24;
+}/*# sourceMappingURL=styles.css.map */
