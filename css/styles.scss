@@ -86,14 +86,14 @@ body {
 }
 
 header {
-  font-weight: 600;
-  color: $white-color;
   .btn-primary {
     font-weight: 600;
     background: $gradient-dark-color;
     border-color: $primary-dark-color;
     box-shadow: none;
   }
+  font-weight: 600;
+  color: $white-color;
 }
 #site-header-wrap {
   position: absolute;
@@ -111,11 +111,6 @@ header {
 .carousel {
   margin-bottom: 4rem;
 }
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
@@ -126,5 +121,282 @@ header {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 50rem;
+  height: 70rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.custom-caption {
+  z-index: 10;
+  right: 0;
+  top: 26%;
+  left: 7%;
+  .title-carousel {
+    font-size: 100px;
+    font-weight: 600;
+  }
+  .sub-title {
+    font-size: 48px;
+    font-weight: 300;
+  }
+  .explore-button {
+    color: $white-color;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border: 3px solid $primary-gold-color;
+    width: max-content;
+    height: max-content;
+    padding: 40px 30px 40px 17px;
+    background: $gradient-dark-color;
+    line-height: 2rem;
+    .note-icon {
+      background: #514935;
+      border: 3px solid $primary-gold-color;
+      width: 50px;
+      height: 50px;
+      line-height: 40px;
+      top: -12px;
+      right: -5px;
+    }
+  }
+  .btn-date {
+    background: $gradient-dark-color;
+    border: none;
+    color: $white-color;
+  }
+  .footer-carousel {
+    .commit-text {
+      font-size: 20px;
+    }
+    .custom-description {
+      border-left: 1px solid #6e6e6e;
+      padding-left: 20px;
+      font-size: 14px;
+    }
+    .custom-social {
+      width: 34px;
+      height: 34px;
+      border: 0.5px solid $white-color;
+      line-height: 30px;
+    }
+  }
+}
+// Handle dots of carousel
+.carousel-indicators {
+  left: 45%;
+  bottom: 30px;
+  z-index: 99;
+  .number-text {
+    color: $white-color;
+  }
+  .active{
+    background: $secondary-gold-color;
+    background-clip: padding-box;
+  }
+}
+
+// Hold until official font is available
+section {
+  font-family: sans-serif;
+}
+
+// Section Best soil amendment in the world
+.section-best-soil {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+// Section Play Video
+.section-video {
+  margin-top: 80px;
+  .modal-dialog {
+    max-width: 75% !important;
+    .modal-content {
+      iframe {
+        height: 500px;
+      }
+    }
+  }
+  .wrap-content {
+    .background-join {
+      width: 100%;
+      height: 45rem;
+    }
+    h2 {
+      bottom: 30px;
+      color: #cdcdcd;
+      left: 100px;
+      font-size: 40px;
+    }
+    .play-button {
+      cursor: pointer;
+      bottom: 50%;
+      left: 50%;
+    }
+  }
+}
+
+// Section story about Hon
+.section-story {
+  margin-top: 80px;
+  .left-item {
+    .image-hon {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      z-index: 1;
+      position: inherit;
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+    .text-custom {
+      color: $white-color;
+      top: 0;
+      padding: 40px;
+      z-index: 1;
+      .title {
+        font-size: 60px;
+        font-weight: 600;
+        span {
+          font-size: 34px;
+          font-weight: 400;
+        }
+      }
+      .description {
+        font-size: 16px;
+        width: 70%;
+      }
+    }
+  }
+  .right-item {
+    .hon-title {
+      font-size: 80px;
+      font-weight: 500;
+      color: #8f7250;
+    }
+    .description {
+      font-size: 26px;
+      color: #8f7250;
+    }
+    
+  }
+  .bg-absolute {
+    background: #ddd;
+    padding: 50px;
+    width: 50%;
+    border-bottom-left-radius: 20px;
+    bottom: -20%;
+    z-index: 0;
+  }
+  .text-story {
+    background: #383838;
+    color: #fff;
+    padding: 30px;
+    font-size: 24px;
+    width: 52%;
+  }
+}
+
+// Section tabs
+.section-tabs {
+  margin-top: 80px;
+  background: $secondary-dark-color;
+  padding: 40px;
+  .tabs-custom {
+    .tabs-lists {
+      .nav-link {
+        font-weight: 600;
+        .number {
+          font-size: 14px;
+        }
+        font-size: 28px;
+        border-radius: 0;
+        color: $white-color;
+        opacity: 0.5;
+        padding: 30px 0;
+        &.active {
+          color: $white-color;
+          opacity: 1;
+          background: none;
+        }
+      }
+      .border-bottom {
+        border-bottom: 1px solid $white-color;
+        width: 60%;
+      }
+      img {
+        left: -50px;
+        top: 44%;
+      }
+    }
+    .tab-content {
+      margin-top: 30px;
+      color: $white-color;
+      .card {
+        background: #4f5c54;
+        border-radius: 10px;
+        .card-header {
+          font-size: 26px;
+          font-weight: 400;
+          background: #58655e;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          padding: 20px 40px;
+        }
+        .card-body {
+          padding: 20px 40px;
+          .card-title {
+            font-size: 26px;
+            font-weight: 600;
+          }
+          .card-text {
+            opacity: 0.6;
+          }
+          .action {
+            .btn-see-more {
+              background: $secondary-gold-color;
+              color: $primary-dark-color;
+              border: none;
+              padding: 5px 20px;
+              box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+            }
+            .avatar {
+              img {
+                border: 4px solid #cecece;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Section contact
+.section-contact {
+  margin-top: 80px;
+  .button-contact {
+    background: $secondary-gold-color;
+    color: $primary-dark-color;
+    border: none;
+    padding: 10px 40px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  }
+}
+
+// Footer
+footer {
+  font-family: sans-serif;
+  font-size: 12px;
+  border-top: 2px solid #c3c3c3;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #898989;
+  margin-top: 80px;
+  .social {
+    width: 34px;
+    height: 34px;
+    border: 0.5px solid $white-color;
+    line-height: 30px;
+    background: $primary-dark-color;
+  }
 }
