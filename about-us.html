@@ -1,18 +1,654 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Popper Tutorial</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Heart of Nature</title>
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="libs/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owlcarousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/popperjs/popper.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libs/jquery/jquery-3.7.0.min.js"></script>
+    <script src="libs/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
-    <button id="button" aria-describedby="tooltip">My button</button>
-    <div id="tooltip" role="tooltip">My tooltip</div>
+    <div id="site-header-wrap">
+      <header id="site-header">
+        <div class="container">
+          <div
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 mb-4">
+            <a href="/"
+              class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+              <img src="images/logo/light.svg" height="70px" />
+            </a>
+            <ul
+              class="nav col-9 col-md-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="about-us.html"
+                  class="nav-link px-4 text-white text-start">About Us</a></li>
+              <li><a href="#" class="nav-link px-4 text-white text-start">Product</a></li>
+              <li><a href="#" class="nav-link px-4 text-white text-start">Applications</a></li>
+              <li><a href="#" class="nav-link px-4 text-white text-start">Media</a></li>
+              <li><a href="#" class="nav-link px-4 text-white text-start">Document</a></li>
+            </ul>
+            <div>
+              <button type="button" class="px-4 py-2 rounded-3 btn btn-primary">Contact
+                Us</button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
 
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script>
-      const button = document.querySelector('#button');
-      const tooltip = document.querySelector('#tooltip');
+    <section class="section-banner position-relative">
+      <div class="custom-content-banner position-relative">
+        <img
+          src="images/about/Image HON mine 05 - By Sonny - May 8 2023 - 02.jpg"
+          class="img-banner" width="100%" , height="100%">
+        <div class="banner-title position-absolute">
+          <h1 class="title-carousel">About Us</h1>
+          <div class="sub-title">Heart of Nature Mine History</div>
+        </div>
+      </div>
+      <div class="list-social position-absolute">
+        <div class="d-flex flex-column">
+          <div class="custom-social rounded-circle text-center">
+            <a href="#">
+              <img src="images/icon/facebook-square.svg" alt width="16">
+            </a>
+          </div>
+          <div class="custom-social rounded-circle text-center mt-3">
+            <a href="#">
+              <img src="images/icon/twitter-square.svg" alt width="16">
+            </a>
+          </div>
+          <div class="custom-social rounded-circle text-center mt-3">
+            <a href="#">
+              <img src="images/icon/instagram.svg" alt width="16">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      const popperInstance = Popper.createPopper(button, tooltip);
-    </script>
+    <section class="section-tabs my-0">
+      <div class="d-flex container tabs-custom justify-content-center pb-4">
+        <div
+          class="col-6 nav nav-pills me-3 tabs-lists flex-column align-items-start position-relative">
+          <a href="#v-pills-history"
+            class="nav-link active border-bottom text-start"
+            data-bs-toggle="pill">
+            <span class="number">01.</span> History of Nevada
+          </a>
+          <a href="#v-pills-geolory" class="nav-link border-bottom text-start"
+            data-bs-toggle="pill">
+            <span class="number">02.</span> Nevada geolory
+          </a>
+          <a href="#v-pills-document" class="nav-link border-bottom text-start"
+            data-bs-toggle="pill">
+            <span class="number">03.</span> Heart of Nature Mine History
+          </a>
+          <a href="#v-pills-settings" class="nav-link border-bottom text-start"
+            data-bs-toggle="pill">
+            <span class="number">04.</span> Heart of Nature Mine Analysis
+          </a>
+          <img src="images/icon/vertical-arrows.svg" width="20" alt
+            class="position-absolute">
+        </div>
+        <div class="col-6 tab-content">
+          <div class="tab-pane fade show active" id="v-pills-history">
+            <div class="card">
+              <div class="card-header">
+                History of Nevada
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">We manufacture the best natural organic
+                  agricultural mineral</h5>
+                <p class="card-text mt-2 mb-4">Let's listen to the sharing of
+                  the experts about the application of HON products.</p>
+                <div
+                  class="action my-4 pt-4 d-flex align-items-center justify-content-between">
+                  <button class="btn btn-see-more">See More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-geolory">
+            <div class="card">
+              <div class="card-header">
+                Nevada geolory
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">We manufacture the best natural organic
+                  agricultural mineral</h5>
+                <p class="card-text mt-2 mb-4">Let's listen to the sharing of
+                  the experts about the application of HON products.</p>
+                <div
+                  class="action my-4 pt-4 d-flex align-items-center justify-content-between">
+                  <button class="btn btn-see-more">See More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-document">
+            <div class="card">
+              <div class="card-header">
+                Heart of Nature Mine History
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">We manufacture the best natural organic
+                  agricultural mineral</h5>
+                <p class="card-text mt-2 mb-4">Let's listen to the sharing of
+                  the experts about the application of HON products.</p>
+                <div
+                  class="action my-4 pt-4 d-flex align-items-center justify-content-between">
+                  <button class="btn btn-see-more">See More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="v-pills-settings">
+            <div class="card">
+              <div class="card-header">
+                Heart of Nature Mine Analysis
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">We manufacture the best natural organic
+                  agricultural mineral</h5>
+                <p class="card-text mt-2 mb-4">Let's listen to the sharing of
+                  the experts about the application of HON products.</p>
+                <div
+                  class="action my-4 pt-4 d-flex align-items-center justify-content-between">
+                  <button class="btn btn-see-more">See More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-company-history container">
+      <div class="row wrap-row-white">
+        <div class="col-6 left-title">
+          <h1>Company History</h1>
+        </div>
+        <div class="col-6 right-content-gray">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, a.
+          Neque alias odio laborum distinctio id sit vitae sequi velit porro
+          veritatis explicabo, omnis voluptatem adipisci aliquid quo, obcaecati
+          a!
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme owl-carousel-company-history">
+        <div class="item-card">
+          <div class="wrap-content position-relative">
+            <img
+              src="images/about/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg"
+              alt>
+            <div class="insert-text position-absolute">
+              <h1>2010</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <button class="btn btn-see-more position-absolute">See More</button>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="wrap-content position-relative">
+            <img
+              src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
+              alt>
+            <div class="insert-text position-absolute">
+              <h1>2010</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <button class="btn btn-see-more position-absolute">See More</button>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="wrap-content position-relative">
+            <img
+              src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
+              alt>
+            <div class="insert-text position-absolute">
+              <h1>2010</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <button class="btn btn-see-more position-absolute">See More</button>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="wrap-content position-relative">
+            <img
+              src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
+              alt>
+            <div class="insert-text position-absolute">
+              <h1>2017</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <button class="btn btn-see-more position-absolute">See More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-leadership">
+      <div class="container">
+        <div class="row wrap-row-black">
+          <div class="col-6 left-title">
+            <h1>Leadership</h1>
+          </div>
+          <div class="col-6 right-content-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, a.
+            Neque alias odio laborum distinctio id sit vitae sequi velit porro
+            veritatis explicabo, omnis voluptatem adipisci aliquid quo,
+            obcaecati a!
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme owl-carousel-leadership">
+          <div class="item-card">
+            <div class="wrap-content">
+              <img src="images/about/pexels-ivan-samkov-4238488.jpg" alt>
+              <div class="insert-text my-4">
+                <h1>Dr. Albert</h1>
+                <p>CEO and Chairmain</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <div class="wrap-content">
+              <img src="images/about/pexels-ivan-samkov-4238488.jpg" alt>
+              <div class="insert-text my-4">
+                <h1>Dr. Albert</h1>
+                <p>CEO and Chairmain</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <div class="wrap-content">
+              <img src="images/about/pexels-ivan-samkov-4238488.jpg" alt>
+              <div class="insert-text my-4">
+                <h1>Dr. Albert</h1>
+                <p>CEO and Chairmain</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <div class="wrap-content">
+              <img src="images/about/pexels-ivan-samkov-4238488.jpg" alt>
+              <div class="insert-text my-4">
+                <h1>Dr. Albert</h1>
+                <p>CEO and Chairmain</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-business container">
+      <div class="row wrap-row-white">
+        <div class="col-6 left-title">
+          <h1>Business Philosophy</h1>
+        </div>
+        <div class="col-6 right-content-gray">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, a.
+          Neque alias odio laborum distinctio id sit vitae sequi velit porro
+          veritatis explicabo, omnis voluptatem adipisci aliquid quo, obcaecati
+          a!
+        </div>
+      </div>
+      <div class="row card-leadership align-items-end">
+        <div class="col-6">
+          <div class="position-relative left-leadership">
+            <div class="position-absolute custom-card-1">
+              <img
+                src="images/about/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg"
+                alt class="img-card-1">
+              <h1 class="title-leadership position-absolute">
+                Leadership brand message
+              </h1>
+            </div>
+            <div class="position-absolute custom-card-2">
+              <img
+                src="images/about/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg"
+                alt class="img-card-2">
+              <h1 class="title-leadership position-absolute">
+                Leadership brand message
+              </h1>
+            </div>
+            <div class="position-absolute custom-card-3">
+              <img
+                src="images/about/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg"
+                alt class="img-card-3">
+              <h1 class="title-leadership position-absolute">
+                Leadership brand message
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <h1>Leadership brand message</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+            laudantium consectetur corporis rem illum ipsa neque. Facere,
+            officia ex, reiciendis facilis dolores impedit ipsam dolorem dolorum
+            itaque sapiente provident voluptatibus!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias
+            iure nihil iusto officia perferendis sed voluptatibus, quos vel
+            saepe esse dolor at officiis, ex, provident totam ut a aperiam.</p>
+          <div>
+            <button class="btn btn-see-more">See More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-respond">
+      <div class="container">
+        <div class="row wrap-row-black text-start">
+          <h1>Responsibility</h1>
+        </div>
+        <div class="row custom-respond justify-content-center align-items-end">
+          <div class="col-6 position-relative">
+            <img src="images/about/responsilbility.jpg" class="img-fluid">
+            <div class="text-custom position-absolute">
+              <div class="title">80% <span>of Nature</span></div>
+            </div>
+          </div>
+          <div class="col-6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              laudantium consectetur corporis rem illum ipsa neque. Facere,
+              officia ex, reiciendis facilis dolores impedit ipsam dolorem
+              dolorum
+              itaque sapiente provident voluptatibus!</p>
+            <div class="mt-4">
+              <button class="btn btn-see-more">See More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-development container">
+      <div class="row wrap-row-white">
+        <div class="col-6 left-title">
+          <h1>Development</h1>
+        </div>
+        <div class="col-6 right-content-gray">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, a.
+          Neque alias odio laborum distinctio id sit vitae sequi velit porro
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme owl-carousel-development">
+        <div class="item-card">
+          <div class="card">
+            <div class="card-header">
+              Research and development
+            </div>
+            <div class="card-body">
+              <p class="card-text mt-2 mb-4">Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Architecto odit autem iste eos quo
+                aliquam ducimus pariatur explicabo! Odio dolor eos natus soluta
+                molestiae quis optio alias sapiente laudantium nulla?.</p>
+              <img
+                src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
+                class="img-fluid" alt>
+              <div
+                class="action my-4 pt-4 d-flex align-items-center justify-content-between">
+                <button class="btn btn-see-more">See More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="card">
+            <div class="card-header">
+              Research and development
+            </div>
+            <div class="card-body">
+              <p class="card-text mt-2 mb-4">Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Architecto odit autem iste eos quo
+                aliquam ducimus pariatur explicabo! Odio dolor eos natus soluta
+                molestiae quis optio alias sapiente laudantium nulla?.</p>
+              <img
+                src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
+                class="img-fluid" alt>
+              <div
+                class="action my-4 pt-4 d-flex align-items-center justify-content-between">
+                <button class="btn btn-see-more">See More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="card">
+            <div class="card-header">
+              Research and development
+            </div>
+            <div class="card-body">
+              <p class="card-text mt-2 mb-4">Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Architecto odit autem iste eos quo
+                aliquam ducimus pariatur explicabo! Odio dolor eos natus soluta
+                molestiae quis optio alias sapiente laudantium nulla?.</p>
+              <img
+                src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
+                class="img-fluid" alt>
+              <div
+                class="action my-4 pt-4 d-flex align-items-center justify-content-between">
+                <button class="btn btn-see-more">See More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="card">
+            <div class="card-header">
+              Research and development
+            </div>
+            <div class="card-body">
+              <p class="card-text mt-2 mb-4">Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Architecto odit autem iste eos quo
+                aliquam ducimus pariatur explicabo! Odio dolor eos natus soluta
+                molestiae quis optio alias sapiente laudantium nulla?.</p>
+              <img
+                src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
+                class="img-fluid" alt>
+              <div
+                class="action my-4 pt-4 d-flex align-items-center justify-content-between">
+                <button class="btn btn-see-more">See More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="card">
+            <div class="card-header">
+              Research and development
+            </div>
+            <div class="card-body">
+              <p class="card-text mt-2 mb-4">Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Architecto odit autem iste eos quo
+                aliquam ducimus pariatur explicabo! Odio dolor eos natus soluta
+                molestiae quis optio alias sapiente laudantium nulla?.</p>
+              <img
+                src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
+                class="img-fluid" alt>
+              <div
+                class="action my-4 pt-4 d-flex align-items-center justify-content-between">
+                <button class="btn btn-see-more">See More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="card">
+            <div class="card-header">
+              Research and development
+            </div>
+            <div class="card-body">
+              <p class="card-text mt-2 mb-4">Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Architecto odit autem iste eos quo
+                aliquam ducimus pariatur explicabo! Odio dolor eos natus soluta
+                molestiae quis optio alias sapiente laudantium nulla?.</p>
+              <img
+                src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
+                class="img-fluid" alt>
+              <div
+                class="action my-4 pt-4 d-flex align-items-center justify-content-between">
+                <button class="btn btn-see-more">See More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="card">
+            <div class="card-header">
+              Research and development
+            </div>
+            <div class="card-body">
+              <p class="card-text mt-2 mb-4">Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Architecto odit autem iste eos quo
+                aliquam ducimus pariatur explicabo! Odio dolor eos natus soluta
+                molestiae quis optio alias sapiente laudantium nulla?.</p>
+              <img
+                src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
+                class="img-fluid" alt>
+              <div
+                class="action my-4 pt-4 d-flex align-items-center justify-content-between">
+                <button class="btn btn-see-more">See More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="card">
+            <div class="card-header">
+              Research and development
+            </div>
+            <div class="card-body">
+              <p class="card-text mt-2 mb-4">Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Architecto odit autem iste eos quo
+                aliquam ducimus pariatur explicabo! Odio dolor eos natus soluta
+                molestiae quis optio alias sapiente laudantium nulla?.</p>
+              <img
+                src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
+                class="img-fluid" alt>
+              <div
+                class="action my-4 pt-4 d-flex align-items-center justify-content-between">
+                <button class="btn btn-see-more">See More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-employment">
+      <div class="container">
+        <div class="row wrap-row-black text-start">
+          <h1>Employment Opportunities</h1>
+        </div>
+        <div class="description text-center mx-4 px-4">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
+          fugit sapiente delectus ducimus sint, officia omnis exercitationem
+          velit, excepturi nihil ratione provident aspernatur. Obcaecati
+          recusandae soluta cum dicta dolores debitis.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque harum
+          rerum obcaecati illum. Fugit, quasi atque fuga laborum ab, voluptates
+          labore animi ipsa reprehenderit, fugiat pariatur. Quas aspernatur
+          cupiditate quod!
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+          doloremque culpa unde, modi, at cupiditate vitae quasi et quaerat
+          recusandae omnis sapiente asperiores porro dolorum quia nostrum optio.
+          Obcaecati, sunt.
+        </div>
+      </div>
+    </section>
+
+    <section class="section-customers container">
+      <div class="wrap-row-white">
+        <div class="left-title">
+          <h1>Our Customers and associates</h1>
+        </div>
+      </div>
+      <div class="owl-carousel owl-theme owl-carousel-customers">
+        <div class="item-card">
+          <div class="wrap-customers">
+            <img src="images/about/customers.jpg" alt class="img-fluid">
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="wrap-customers">
+            <img src="images/about/customers.jpg" alt class="img-fluid">
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="wrap-customers">
+            <img src="images/about/customers.jpg" alt class="img-fluid">
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="wrap-customers">
+            <img src="images/about/customers.jpg" alt class="img-fluid">
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="wrap-customers">
+            <img src="images/about/customers.jpg" alt class="img-fluid">
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="wrap-customers">
+            <img src="images/about/customers.jpg" alt class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="description text-center mx-4 px-4">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
+        fugit sapiente delectus ducimus sint, officia omnis exercitationem
+        velit, excepturi nihil ratione provident aspernatur. Obcaecati
+        recusandae soluta cum dicta dolores debitis.
+      </div>
+    </section>
+
+    <footer class="footer-black">
+      <div class="container">
+        <div class="row justify-content-center align-items-center text-center">
+          <div class="col-2">
+            Contact Us
+          </div>
+          <div class="col-2">
+            Handbook guidelines
+          </div>
+          <div class="col-4">
+            &copy; <script>document.write(new Date().getFullYear())</script>
+            Heart Of Nature Inconportalbe, All Right Reserved
+          </div>
+          <div class="col-2">
+            Site map
+          </div>
+          <div class="col-2 d-flex align-items-center justify-content-center">
+            <div class="social rounded-circle me-2 text-center">
+              <a href="#">
+                <img src="images/icon/facebook-square.svg" alt width="16">
+              </a>
+            </div>
+            <div class="social rounded-circle me-2 text-center">
+              <a href="#">
+                <img src="images/icon/twitter-square.svg" alt width="16">
+              </a>
+            </div>
+            <div class="social rounded-circle me-2 text-center">
+              <a href="#">
+                <img src="images/icon/instagram.svg" alt width="16">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

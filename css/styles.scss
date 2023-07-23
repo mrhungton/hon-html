@@ -4,13 +4,29 @@
 $white-color: #ffffff;
 $primary-dark-color: #2a2b24;
 $secondary-dark-color: #434d47;
-$gradient-dark-color: linear-gradient(to right, $primary-dark-color, $secondary-dark-color);
-$gradient-dark-radial: radial-gradient(circle at top right, $primary-dark-color, $secondary-dark-color 50%);
+$gradient-dark-color: linear-gradient(
+  to right,
+  $primary-dark-color,
+  $secondary-dark-color
+);
+$gradient-dark-radial: radial-gradient(
+  circle at top right,
+  $primary-dark-color,
+  $secondary-dark-color 50%
+);
 
 $primary-gold-color: #937b3d;
 $secondary-gold-color: #ecc256;
-$gradient-gold-color: linear-gradient(to right, $primary-gold-color, $secondary-gold-color);
-$gradient-gold-radial: radial-gradient(circle at top right, $primary-gold-color, $secondary-gold-color 50%);
+$gradient-gold-color: linear-gradient(
+  to right,
+  $primary-gold-color,
+  $secondary-gold-color
+);
+$gradient-gold-radial: radial-gradient(
+  circle at top right,
+  $primary-gold-color,
+  $secondary-gold-color 50%
+);
 
 // fonts
 // @mixin font-face($font-name, $font-filename, $font-weight: normal, $font-style: normal) {
@@ -26,8 +42,7 @@ $gradient-gold-radial: radial-gradient(circle at top right, $primary-gold-color,
 // @include font-face('Avant Garde Gothic', 'SVN-Avant Garde Gothic Demi');
 // @include font-face('Avant Garde Gothic', 'SVN-Avant Garde Gothic Demi');
 
-
-$font-path: '../fonts/';
+$font-path: "../fonts/";
 
 @mixin font-faces($fonts) {
   @each $font in $fonts {
@@ -44,7 +59,7 @@ $font-path: '../fonts/';
       //      url('#{$font-path}#{$font-filename}.woff') format('woff'),
       //      url('#{$font-path}#{$font-filename}.ttf') format('truetype'),
       //      url('#{$font-path}#{$font-filename}.otf') format('opentype');
-      src: url('#{$font-path}#{$font-filename}.otf');
+      src: url("#{$font-path}#{$font-filename}.otf");
       font-weight: $font-weight;
       font-style: $font-style;
     }
@@ -52,26 +67,56 @@ $font-path: '../fonts/';
 }
 
 $fonts: (
-  ('HON-Regular', 'SVN-Avant Garde Gothic ExtraLight', lighter, normal),
-  ('HON-Regular', 'SVN-Avant Garde Gothic ExtraLight Italic', lighter, italic),
-  ('HON-Regular', 'SVN-Avant Garde Gothic Book', normal, normal),
-  ('HON-Regular', 'SVN-Avant Garde Gothic Book Italic', normal, italic),
-  ('HON-Regular', 'SVN-Avant Garde Gothic Medium', 600, normal),
-  ('HON-Regular', 'SVN-Avant Garde Gothic Medium Italic', 600, italic),
-  ('HON-Regular', 'SVN-Avant Garde Gothic Demi', bold, normal),
-  ('HON-Regular', 'SVN-Avant Garde Gothic Demi Italic', bold, italic),
-  ('HON-Regular', 'SVN-Avant Garde Gothic Bold', bolder, normal),
-  ('HON-Regular', 'SVN-Avant Garde Gothic Bold Italic', bolder, italic),
-  ('HON-Condensed', 'SVN-Avant Garde Gothic Condensed ExtraLight', lighter, normal),
-  ('HON-Condensed', 'SVN-Avant Garde Gothic Condensed ExtraLight Italic', lighter, italic),
-  ('HON-Condensed', 'SVN-Avant Garde Gothic Condensed Book', normal, normal),
-  ('HON-Condensed', 'SVN-Avant Garde Gothic Condensed Book Italic', normal, italic),
-  ('HON-Condensed', 'SVN-Avant Garde Gothic Condensed Medium', 600, normal),
-  ('HON-Condensed', 'SVN-Avant Garde Gothic Condensed Medium Italic', 600, italic),
-  ('HON-Condensed', 'SVN-Avant Garde Gothic Condensed Demi', bold, normal),
-  ('HON-Condensed', 'SVN-Avant Garde Gothic Condensed Demi Italic', bold, italic),
-  ('HON-Condensed', 'SVN-Avant Garde Gothic Condensed Bold', bolder, normal),
-  ('HON-Condensed', 'SVN-Avant Garde Gothic Condensed Bold Italic', bolder, italic)
+  ("HON-Regular", "SVN-Avant Garde Gothic ExtraLight", lighter, normal),
+  ("HON-Regular", "SVN-Avant Garde Gothic ExtraLight Italic", lighter, italic),
+  ("HON-Regular", "SVN-Avant Garde Gothic Book", normal, normal),
+  ("HON-Regular", "SVN-Avant Garde Gothic Book Italic", normal, italic),
+  ("HON-Regular", "SVN-Avant Garde Gothic Medium", 600, normal),
+  ("HON-Regular", "SVN-Avant Garde Gothic Medium Italic", 600, italic),
+  ("HON-Regular", "SVN-Avant Garde Gothic Demi", bold, normal),
+  ("HON-Regular", "SVN-Avant Garde Gothic Demi Italic", bold, italic),
+  ("HON-Regular", "SVN-Avant Garde Gothic Bold", bolder, normal),
+  ("HON-Regular", "SVN-Avant Garde Gothic Bold Italic", bolder, italic),
+  (
+    "HON-Condensed",
+    "SVN-Avant Garde Gothic Condensed ExtraLight",
+    lighter,
+    normal
+  ),
+  (
+    "HON-Condensed",
+    "SVN-Avant Garde Gothic Condensed ExtraLight Italic",
+    lighter,
+    italic
+  ),
+  ("HON-Condensed", "SVN-Avant Garde Gothic Condensed Book", normal, normal),
+  (
+    "HON-Condensed",
+    "SVN-Avant Garde Gothic Condensed Book Italic",
+    normal,
+    italic
+  ),
+  ("HON-Condensed", "SVN-Avant Garde Gothic Condensed Medium", 600, normal),
+  (
+    "HON-Condensed",
+    "SVN-Avant Garde Gothic Condensed Medium Italic",
+    600,
+    italic
+  ),
+  ("HON-Condensed", "SVN-Avant Garde Gothic Condensed Demi", bold, normal),
+  (
+    "HON-Condensed",
+    "SVN-Avant Garde Gothic Condensed Demi Italic",
+    bold,
+    italic
+  ),
+  ("HON-Condensed", "SVN-Avant Garde Gothic Condensed Bold", bolder, normal),
+  (
+    "HON-Condensed",
+    "SVN-Avant Garde Gothic Condensed Bold Italic",
+    bolder,
+    italic
+  )
 );
 
 @include font-faces($fonts);
@@ -188,7 +233,7 @@ header {
   .number-text {
     color: $white-color;
   }
-  .active{
+  .active {
     background: $secondary-gold-color;
     background-clip: padding-box;
   }
@@ -245,7 +290,9 @@ section {
       border-top-right-radius: 20px;
       z-index: 1;
       position: inherit;
-      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+        rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+        rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     }
     .text-custom {
       color: $white-color;
@@ -276,7 +323,6 @@ section {
       font-size: 26px;
       color: #8f7250;
     }
-    
   }
   .bg-absolute {
     background: #ddd;
@@ -295,10 +341,269 @@ section {
   }
 }
 
+// Section contact
+.section-contact {
+  margin-top: 80px;
+  .button-contact {
+    background: $secondary-gold-color;
+    color: $primary-dark-color;
+    border: none;
+    padding: 10px 40px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+      rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+      rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  }
+}
+
+// Footer
+footer {
+  font-family: sans-serif;
+  font-size: 12px;
+  padding-bottom: 30px;
+  color: #898989;
+  margin-top: 80px;
+  .container {
+    border-top: 1px solid #c3c3c3;
+    padding-top: 30px;
+    .social {
+      width: 34px;
+      height: 34px;
+      border: 0.5px solid $white-color;
+      line-height: 30px;
+      background: $primary-dark-color;
+    }
+  }
+}
+.footer-black {
+  background: #323834;
+  color: $white-color;
+  padding-top: 30px;
+}
+
+/* About Us */
+.section-banner {
+  color: $white-color;
+  .custom-content-banner {
+    .img-banner {
+      height: 50rem;
+    }
+    .banner-title {
+      z-index: 10;
+      right: 0;
+      top: 30%;
+      left: 7%;
+      h1 {
+        font-size: 100px;
+        font-weight: 600;
+      }
+      .sub-title {
+        font-size: 48px;
+        font-weight: 300;
+      }
+    }
+  }
+  .list-social {
+    bottom: 10%;
+    right: 7%;
+    .custom-social {
+      width: 34px;
+      height: 34px;
+      border: 0.5px solid $white-color;
+      line-height: 30px;
+    }
+  }
+}
+
+.section-company-history {
+  margin-top: 80px;
+  .owl-carousel-company-history {
+    margin-top: 40px;
+    .item-card {
+      .wrap-content {
+        img {
+          height: 300px;
+          border-radius: 10px;
+        }
+        .insert-text {
+          top: 30px;
+          left: 30px;
+          width: 70%;
+          color: $white-color;
+        }
+        button {
+          bottom: 30px;
+          left: 30px;
+        }
+      }
+    }
+  }
+}
+
+.section-leadership {
+  margin-top: 80px;
+  background: #323834;
+  .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .owl-carousel-leadership {
+    margin-top: 40px;
+    .item-card {
+      .wrap-content {
+        img {
+          border-radius: 10px;
+        }
+        .insert-text {
+          width: 70%;
+          color: $white-color;
+        }
+      }
+    }
+  }
+}
+
+.section-business {
+  margin-top: 80px;
+  .card-leadership {
+    margin-top: 60px;
+    .left-leadership {
+      height: 32rem;
+      right: 5%;
+      color: $white-color;
+      .custom-card-1 {
+        right: 130px;
+        top: 55px;
+        .img-card-1 {
+          border-radius: 15px;
+          width: 300px;
+          height: 350px;
+        }
+      }
+      .custom-card-2 {
+        right: 70px;
+        top: 30px;
+        .img-card-2 {
+          border-radius: 15px;
+          width: 320px;
+          height: 400px;
+        }
+      }
+      .custom-card-3 {
+        right: 0;
+        .img-card-3 {
+          border-radius: 15px;
+          width: 350px;
+          height: 450px;
+        }
+      }
+      .title-leadership {
+        top: 20px;
+        left: 20px;
+      }
+    }
+  }
+}
+
+.section-respond {
+  margin-top: 80px;
+  background: #323834;
+  color: $white-color;
+  .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .custom-respond {
+    margin-top: 40px;
+    img {
+      border-radius: 15px;
+      height: 250px;
+    }
+    .text-custom {
+      top: 0;
+      padding: 40px;
+      z-index: 1;
+      .title {
+        font-size: 60px;
+        font-weight: 600;
+        span {
+          font-size: 34px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.section-development {
+  margin-top: 80px;
+  .owl-carousel-development {
+    color: $white-color;
+    margin-top: 40px;
+    .item-card {
+      .card {
+        background: #4f5c54;
+        border-radius: 10px;
+        .card-header {
+          font-size: 20px;
+          font-weight: 400;
+          background: #58655e;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          padding: 20px 40px;
+        }
+        .card-body {
+          padding: 20px 40px;
+          .card-text {
+            font-size: 13px;
+            opacity: 0.6;
+          }
+          img {
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-employment {
+  margin-top: 80px;
+  background: #323834;
+  color: $white-color;
+  .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .description {
+    padding-top: 80px;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.8;
+  }
+}
+
+.section-customers {
+  margin-top: 80px;
+  .owl-carousel-customers {
+    margin-top: 80px;
+    .wrap-customers {
+      img {
+        border: 2px solid #d1d1d1;
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+  .description {
+    margin-top: 40px;
+  }
+}
+
+/* Shared */
 // Section tabs
 .section-tabs {
   margin-top: 80px;
-  background: $secondary-dark-color;
+  background: #323834;
   padding: 40px;
   .tabs-custom {
     .tabs-lists {
@@ -320,7 +625,6 @@ section {
       }
       .border-bottom {
         border-bottom: 1px solid $white-color;
-        width: 60%;
       }
       img {
         left: -50px;
@@ -351,17 +655,11 @@ section {
             opacity: 0.6;
           }
           .action {
-            .btn-see-more {
-              background: $secondary-gold-color;
-              color: $primary-dark-color;
-              border: none;
-              padding: 5px 20px;
-              box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-            }
             .avatar {
               img {
                 border: 4px solid #cecece;
-                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+                  rgba(0, 0, 0, 0.22) 0px 10px 10px;
               }
             }
           }
@@ -370,33 +668,57 @@ section {
     }
   }
 }
-
-// Section contact
-.section-contact {
-  margin-top: 80px;
-  .button-contact {
-    background: $secondary-gold-color;
-    color: $primary-dark-color;
-    border: none;
-    padding: 10px 40px;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-  }
+// Button see more
+.btn-see-more {
+  background: $secondary-gold-color;
+  color: $primary-dark-color;
+  border: none;
+  padding: 5px 20px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+// Dots Owl Carousel
+.owl-theme .owl-dots .owl-dot.active span {
+  width: 35px;
+  height: 3px;
+  margin: 3px;
+  background: #ecc256;
 }
 
-// Footer
-footer {
-  font-family: sans-serif;
-  font-size: 12px;
-  border-top: 2px solid #c3c3c3;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: #898989;
-  margin-top: 80px;
-  .social {
-    width: 34px;
-    height: 34px;
-    border: 0.5px solid $white-color;
-    line-height: 30px;
-    background: $primary-dark-color;
+.owl-theme .owl-dots .owl-dot span {
+  width: 35px;
+  height: 3px;
+  margin: 3px;
+  background: #5c5c5c;
+}
+
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  margin-top: 40px;
+}
+// background white of title in section
+.wrap-row-white {
+  border-bottom: 1px solid #6c6c6c;
+  padding-bottom: 20px;
+  align-items: center;
+  .right-content-gray {
+    font-weight: 600;
+    color: #6c6c6c;
   }
 }
+// background black of title in section
+.wrap-row-black {
+  border-bottom: 1px solid $white-color;
+  padding-bottom: 20px;
+  align-items: center;
+  color: $white-color;
+  .right-content-white {
+    font-weight: 600;
+  }
+}
+/* End Shared */
+/* End About Us*/
