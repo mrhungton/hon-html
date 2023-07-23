@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Heart of Nature</title>
-  <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="libs/owlcarousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="libs/owlcarousel/css/owl.theme.default.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="libs/popperjs/popper.min.js"></script>
   <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="libs/jquery/jquery-3.7.0.min.js"></script>
+  <script src="libs/owlcarousel/js/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
@@ -18,7 +24,7 @@
             <img src="images/logo/light.svg" height="70px" />
           </a>
           <ul class="nav col-9 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-4 text-white text-start">About Us</a></li>
+            <li><a href="about-us.html" class="nav-link px-4 text-white text-start">About Us</a></li>
             <li><a href="#" class="nav-link px-4 text-white text-start">Product</a></li>
             <li><a href="#" class="nav-link px-4 text-white text-start">Applications</a></li>
             <li><a href="#" class="nav-link px-4 text-white text-start">Media</a></li>
@@ -175,25 +181,37 @@
     </div>
   </section>
 
-  <section class="section-tabs">
+  <section class="section-tabs my-0">
     <div class="d-flex container tabs-custom justify-content-center pb-4">
-      <div class="col-4 nav nav-pills me-3 tabs-lists flex-column align-items-start position-relative" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-        <button class="nav-link active border-bottom" id="v-pills-product-tab" data-bs-toggle="pill" data-bs-target="#v-pills-product" type="button" role="tab" aria-controls="v-pills-product" aria-selected="true"><span class="number">01.</span> Product</button>
-        <button class="nav-link border-bottom" id="v-pills-application-tab" data-bs-toggle="pill" data-bs-target="#v-pills-application" type="button" role="tab" aria-controls="v-pills-application" aria-selected="false"><span class="number">02.</span> Applications</button>
-        <button class="nav-link border-bottom" id="v-pills-document-tab" data-bs-toggle="pill" data-bs-target="#v-pills-document" type="button" role="tab" aria-controls="v-pills-document" aria-selected="false"><span class="number">03.</span> Documents</button>
-        <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false"><span class="number">04.</span> Media</button>
+      <div
+        class="col-4 nav nav-pills me-3 tabs-lists flex-column align-items-start position-relative">
+        <a href="#v-pills-product" class="nav-link active border-bottom text-start" data-bs-toggle="pill">
+          <span class="number">01.</span> Product
+        </a>
+        <a href="#v-pills-application" class="nav-link border-bottom text-start" data-bs-toggle="pill">
+          <span class="number">02.</span> Applications
+        </a>
+        <a href="#v-pills-document" class="nav-link border-bottom text-start" data-bs-toggle="pill">
+          <span class="number">03.</span> Documents
+        </a>
+        <a href="#v-pills-settings" class="nav-link border-bottom text-start" data-bs-toggle="pill">
+          <span class="number">04.</span> Settings
+        </a>
         <img src="images/icon/vertical-arrows.svg" width="20" alt="" class="position-absolute">
       </div>
-      <div class="col-6 tab-content" id="v-pills-tabContent">
-        <div class="tab-pane fade show active" id="v-pills-product" role="tabpanel" aria-labelledby="v-pills-product-tab">
+      <div class="col-8 tab-content">
+        <div class="tab-pane fade show active" id="v-pills-product">
           <div class="card">
             <div class="card-header">
               Product
             </div>
             <div class="card-body">
-              <h5 class="card-title">We manufacture the best natural organic agricultural mineral</h5>
-              <p class="card-text mt-2 mb-4">Let's listen to the sharing of the experts about the application of HON products.</p>
-              <div class="action my-4 pt-4 d-flex align-items-center justify-content-between">
+              <h5 class="card-title">We manufacture the best natural organic
+                agricultural mineral</h5>
+              <p class="card-text mt-2 mb-4">Let's listen to the sharing of
+                the experts about the application of HON products.</p>
+              <div
+                class="action my-4 pt-4 d-flex align-items-center justify-content-between">
                 <button class="btn btn-see-more">See More</button>
                 <div class="profile d-flex align-items-center">
                   <div class="info text-end me-3">
@@ -208,15 +226,18 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="v-pills-application" role="tabpanel" aria-labelledby="v-pills-application-tab">
+        <div class="tab-pane fade" id="v-pills-application">
           <div class="card">
             <div class="card-header">
               Applications
             </div>
             <div class="card-body">
-              <h5 class="card-title">We manufacture the best natural organic agricultural mineral</h5>
-              <p class="card-text mt-2 mb-4">Let's listen to the sharing of the experts about the application of HON products.</p>
-              <div class="action my-4 pt-4 d-flex align-items-center justify-content-between">
+              <h5 class="card-title">We manufacture the best natural organic
+                agricultural mineral</h5>
+              <p class="card-text mt-2 mb-4">Let's listen to the sharing of
+                the experts about the application of HON products.</p>
+              <div
+                class="action my-4 pt-4 d-flex align-items-center justify-content-between">
                 <button class="btn btn-see-more">See More</button>
                 <div class="profile d-flex align-items-center">
                   <div class="info text-end me-3">
@@ -231,15 +252,18 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="v-pills-document" role="tabpanel" aria-labelledby="v-pills-document-tab">
+        <div class="tab-pane fade" id="v-pills-document">
           <div class="card">
             <div class="card-header">
               Documents
             </div>
             <div class="card-body">
-              <h5 class="card-title">We manufacture the best natural organic agricultural mineral</h5>
-              <p class="card-text mt-2 mb-4">Let's listen to the sharing of the experts about the application of HON products.</p>
-              <div class="action my-4 pt-4 d-flex align-items-center justify-content-between">
+              <h5 class="card-title">We manufacture the best natural organic
+                agricultural mineral</h5>
+              <p class="card-text mt-2 mb-4">Let's listen to the sharing of
+                the experts about the application of HON products.</p>
+              <div
+                class="action my-4 pt-4 d-flex align-items-center justify-content-between">
                 <button class="btn btn-see-more">See More</button>
                 <div class="profile d-flex align-items-center">
                   <div class="info text-end me-3">
@@ -254,15 +278,18 @@
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+        <div class="tab-pane fade" id="v-pills-settings">
           <div class="card">
             <div class="card-header">
-              Media
+              Settings
             </div>
             <div class="card-body">
-              <h5 class="card-title">We manufacture the best natural organic agricultural mineral</h5>
-              <p class="card-text mt-2 mb-4">Let's listen to the sharing of the experts about the application of HON products.</p>
-              <div class="action my-4 pt-4 d-flex align-items-center justify-content-between">
+              <h5 class="card-title">We manufacture the best natural organic
+                agricultural mineral</h5>
+              <p class="card-text mt-2 mb-4">Let's listen to the sharing of
+                the experts about the application of HON products.</p>
+              <div
+                class="action my-4 pt-4 d-flex align-items-center justify-content-between">
                 <button class="btn btn-see-more">See More</button>
                 <div class="profile d-flex align-items-center">
                   <div class="info text-end me-3">
@@ -286,35 +313,37 @@
     <button type="button" class="btn btn-primary button-contact">Contact Us</button>
   </section>
   
-  <footer class="container">
-    <div class="row justify-content-center align-items-center text-center">
-      <div class="col-2">
-        Contact Us
-      </div>
-      <div class="col-2">
-        Handbook guidelines
-      </div>
-      <div class="col-4">
-        &copy; <script>document.write(new Date().getFullYear())</script> Heart Of Nature Inconportalbe, All Right Reserved
-      </div>
-      <div class="col-2">
-        Site map
-      </div>
-      <div class="col-2 d-flex align-items-center justify-content-center">
-        <div class="social rounded-circle me-2 text-center">
-          <a href="#">
-            <img src="images/icon/facebook-square.svg" alt="" width="16">
-          </a>
+  <footer class="footer-white">
+    <div class="container">
+      <div class="row justify-content-center align-items-center text-center">
+        <div class="col-2">
+          Contact Us
         </div>
-        <div class="social rounded-circle me-2 text-center">
-          <a href="#">
-            <img src="images/icon/twitter-square.svg" alt="" width="16">
-          </a>
+        <div class="col-2">
+          Handbook guidelines
         </div>
-        <div class="social rounded-circle me-2 text-center">
-          <a href="#">
-            <img src="images/icon/instagram.svg" alt="" width="16">
-          </a>
+        <div class="col-4">
+          &copy; <script>document.write(new Date().getFullYear())</script> Heart Of Nature Inconportalbe, All Right Reserved
+        </div>
+        <div class="col-2">
+          Site map
+        </div>
+        <div class="col-2 d-flex align-items-center justify-content-center">
+          <div class="social rounded-circle me-2 text-center">
+            <a href="#">
+              <img src="images/icon/facebook-square.svg" alt="" width="16">
+            </a>
+          </div>
+          <div class="social rounded-circle me-2 text-center">
+            <a href="#">
+              <img src="images/icon/twitter-square.svg" alt="" width="16">
+            </a>
+          </div>
+          <div class="social rounded-circle me-2 text-center">
+            <a href="#">
+              <img src="images/icon/instagram.svg" alt="" width="16">
+            </a>
+          </div>
         </div>
       </div>
     </div>
