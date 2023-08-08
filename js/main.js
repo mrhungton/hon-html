@@ -35,7 +35,7 @@ $(document).ready(function () {
       },
     },
   });
-  $(".owl-carousel-development").owlCarousel({
+  $(".owl-carousel-three-items").owlCarousel({
     loop: false,
     nav: true,
     singleItem: true,
