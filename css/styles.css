@@ -354,6 +354,13 @@ footer .container {
   border-top: 1px solid #c3c3c3;
   padding-top: 30px;
 }
+footer .container a {
+  text-decoration: none;
+  color: #898989;
+}
+footer .container a:hover {
+  color: #2a2b24;
+}
 footer .container .social {
   width: 34px;
   height: 34px;
@@ -366,6 +373,9 @@ footer .container .social {
   background: #323834;
   color: #ffffff;
   padding-top: 30px;
+}
+.footer-black .container a:hover {
+  color: #ffffff;
 }
 
 /* About Us */
@@ -482,6 +492,65 @@ footer .container .social {
   left: 20px;
 }
 
+.business-detail .img-detail-1 {
+  border-radius: 15px;
+  width: 100%;
+  height: 450px;
+}
+.business-detail .play-button {
+  position: absolute;
+  width: 60px;
+  top: 48%;
+  left: 45%;
+  cursor: pointer;
+}
+.business-detail .modal-dialog {
+  max-width: 75% !important;
+}
+.business-detail .modal-dialog .modal-content iframe {
+  height: 500px;
+}
+.business-detail .sub-card .overflow-auto {
+  padding-bottom: 10px;
+}
+.business-detail .sub-card .overflow-auto::-webkit-scrollbar {
+  height: 5px;
+}
+.business-detail .sub-card .overflow-auto::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+.business-detail .sub-card .overflow-auto::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+.business-detail .sub-card .overflow-auto::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.business-detail .sub-card .img-sub-detail {
+  border-radius: 15px;
+  width: 150px;
+  height: 200px;
+}
+.business-detail .sub-card .title-sub-detail {
+  color: #ffffff;
+  top: 10px;
+  left: 10px;
+}
+.business-detail .text-story {
+  background: #323834;
+  color: #fff;
+  padding: 20px;
+  font-size: 24px;
+  width: 100%;
+}
+.business-detail .text-story a {
+  color: #fff;
+  text-decoration-line: none;
+}
+.business-detail .text-story a:hover {
+  color: #937b3d;
+}
+
 .section-respond {
   margin-top: 80px;
   background: #323834;
@@ -510,6 +579,9 @@ footer .container .social {
 .section-respond .custom-respond .text-custom .title span {
   font-size: 34px;
   font-weight: 400;
+}
+.section-respond .custom-respond .content {
+  opacity: 0.8;
 }
 
 .section-development {
@@ -573,6 +645,72 @@ footer .container .social {
   margin-top: 40px;
 }
 
+.modal-tabs .modal-content {
+  background: #4f5c54;
+  background: #4f5c54;
+  color: #fff;
+}
+.modal-tabs .modal-content .modal-header {
+  border-bottom: 1px solid #8f8f8f;
+  padding: 1rem 2rem;
+}
+.modal-tabs .modal-content .modal-header .btn-close {
+  display: none;
+}
+
+.modal-company-history .show-company-detail {
+  color: #2a2b24;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0.6;
+}
+.modal-company-history .show-company-detail:hover {
+  color: #2a2b24;
+  opacity: 0.8;
+}
+.modal-company-history .wrap-company-detail .company-title {
+  font-size: 36px;
+  font-weight: 600;
+}
+.modal-company-history .wrap-company-detail .company-description {
+  font-size: 13px;
+}
+
+.modal-dialog-scrollable {
+  font-weight: 400;
+  max-width: none;
+  font-family: sans-serif;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.modal-dialog-scrollable .modal-body {
+  padding: 1rem 2rem;
+}
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar {
+  width: 5px;
+}
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar-track {
+  background: #a8a8a8;
+}
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.modal-dialog-scrollable .modal-footer {
+  border-top: none;
+  justify-content: start;
+  padding: 1rem 2rem;
+}
+
+@media only screen and (max-width: 575px) {
+  .modal-dialog-scrollable {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
 /* End About Us */
 /* Products */
 .section-about-product {
@@ -642,19 +780,10 @@ footer .container .social {
 
 .product-line-detail {
   color: #ffffff;
-  margin-top: 40px;
-}
-.product-line-detail .product-header {
-  font-size: 18px;
-  font-weight: 400;
-  background: #58655e;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  padding: 20px 40px;
 }
 .product-line-detail .product-content {
   background: #4f5c54;
-  padding: 20px 40px;
+  padding: 20px 40px 20px 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -688,6 +817,9 @@ footer .container .social {
 .product-line-detail .product-content .product-carousel {
   height: 35rem;
 }
+.product-line-detail .product-content .product-carousel .carousel-item {
+  height: 35rem;
+}
 .product-line-detail .product-content .product-carousel .carousel-control-prev {
   left: -12%;
 }
@@ -714,7 +846,7 @@ footer .container .social {
   border-radius: 10px;
 }
 .section-testimonials .custom-carousel-testimonials .item-card .card .card-header {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   background: #58655e;
   border-top-left-radius: 10px;
@@ -749,20 +881,24 @@ footer .container .social {
   background: #ddd;
 }
 
+.height-tabs-400 {
+  height: 400px !important;
+}
+
 .section-tabs {
   margin-top: 80px;
   padding: 40px;
 }
 .section-tabs .tabs-custom .wrap-tab-lists {
   overflow: auto;
-  height: 400px;
+  height: 600px;
   flex-flow: column;
 }
 .section-tabs .tabs-custom .wrap-tab-lists::-webkit-scrollbar {
   width: 5px;
 }
 .section-tabs .tabs-custom .wrap-tab-lists::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #a8a8a8;
 }
 .section-tabs .tabs-custom .wrap-tab-lists::-webkit-scrollbar-thumb {
   background: #888;
@@ -872,6 +1008,46 @@ footer .container .social {
 }
 .wrap-row-black .right-content-white {
   font-weight: 600;
+}
+
+.custom-tabs .nav-pills {
+  font-size: 16px;
+  font-weight: 400;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 20px;
+  gap: 20px;
+}
+.custom-tabs .tab-content {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.custom-tabs .tab-content .custom-card .card-body {
+  padding: 30px;
+}
+.custom-tabs .tab-content .custom-card .card-text {
+  opacity: 0.8;
+}
+
+.bg-tabs-header-dark {
+  background: #58655e;
+}
+.bg-tabs-header-dark .active {
+  color: #ffffff !important;
+}
+.bg-tabs-header-dark .header-link {
+  text-decoration: none;
+  color: #c3c3c3;
+}
+.bg-tabs-header-dark .header-link:hover {
+  color: #ffffff !important;
+}
+
+.bg-tabs-content-dark {
+  background: #4f5c54;
+}
+.bg-tabs-content-dark .card-body {
+  color: #ffffff;
 }
 
 /* End Shared *//*# sourceMappingURL=styles.css.map */

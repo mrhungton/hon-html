@@ -74,4 +74,33 @@ $(document).ready(function () {
       },
     },
   });
+  $(".owl-carousel-one-items").owlCarousel({
+    loop: false,
+    nav: true,
+    singleItem: true,
+    margin: 20,
+    responsive: {
+      0: {
+        items: 1,
+        center: true,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  });
+  // Responsibility
+  $("#responsibility-detail").hide();
+  $("#show-detail").on("click", function () {
+    $("#responsibility-detail").show();
+    $("#responsibility").hide();
+  });
+  $("#back-responsibility").on("click", function () {
+    $("#responsibility-detail").hide();
+    $("#responsibility").show();
+  });
+  // End Responsibility
 });
