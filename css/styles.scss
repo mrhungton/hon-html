@@ -372,6 +372,13 @@ footer {
   .container {
     border-top: 1px solid #c3c3c3;
     padding-top: 30px;
+    a {
+      text-decoration: none;
+      color: #898989;
+      &:hover {
+        color: #2a2b24;
+      }
+    }
     .social {
       width: 34px;
       height: 34px;
@@ -385,6 +392,13 @@ footer {
   background: #323834;
   color: $white-color;
   padding-top: 30px;
+  .container {
+    a {
+      &:hover {
+        color: $white-color;
+      }
+    }
+  }
 }
 
 /* About Us */
@@ -510,7 +524,70 @@ footer {
     }
   }
 }
-
+.business-detail {
+  .img-detail-1 {
+    border-radius: 15px;
+    width: 100%;
+    height: 450px;
+  }
+  .play-button {
+    position: absolute;
+    width: 60px;
+    top: 48%;
+    left: 45%;
+    cursor: pointer;
+  }
+  .modal-dialog {
+    max-width: 75% !important;
+    .modal-content {
+      iframe {
+        height: 500px;
+      }
+    }
+  }
+  .sub-card {
+    .overflow-auto {
+      padding-bottom: 10px;
+      &::-webkit-scrollbar {
+        height: 5px;
+      }
+      &::-webkit-scrollbar-track {
+        background: $white-color;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    }
+    .img-sub-detail {
+      border-radius: 15px;
+      width: 150px;
+      height: 200px;
+    }
+    .title-sub-detail {
+      color: $white-color;
+      top: 10px;
+      left: 10px;
+    }
+  }
+  .text-story {
+    background: #323834;
+    color: #fff;
+    padding: 20px;
+    font-size: 24px;
+    width: 100%;
+    a {
+      color: #fff;
+      text-decoration-line: none;
+      &:hover {
+        color: $primary-gold-color;
+      }
+    }
+  }
+}
 .section-respond {
   margin-top: 80px;
   background: #323834;
@@ -537,6 +614,9 @@ footer {
           font-weight: 400;
         }
       }
+    }
+    .content {
+      opacity: 0.8;
     }
   }
 }
@@ -605,6 +685,79 @@ footer {
     margin-top: 40px;
   }
 }
+// Modal tabs
+.modal-tabs {
+  .modal-content {
+    background: #4f5c54;
+    background: #4f5c54;
+    color: #fff;
+    .modal-header {
+      border-bottom: 1px solid #8f8f8f;
+      padding: 1rem 2rem;
+      .btn-close {
+        display: none;
+      }
+    }
+  }
+}
+
+// Modal company history
+.modal-company-history {
+  .show-company-detail {
+    color: $primary-dark-color;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0.6;
+    &:hover {
+      color: $primary-dark-color;
+      opacity: 0.8;
+    }
+  }
+  .wrap-company-detail {
+    .company-title {
+      font-size: 36px;
+      font-weight: 600;
+    }
+    .company-description {
+      font-size: 13px;
+    }
+  }
+}
+// Custom Modal
+.modal-dialog-scrollable {
+  font-weight: 400;
+  max-width: none;
+  font-family: sans-serif;
+  margin-right: 20px;
+  margin-left: 20px;
+  .modal-body {
+    padding: 1rem 2rem;
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #a8a8a8;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+  .modal-footer {
+    border-top: none;
+    justify-content: start;
+    padding: 1rem 2rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .modal-dialog-scrollable {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}
 /* End About Us */
 /* Products */
 .section-about-product {
@@ -660,7 +813,8 @@ footer {
     .wrap-product-detail {
       margin-top: 20px;
       border-radius: 10px;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
       padding: 40px;
       .wrap-content {
         .product-title {
@@ -678,22 +832,13 @@ footer {
 // Product detail
 .product-line-detail {
   color: $white-color;
-  margin-top: 40px;
-  .product-header {
-    font-size: 18px;
-    font-weight: 400;
-    background: #58655e;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 20px 40px;
-  }
   .product-content {
     background: #4f5c54;
-    padding: 20px 40px;
+    padding: 20px 40px 20px 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     .product-description {
-      width: 80%; 
+      width: 80%;
     }
     .title {
       font-size: 18px;
@@ -717,10 +862,13 @@ footer {
           color: $white-color;
           opacity: 1;
         }
-      } 
+      }
     }
     .product-carousel {
       height: 35rem;
+      .carousel-item {
+        height: 35rem;
+      }
       .carousel-control-prev {
         left: -12%;
       }
@@ -749,7 +897,7 @@ footer {
         background: #4f5c54;
         border-radius: 10px;
         .card-header {
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 400;
           background: #58655e;
           border-top-left-radius: 10px;
@@ -785,19 +933,22 @@ footer {
 .bg-tabs-white {
   background: #ddd;
 }
+.height-tabs-400 {
+  height: 400px !important;
+}
 .section-tabs {
   margin-top: 80px;
   padding: 40px;
   .tabs-custom {
     .wrap-tab-lists {
       overflow: auto;
-      height: 400px;
+      height: 600px;
       flex-flow: column;
       &::-webkit-scrollbar {
         width: 5px;
       }
       &::-webkit-scrollbar-track {
-        background: #f1f1f1;
+        background: #a8a8a8;
       }
       &::-webkit-scrollbar-thumb {
         background: #888;
@@ -918,6 +1069,47 @@ footer {
   color: $white-color;
   .right-content-white {
     font-weight: 600;
+  }
+}
+.custom-tabs {
+  .nav-pills {
+    font-size: 16px;
+    font-weight: 400;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+  }
+  .tab-content {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    .custom-card {
+      .card-body {
+        padding: 30px;
+      }
+      .card-text {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+.bg-tabs-header-dark {
+  background: #58655e;
+  .active {
+    color: $white-color !important;
+  }
+  .header-link {
+    text-decoration: none;
+    color: #c3c3c3;
+    &:hover {
+      color: $white-color !important;
+    } 
+  }
+}
+.bg-tabs-content-dark {
+  background: #4f5c54;
+  .card-body {
+    color: $white-color;
   }
 }
 /* End Shared */

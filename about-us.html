@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="libs/owlcarousel/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="libs/popperjs/popper.min.js"></script>
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="libs/popperjs/popper.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script> -->
     <script src="libs/jquery/jquery-3.7.0.min.js"></script>
     <script src="libs/owlcarousel/js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
@@ -43,32 +43,86 @@
       </header>
     </div>
 
-    <section class="section-banner position-relative">
-      <div class="custom-content-banner position-relative">
-        <img
-          src="images/about/Image HON mine 05 - By Sonny - May 8 2023 - 02.jpg"
-          class="img-banner" width="100%" , height="100%">
-        <div class="banner-title position-absolute">
-          <h1 class="title-carousel">About Us</h1>
-          <div class="sub-title">Heart of Nature Mine History</div>
-        </div>
-      </div>
-      <div class="list-social position-absolute">
-        <div class="d-flex flex-column">
-          <div class="custom-social rounded-circle text-center">
-            <a href="#">
-              <img src="images/icon/facebook-square.svg" alt width="16">
-            </a>
+    <section>
+      <div id="myCarousel" class="carousel slide my-0" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="bd-placeholder-img" src="images/about/Image HON mine 05 - By Sonny - May 8 2023 - 02.jpg" width="100%" height="100%" />
+            <div class="container">
+              <div class="carousel-caption custom-caption text-start d-flex justify-content-between flex-column">
+                <div class="row align-items-center">
+                  <div class="col-9">
+                    <button type="button" class="px-4 py-2 mb-4 shadow-lg rounded-3 btn btn-date">
+                      <span class="me-2"><img src="images/icon/calendar.svg" alt="" width="15"></span>
+                      30 March 2023 - 27 May 2023
+                    </button>
+                    <h1 class="title-carousel">About Us</h1>
+                    <div class="sub-title">Heart of Nature Mine History</div>
+                  </div>
+                  <div class="col-3">
+                    <a class="position-relative explore-button d-block text-decoration-none rounded-circle" href="#">
+                      <div class="note-icon shadow rounded-circle position-absolute text-center">
+                        <img src="images/icon/book.svg" alt="" width="23px"></span>
+                      </div>
+                      Explore <br> Us <span><img src="images/icon/long-arrow-right.svg" alt="" width="50px"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="row footer-carousel align-items-end justify-content-between">
+                  <div class="col-7">
+                    <div class="d-flex align-items-center">
+                      <div class="commit-text pe-4">Commit</div>
+                      <div class="custom-description">You and I agree on the rights and obligations to access the website under this guide. All single purpose is to cooperate closely with information to protect the legitimate interests of the parties involved in using the website.</div>
+                    </div>
+                  </div>
+                  <div class="col-2 pb-4">
+                    <div class="d-flex flex-column">
+                      <div class="custom-social rounded-circle text-center">
+                        <a href="#">
+                          <img src="images/icon/facebook-square.svg" alt="" width="16">
+                        </a>
+                      </div>
+                      <div class="custom-social rounded-circle text-center mt-3">
+                        <a href="#">
+                          <img src="images/icon/twitter-square.svg" alt="" width="16">
+                        </a>
+                      </div>
+                      <div class="custom-social rounded-circle text-center mt-3">
+                        <a href="#">
+                          <img src="images/icon/instagram.svg" alt="" width="16">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="custom-social rounded-circle text-center mt-3">
-            <a href="#">
-              <img src="images/icon/twitter-square.svg" alt width="16">
-            </a>
+          <div class="carousel-item">
+            <img class="bd-placeholder-img" src="images/about/Image HON mine 05 - By Sonny - May 8 2023 - 02.jpg" width="100%" height="100%" />
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
           </div>
-          <div class="custom-social rounded-circle text-center mt-3">
-            <a href="#">
-              <img src="images/icon/instagram.svg" alt width="16">
-            </a>
+          <div class="carousel-item">
+            <img class="bd-placeholder-img" src="images/about/Image HON mine 05 - By Sonny - May 8 2023 - 02.jpg" width="100%" height="100%" />
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="position-absolute carousel-indicators align-items-center">
+            <span class="pe-3 number-text">01/03</span>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
         </div>
       </div>
@@ -77,7 +131,7 @@
     <section class="section-tabs my-0 bg-section-dark">
       <div class="d-flex container tabs-custom justify-content-center pb-4 position-relative">
         <div
-          class="col-6 nav nav-pills me-3 tabs-lists flex-column align-items-start wrap-tab-lists">
+          class="col-6 nav nav-pills me-3 tabs-lists flex-column align-items-start wrap-tab-lists height-tabs-400">
           <a href="#v-pills-history"
             class="nav-link active border-bottom text-start"
             data-bs-toggle="pill">
@@ -110,7 +164,7 @@
                   the experts about the application of HON products.</p>
                 <div
                   class="action my-4 pt-4 d-flex align-items-center justify-content-between">
-                  <button class="btn btn-see-more">See More</button>
+                  <a class="btn btn-see-more" href="#modal_1" data-bs-toggle="modal">See More</a>
                 </div>
               </div>
             </div>
@@ -127,7 +181,7 @@
                   the experts about the application of HON products.</p>
                 <div
                   class="action my-4 pt-4 d-flex align-items-center justify-content-between">
-                  <button class="btn btn-see-more">See More</button>
+                  <a class="btn btn-see-more" href="#modal_2" data-bs-toggle="modal">See More</a>
                 </div>
               </div>
             </div>
@@ -144,7 +198,7 @@
                   the experts about the application of HON products.</p>
                 <div
                   class="action my-4 pt-4 d-flex align-items-center justify-content-between">
-                  <button class="btn btn-see-more">See More</button>
+                  <a class="btn btn-see-more" href="#modal_3" data-bs-toggle="modal">See More</a>
                 </div>
               </div>
             </div>
@@ -161,7 +215,7 @@
                   the experts about the application of HON products.</p>
                 <div
                   class="action my-4 pt-4 d-flex align-items-center justify-content-between">
-                  <button class="btn btn-see-more">See More</button>
+                  <a class="btn btn-see-more" href="#modal_4" data-bs-toggle="modal">See More</a>
                 </div>
               </div>
             </div>
@@ -170,16 +224,112 @@
       </div>
     </section>
 
+    <!-- Modal section tabs -->
+    <!-- Modal 1 -->
+    <div class="modal fade show" id="modal_1">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-tabs">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">History of Nevada</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2 class="title my-4">
+              History of Nevada
+            </h2>
+            <p>This is some placeholder content to show a vertically centered modal. We've added some extra copy here to show how vertically centering the modal works when combined with scrollable modals. We also use some repeated line breaks to quickly extend the height of the content, thereby triggering the scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
+            <p>This is some placeholder content to show a vertically centered modal. We've added some extra copy here to show how vertically centering the modal works when combined with scrollable modals. We also use some repeated line breaks to quickly extend the height of the content, thereby triggering the scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
+            <img src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg" class="img-fluid" width="250" height="250" alt="">
+            <p>Just like that.</p>
+            <p>This is some placeholder content to show a vertically centered modal. We've added some extra copy here to show how vertically centering the modal works when combined with scrollable modals. We also use some repeated line breaks to quickly extend the height of the content, thereby triggering the scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-see-more" data-bs-dismiss="modal">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2 -->
+    <div class="modal fade show" id="modal_2">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-tabs">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Nevada geolory</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2 class="title my-4">
+              Nevada geolory
+            </h2>
+            <p>This is some placeholder content to show a vertically centered modal. We've added some extra copy here to show how vertically centering the modal works when combined with scrollable modals. We also use some repeated line breaks to quickly extend the height of the content, thereby triggering the scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
+            <p>This is some placeholder content to show a vertically centered modal. We've added some extra copy here to show how vertically centering the modal works when combined with scrollable modals. We also use some repeated line breaks to quickly extend the height of the content, thereby triggering the scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
+            <img src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg" class="img-fluid" width="250" height="250" alt="">
+            <p>Just like that.</p>
+            <p>This is some placeholder content to show a vertically centered modal. We've added some extra copy here to show how vertically centering the modal works when combined with scrollable modals. We also use some repeated line breaks to quickly extend the height of the content, thereby triggering the scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-see-more" data-bs-dismiss="modal">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 3 -->
+    <div class="modal fade show" id="modal_3">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-tabs">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Heart of Nature Mine History</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2 class="title my-4">
+              Heart of Nature Mine History
+            </h2>
+            <p>This is some placeholder content to show a vertically centered modal. We've added some extra copy here to show how vertically centering the modal works when combined with scrollable modals. We also use some repeated line breaks to quickly extend the height of the content, thereby triggering the scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
+            <p>This is some placeholder content to show a vertically centered modal. We've added some extra copy here to show how vertically centering the modal works when combined with scrollable modals. We also use some repeated line breaks to quickly extend the height of the content, thereby triggering the scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
+            <img src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg" class="img-fluid" width="250" height="250" alt="">
+            <p>Just like that.</p>
+            <p>This is some placeholder content to show a vertically centered modal. We've added some extra copy here to show how vertically centering the modal works when combined with scrollable modals. We also use some repeated line breaks to quickly extend the height of the content, thereby triggering the scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-see-more" data-bs-dismiss="modal">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 4 -->
+    <div class="modal fade show" id="modal_4">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-tabs">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Heart of Nature Mine Analysis</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h2 class="title my-4">
+              Heart of Nature Mine Analysis
+            </h2>
+            <p>This is some placeholder content to show a vertically centered modal. We've added some extra copy here to show how vertically centering the modal works when combined with scrollable modals. We also use some repeated line breaks to quickly extend the height of the content, thereby triggering the scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
+            <p>This is some placeholder content to show a vertically centered modal. We've added some extra copy here to show how vertically centering the modal works when combined with scrollable modals. We also use some repeated line breaks to quickly extend the height of the content, thereby triggering the scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
+            <img src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg" class="img-fluid" width="250" height="250" alt="">
+            <p>Just like that.</p>
+            <p>This is some placeholder content to show a vertically centered modal. We've added some extra copy here to show how vertically centering the modal works when combined with scrollable modals. We also use some repeated line breaks to quickly extend the height of the content, thereby triggering the scrolling. When content becomes longer than the prefedined max-height of modal, content will be cropped and scrollable within the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-see-more" data-bs-dismiss="modal">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal section tabs -->
+
     <section class="section-company-history container">
       <div class="row wrap-row-white">
         <div class="col-6 left-title">
           <h1>Company History</h1>
         </div>
         <div class="col-6 right-content-gray">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, a.
-          Neque alias odio laborum distinctio id sit vitae sequi velit porro
-          veritatis explicabo, omnis voluptatem adipisci aliquid quo, obcaecati
-          a!
+          Mr. Moon Thai is a scientist. He researches natural organic minerals applied to improve and maintain a clean environment in various industries.
         </div>
       </div>
       <div class="owl-carousel owl-theme owl-carousel-company-history">
@@ -190,33 +340,9 @@
               alt>
             <div class="insert-text position-absolute">
               <h1>2010</h1>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>Research stage of organic minerals.</p>
             </div>
-            <button class="btn btn-see-more position-absolute">See More</button>
-          </div>
-        </div>
-        <div class="item-card">
-          <div class="wrap-content position-relative">
-            <img
-              src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
-              alt>
-            <div class="insert-text position-absolute">
-              <h1>2010</h1>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <button class="btn btn-see-more position-absolute">See More</button>
-          </div>
-        </div>
-        <div class="item-card">
-          <div class="wrap-content position-relative">
-            <img
-              src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
-              alt>
-            <div class="insert-text position-absolute">
-              <h1>2010</h1>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <button class="btn btn-see-more position-absolute">See More</button>
+            <button class="btn btn-see-more position-absolute" href="#modal_company_history_2010" data-bs-toggle="modal">See More</button>
           </div>
         </div>
         <div class="item-card">
@@ -226,13 +352,232 @@
               alt>
             <div class="insert-text position-absolute">
               <h1>2017</h1>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>Product Research Stage.</p>
             </div>
-            <button class="btn btn-see-more position-absolute">See More</button>
+            <button class="btn btn-see-more position-absolute" href="#modal_company_history_2017" data-bs-toggle="modal">See More</button>
+          </div>
+        </div>
+        <div class="item-card">
+          <div class="wrap-content position-relative">
+            <img
+              src="images/about/Image HON mine 05 - By Sonny - May 8 2023 - 02.jpg"
+              alt>
+            <div class="insert-text position-absolute">
+              <h1>2021</h1>
+              <p>Established Heart of Nature Company.</p>
+            </div>
+            <button class="btn btn-see-more position-absolute" href="#modal_company_history_2021" data-bs-toggle="modal">See More</button>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Modal company -->
+    <!-- 2010 aria-expanded="true" <div class="collapse wrap-company-detail show" id="company_2010"> -->
+    <div class="modal fade show" id="modal_company_history_2010">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-company-history">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="custom-img text-center">
+              <img src="images/about/pexels-ivan-samkov-4238488.jpg" width="30%" class="rounded" alt="">
+            </div>
+            <div class="collapse-company">
+              <div class="company-item my-4">
+                <div class="border-bottom pb-4">
+                  <a class="show-company-detail" data-bs-toggle="collapse" href="#company_2010" role="button" aria-expanded="true">
+                    13 March 2010
+                  </a>
+                </div>
+                <div class="collapse wrap-company-detail show" id="company_2010">
+                  <div class="wrap-content my-4">
+                    <h2 class="company-title mb-4">
+                      Research stage of organic minerals
+                    </h2>
+                    <div class="company-description">
+                      In 2010,  he has done many projects on environmental improvement in some rural areas around the world. After more than six years of research with many challenges, he found that the beneficial indicators for the soil environment, water environment, and plants after each research project gave better and more results. 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="company-item my-4">
+                <div class="border-bottom pb-4">
+                  <a class="show-company-detail" data-bs-toggle="collapse" href="#company_2017" role="button" aria-expanded="false">
+                    17 March 2017
+                  </a>
+                </div>
+                <div class="collapse wrap-company-detail" id="company_2017">
+                  <div class="wrap-content my-4">
+                    <div class="company-title mb-4">
+                      Product Research Stage
+                    </div>
+                    <div class="company-description">
+                      In 2017, he decided to acquire HON mine to continue researching natural organic minerals applied to improving the soil environment and water environment in many different fields.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="company-item my-4">
+                <div class="border-bottom pb-4">
+                  <a class="show-company-detail" data-bs-toggle="collapse" href="#company_2021" role="button" aria-expanded="false">
+                    2021
+                  </a>
+                </div>
+                <div class="collapse wrap-company-detail" id="company_2021">
+                  <div class="wrap-content my-4">
+                    <h2 class="company-title mb-4">
+                      Established Heart of Nature Company
+                    </h2>
+                    <div class="company-description">
+                      After time for researching the application of natural organic agricultural minerals with the expected results, in 2021, he decided to establish the Heart of Nature company in the US. The company operates in the manufacturing and trading of natural organic agricultural mineral products with the brand name S-K-Microsource.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-see-more" data-bs-dismiss="modal">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 2017 aria-expanded="true" <div class="collapse wrap-company-detail show" id="company_2017"> -->
+    <div class="modal fade show" id="modal_company_history_2017">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-company-history">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="custom-img text-center">
+              <img src="images/about/pexels-ivan-samkov-4238488.jpg" width="30%" class="rounded" alt="">
+            </div>
+            <div class="collapse-company">
+              <div class="company-item my-4">
+                <div class="border-bottom pb-4">
+                  <a class="show-company-detail" data-bs-toggle="collapse" href="#company_2010" role="button" aria-expanded="false">
+                    13 March 2010
+                  </a>
+                </div>
+                <div class="collapse wrap-company-detail" id="company_2010">
+                  <div class="wrap-content my-4">
+                    <h2 class="company-title mb-4">
+                      Research stage of organic minerals
+                    </h2>
+                    <div class="company-description">
+                      In 2010,  he has done many projects on environmental improvement in some rural areas around the world. After more than six years of research with many challenges, he found that the beneficial indicators for the soil environment, water environment, and plants after each research project gave better and more results. 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="company-item my-4">
+                <div class="border-bottom pb-4">
+                  <a class="show-company-detail" data-bs-toggle="collapse" href="#company_2017" role="button" aria-expanded="true">
+                    17 March 2017
+                  </a>
+                </div>
+                <div class="collapse wrap-company-detail show" id="company_2017">
+                  <div class="wrap-content my-4">
+                    <div class="company-title mb-4">
+                      Product Research Stage
+                    </div>
+                    <div class="company-description">
+                      In 2017, he decided to acquire HON mine to continue researching natural organic minerals applied to improving the soil environment and water environment in many different fields.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="company-item my-4">
+                <div class="border-bottom pb-4">
+                  <a class="show-company-detail" data-bs-toggle="collapse" href="#company_2021" role="button" aria-expanded="false">
+                    2021
+                  </a>
+                </div>
+                <div class="collapse wrap-company-detail" id="company_2021">
+                  <div class="wrap-content my-4">
+                    <h2 class="company-title mb-4">
+                      Established Heart of Nature Company
+                    </h2>
+                    <div class="company-description">
+                      After time for researching the application of natural organic agricultural minerals with the expected results, in 2021, he decided to establish the Heart of Nature company in the US. The company operates in the manufacturing and trading of natural organic agricultural mineral products with the brand name S-K-Microsource.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-see-more" data-bs-dismiss="modal">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 2021 aria-expanded="true" <div class="collapse wrap-company-detail show" id="company_2021"> -->
+    <div class="modal fade show" id="modal_company_history_2021">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-company-history">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="custom-img text-center">
+              <img src="images/about/pexels-ivan-samkov-4238488.jpg" width="30%" class="rounded" alt="">
+            </div>
+            <div class="collapse-company">
+              <div class="company-item my-4">
+                <div class="border-bottom pb-4">
+                  <a class="show-company-detail" data-bs-toggle="collapse" href="#company_2010" role="button" aria-expanded="false">
+                    13 March 2010
+                  </a>
+                </div>
+                <div class="collapse wrap-company-detail" id="company_2010">
+                  <div class="wrap-content my-4">
+                    <h2 class="company-title mb-4">
+                      Research stage of organic minerals
+                    </h2>
+                    <div class="company-description">
+                      In 2010,  he has done many projects on environmental improvement in some rural areas around the world. After more than six years of research with many challenges, he found that the beneficial indicators for the soil environment, water environment, and plants after each research project gave better and more results. 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="company-item my-4">
+                <div class="border-bottom pb-4">
+                  <a class="show-company-detail" data-bs-toggle="collapse" href="#company_2017" role="button" aria-expanded="false">
+                    17 March 2017
+                  </a>
+                </div>
+                <div class="collapse wrap-company-detail" id="company_2017">
+                  <div class="wrap-content my-4">
+                    <div class="company-title mb-4">
+                      Product Research Stage
+                    </div>
+                    <div class="company-description">
+                      In 2017, he decided to acquire HON mine to continue researching natural organic minerals applied to improving the soil environment and water environment in many different fields.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="company-item my-4">
+                <div class="border-bottom pb-4">
+                  <a class="show-company-detail" data-bs-toggle="collapse" href="#company_2021" role="button" aria-expanded="true">
+                    2021
+                  </a>
+                </div>
+                <div class="collapse wrap-company-detail show" id="company_2021">
+                  <div class="wrap-content my-4">
+                    <h2 class="company-title mb-4">
+                      Established Heart of Nature Company
+                    </h2>
+                    <div class="company-description">
+                      After time for researching the application of natural organic agricultural minerals with the expected results, in 2021, he decided to establish the Heart of Nature company in the US. The company operates in the manufacturing and trading of natural organic agricultural mineral products with the brand name S-K-Microsource.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-see-more" data-bs-dismiss="modal">Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End modal company -->
 
     <section class="section-leadership">
       <div class="container">
@@ -241,10 +586,7 @@
             <h1>Leadership</h1>
           </div>
           <div class="col-6 right-content-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, a.
-            Neque alias odio laborum distinctio id sit vitae sequi velit porro
-            veritatis explicabo, omnis voluptatem adipisci aliquid quo,
-            obcaecati a!
+            Welcome to the company's executive leadership, the highest-making decision, and leadership management team, who focus on strategic financial decisions and scale operations for the entire company
           </div>
         </div>
         <div class="owl-carousel owl-theme owl-carousel-leadership">
@@ -252,7 +594,16 @@
             <div class="wrap-content">
               <img src="images/about/pexels-ivan-samkov-4238488.jpg" alt>
               <div class="insert-text my-4">
-                <h1>Dr. Albert</h1>
+                <h3>Mr. Moon Thai</h3>
+                <p>President</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <div class="wrap-content">
+              <img src="images/about/pexels-ivan-samkov-4238488.jpg" alt>
+              <div class="insert-text my-4">
+                <h3>Mr. Sonny Nguyen</h3>
                 <p>CEO and Chairmain</p>
               </div>
             </div>
@@ -261,8 +612,8 @@
             <div class="wrap-content">
               <img src="images/about/pexels-ivan-samkov-4238488.jpg" alt>
               <div class="insert-text my-4">
-                <h1>Dr. Albert</h1>
-                <p>CEO and Chairmain</p>
+                <h3>Mr. Gid MacDonald</h3>
+                <p>Mine Manager</p>
               </div>
             </div>
           </div>
@@ -270,17 +621,8 @@
             <div class="wrap-content">
               <img src="images/about/pexels-ivan-samkov-4238488.jpg" alt>
               <div class="insert-text my-4">
-                <h1>Dr. Albert</h1>
-                <p>CEO and Chairmain</p>
-              </div>
-            </div>
-          </div>
-          <div class="item-card">
-            <div class="wrap-content">
-              <img src="images/about/pexels-ivan-samkov-4238488.jpg" alt>
-              <div class="insert-text my-4">
-                <h1>Dr. Albert</h1>
-                <p>CEO and Chairmain</p>
+                <h3>Mrs. Mary Matusky</h3>
+                <p>Office Manager</p>
               </div>
             </div>
           </div>
@@ -294,52 +636,119 @@
           <h1>Business Philosophy</h1>
         </div>
         <div class="col-6 right-content-gray">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, a.
-          Neque alias odio laborum distinctio id sit vitae sequi velit porro
-          veritatis explicabo, omnis voluptatem adipisci aliquid quo, obcaecati
-          a!
+          Heart of Nature focuses on great products to provide perfect service value to customers.
         </div>
       </div>
-      <div class="row card-leadership align-items-end">
-        <div class="col-6">
-          <div class="position-relative left-leadership">
-            <div class="position-absolute custom-card-1">
-              <img
-                src="images/about/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg"
-                alt class="img-card-1">
-              <h1 class="title-leadership position-absolute">
-                Leadership brand message
-              </h1>
+      <div class="owl-carousel owl-theme owl-carousel-one-items">
+        <div class="row card-leadership align-items-end">
+          <div class="col-6">
+            <div class="position-relative left-leadership">
+              <div class="position-absolute custom-card-1">
+                <img
+                  src="images/about/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg"
+                  alt class="img-card-1">
+                <h1 class="title-leadership position-absolute">
+                  Vission
+                </h1>
+              </div>
+              <div class="position-absolute custom-card-2">
+                <img
+                  src="images/about/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg"
+                  alt class="img-card-2">
+                <h1 class="title-leadership position-absolute">
+                  The mission statement
+                </h1>
+              </div>
+              <div class="position-absolute custom-card-3">
+                <img
+                  src="images/about/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg"
+                  alt class="img-card-3">
+                <h1 class="title-leadership position-absolute">
+                  Leadership brand message
+                </h1>
+              </div>
             </div>
-            <div class="position-absolute custom-card-2">
-              <img
-                src="images/about/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg"
-                alt class="img-card-2">
-              <h1 class="title-leadership position-absolute">
-                Leadership brand message
-              </h1>
-            </div>
-            <div class="position-absolute custom-card-3">
-              <img
-                src="images/about/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg"
-                alt class="img-card-3">
-              <h1 class="title-leadership position-absolute">
-                Leadership brand message
-              </h1>
+          </div>
+          <div class="col-6">
+            <h1>Message from management</h1>
+            <p>Heart of Nature is the prompt provision of superior value based on the “At your side.” spirit, which always places our customers first.</p>
+            <div>
+              <a href="about-us-business-philosophy.html" class="btn btn-see-more">See More</a>
             </div>
           </div>
         </div>
-        <div class="col-6">
-          <h1>Leadership brand message</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-            laudantium consectetur corporis rem illum ipsa neque. Facere,
-            officia ex, reiciendis facilis dolores impedit ipsam dolorem dolorum
-            itaque sapiente provident voluptatibus!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias
-            iure nihil iusto officia perferendis sed voluptatibus, quos vel
-            saepe esse dolor at officiis, ex, provident totam ut a aperiam.</p>
-          <div>
-            <button class="btn btn-see-more">See More</button>
+        <div class="row card-leadership align-items-end">
+          <div class="col-6">
+            <div class="position-relative left-leadership">
+              <div class="position-absolute custom-card-1">
+                <img
+                  src="images/about/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg"
+                  alt class="img-card-1">
+                <h1 class="title-leadership position-absolute">
+                  Leadership brand message
+                </h1>
+              </div>
+              <div class="position-absolute custom-card-2">
+                <img
+                  src="images/about/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg"
+                  alt class="img-card-2">
+                <h1 class="title-leadership position-absolute">
+                  Vision
+                </h1>
+              </div>
+              <div class="position-absolute custom-card-3">
+                <img
+                  src="images/about/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg"
+                  alt class="img-card-3">
+                <h1 class="title-leadership position-absolute">
+                  The mission statement
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <h1>The mission statement</h1>
+            <p>Produce the best natural organic agricultural mineral products in the world.</p>
+            <div>
+              <a href="about-us-business-philosophy.html" class="btn btn-see-more">See More</a>
+            </div>
+          </div>
+        </div>
+        <div class="row card-leadership align-items-end">
+          <div class="col-6">
+            <div class="position-relative left-leadership">
+              <div class="position-absolute custom-card-1">
+                <img
+                  src="images/about/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg"
+                  alt class="img-card-1">
+                <h1 class="title-leadership position-absolute">
+                  The mission statement
+                </h1>
+              </div>
+              <div class="position-absolute custom-card-2">
+                <img
+                  src="images/about/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg"
+                  alt class="img-card-2">
+                <h1 class="title-leadership position-absolute">
+                  Leadership brand message
+                </h1>
+              </div>
+              <div class="position-absolute custom-card-3">
+                <img
+                  src="images/about/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg"
+                  alt class="img-card-3">
+                <h1 class="title-leadership position-absolute">
+                  Vision
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <h1>Vision</h1>
+            <p>Heart of Nature is always contributing to make our world more cleaner, healthier and happier. </p>
+            <div>
+              <a href="about-us-business-philosophy.html" class="btn btn-see-more">See More</a>
+            </div>
           </div>
         </div>
       </div>
@@ -350,7 +759,7 @@
         <div class="row wrap-row-black text-start">
           <h1>Responsibility</h1>
         </div>
-        <div class="row custom-respond justify-content-center align-items-end">
+        <div class="row custom-respond justify-content-center align-items-end" id="responsibility">
           <div class="col-6 position-relative">
             <img src="images/about/responsilbility.jpg" class="img-fluid">
             <div class="text-custom position-absolute">
@@ -358,13 +767,93 @@
             </div>
           </div>
           <div class="col-6">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-              laudantium consectetur corporis rem illum ipsa neque. Facere,
-              officia ex, reiciendis facilis dolores impedit ipsam dolorem
-              dolorum
-              itaque sapiente provident voluptatibus!</p>
+            <p> At Heart Of Nature, we do kindness for public health and act with integrity in everything we do. Our values guide us to make ethically sound decisions; responsible to consumers and society. The thoughtfulness in thought and action has driven all resources inside and outside the company towards unity, trust, and accountability to do the right thing. We all must understand our right to comply and carry out all duties with honor.
+            </p>
             <div class="mt-4">
-              <button class="btn btn-see-more">See More</button>
+              <button class="btn btn-see-more" id="show-detail">See More</button>
+            </div>
+          </div>
+        </div>
+        <div class="custom-respond" id="responsibility-detail">
+          <div class="my-4 text-center">
+            <button class="btn btn-see-more" id="back-responsibility">Back</button>
+          </div>
+          <div class="content text-center">
+            "We aim to protect the natural resources of land and water by making them cleaner. That purpose begins with farmers, ranchers, and businesses in the agricultural sector. We help our partners address the challenges of reclamation and restoration of land and water environments cleaner. A clean environment supports crops, and aquaculture grows better. That's how Heart of Nature and its partners make the world cleaner, healthier, and happier."
+          </div>
+          <div class="custom-tabs bg-section-dark my-4 pt-4">
+            <div class="nav nav-pills bg-tabs-header-dark">
+              <a href="#compliance"
+                class="header-link active text-start"
+                data-bs-toggle="pill">
+                Compliance with ethics
+              </a>
+              <a href="#fairness"
+                class="header-link text-start"
+                data-bs-toggle="pill">
+                Fairness and cooperation
+              </a>
+              <a href="#diverse"
+                class="header-link text-start"
+                data-bs-toggle="pill">
+                Diverse and integration
+              </a>
+              <a href="#environmental"
+                class="header-link text-start"
+                data-bs-toggle="pill">
+                Environmental sustainability
+              </a>
+            </div>
+            <div class="tab-content bg-tabs-content-dark">
+              <div class="tab-pane fade show active" id="compliance">
+                <div class="custom-card">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title mb-4">We manufacture the best natural organic
+                      agricultural mineral</h5> -->
+                    <p class="card-text">Heart of Nature is strongly complying with business practices and regulations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="fairness">
+                <div class="custom-card">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title mb-4">We manufacture the best natural organic
+                      agricultural mineral</h5> -->
+                    <p class="card-text">Heart of Nature đối xử bình đẳng với khách hàng trên phương châm đôi bên cùng có lợi.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="diverse">
+                <div class="custom-card">
+                  <div class="card-body">
+                    <h5 class="card-title mb-4">Build a more diverse and inclusive team.</h5>
+                    <p class="card-text">
+                      At our company, we are committed to diversifying our team globally through gender and regional equality by identifying and working to empower disadvantaged groups to thrive. We bring happiness and prosperity to everyone.
+                    </p>
+                    <h5 class="card-title mb-4">
+                      Promote diversity and inclusion in our supply chain.
+                    </h5>
+                    <p class="card-text">
+                      We aim for the unification of an efficient supply chain. To do this, we work with our supply chain partners to jointly find a diverse and suitable supply solution for our business.
+                      <br>
+                      We always learn and carefully apply diverse views and integrate them into our supply chain, from the job description to the selection of suppliers. Take responsibility as we do with any other business goals. We understand that is what to do because a world uses clean and sustainable resources. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="environmental">
+                <div class="custom-card">
+                  <div class="card-body">
+                    <!-- <h5 class="card-title mb-4">We manufacture the best natural organic
+                      agricultural mineral</h5> -->
+                    <p class="card-text">
+                      Life on earth only exists when the environment has enough necessary elements to help life maintain and develop. Therefore, the living environment on earth plays a very important role for humans and other living beings. We realize that protecting the environment on earth is protecting the existence of all life. Therefore, we always seek to reduce the percentage of carbon emissions (CO2) generated to 0% according to the company's business improvement roadmap in the fastest and most effective way.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -377,8 +866,7 @@
           <h1>Development</h1>
         </div>
         <div class="col-6 right-content-gray">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, a.
-          Neque alias odio laborum distinctio id sit vitae sequi velit porro
+          We pursue programs and policies toward a healthier world for all.
         </div>
       </div>
       <div class="owl-carousel owl-theme owl-carousel-three-items custom-carousel-development">
@@ -388,10 +876,9 @@
               Research and development
             </div>
             <div class="card-body">
-              <p class="card-text mt-2 mb-4">Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Architecto odit autem iste eos quo
-                aliquam ducimus pariatur explicabo! Odio dolor eos natus soluta
-                molestiae quis optio alias sapiente laudantium nulla?.</p>
+              <p class="card-text mt-2 mb-4">
+                Heart of Nature is continuing work with Scientists, Universities and other partners to develop better products.
+              </p>
               <img
                 src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
                 class="img-fluid" alt>
@@ -405,13 +892,12 @@
         <div class="item-card">
           <div class="card">
             <div class="card-header">
-              Research and development
+              Customer relationships
             </div>
             <div class="card-body">
-              <p class="card-text mt-2 mb-4">Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Architecto odit autem iste eos quo
-                aliquam ducimus pariatur explicabo! Odio dolor eos natus soluta
-                molestiae quis optio alias sapiente laudantium nulla?.</p>
+              <p class="card-text mt-2 mb-4">
+                Heart of Nature is always improving business relationships with all of our clients.
+              </p>
               <img
                 src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
                 class="img-fluid" alt>
@@ -425,13 +911,12 @@
         <div class="item-card">
           <div class="card">
             <div class="card-header">
-              Research and development
+              Expertise
             </div>
             <div class="card-body">
-              <p class="card-text mt-2 mb-4">Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Architecto odit autem iste eos quo
-                aliquam ducimus pariatur explicabo! Odio dolor eos natus soluta
-                molestiae quis optio alias sapiente laudantium nulla?.</p>
+              <p class="card-text mt-2 mb-4">
+                Heart of Nature will continue to develop its products with our experts, scientists and other agencies.
+              </p>
               <img
                 src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
                 class="img-fluid" alt>
@@ -445,93 +930,14 @@
         <div class="item-card">
           <div class="card">
             <div class="card-header">
-              Research and development
+              Managing
             </div>
             <div class="card-body">
-              <p class="card-text mt-2 mb-4">Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Architecto odit autem iste eos quo
-                aliquam ducimus pariatur explicabo! Odio dolor eos natus soluta
-                molestiae quis optio alias sapiente laudantium nulla?.</p>
-              <img
-                src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
-                class="img-fluid" alt>
-              <div
-                class="action my-4 pt-4 d-flex align-items-center justify-content-between">
-                <button class="btn btn-see-more">See More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item-card">
-          <div class="card">
-            <div class="card-header">
-              Research and development
-            </div>
-            <div class="card-body">
-              <p class="card-text mt-2 mb-4">Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Architecto odit autem iste eos quo
-                aliquam ducimus pariatur explicabo! Odio dolor eos natus soluta
-                molestiae quis optio alias sapiente laudantium nulla?.</p>
-              <img
-                src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
-                class="img-fluid" alt>
-              <div
-                class="action my-4 pt-4 d-flex align-items-center justify-content-between">
-                <button class="btn btn-see-more">See More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item-card">
-          <div class="card">
-            <div class="card-header">
-              Research and development
-            </div>
-            <div class="card-body">
-              <p class="card-text mt-2 mb-4">Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Architecto odit autem iste eos quo
-                aliquam ducimus pariatur explicabo! Odio dolor eos natus soluta
-                molestiae quis optio alias sapiente laudantium nulla?.</p>
-              <img
-                src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
-                class="img-fluid" alt>
-              <div
-                class="action my-4 pt-4 d-flex align-items-center justify-content-between">
-                <button class="btn btn-see-more">See More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item-card">
-          <div class="card">
-            <div class="card-header">
-              Research and development
-            </div>
-            <div class="card-body">
-              <p class="card-text mt-2 mb-4">Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Architecto odit autem iste eos quo
-                aliquam ducimus pariatur explicabo! Odio dolor eos natus soluta
-                molestiae quis optio alias sapiente laudantium nulla?.</p>
-              <img
-                src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
-                class="img-fluid" alt>
-              <div
-                class="action my-4 pt-4 d-flex align-items-center justify-content-between">
-                <button class="btn btn-see-more">See More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item-card">
-          <div class="card">
-            <div class="card-header">
-              Research and development
-            </div>
-            <div class="card-body">
-              <p class="card-text mt-2 mb-4">Lorem ipsum dolor, sit amet
-                consectetur adipisicing elit. Architecto odit autem iste eos quo
-                aliquam ducimus pariatur explicabo! Odio dolor eos natus soluta
-                molestiae quis optio alias sapiente laudantium nulla?.</p>
+              <p class="card-text mt-2 mb-4">
+                Heart of Nature is managing and operating under the most experienced members. 
+                <br>
+                We are interested in correctly improving the working environment, health, and safety in the workplace. That's how we run our business to ensure that risk management and regulatory compliance had monitored to the highest degree.
+              </p>
               <img
                 src="images/about/Image HON mines - By Sonny - May 3 2023 - 45.jpg"
                 class="img-fluid" alt>
@@ -551,18 +957,7 @@
           <h1>Employment Opportunities</h1>
         </div>
         <div class="description text-center mx-4 px-4">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
-          fugit sapiente delectus ducimus sint, officia omnis exercitationem
-          velit, excepturi nihil ratione provident aspernatur. Obcaecati
-          recusandae soluta cum dicta dolores debitis.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque harum
-          rerum obcaecati illum. Fugit, quasi atque fuga laborum ab, voluptates
-          labore animi ipsa reprehenderit, fugiat pariatur. Quas aspernatur
-          cupiditate quod!
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
-          doloremque culpa unde, modi, at cupiditate vitae quasi et quaerat
-          recusandae omnis sapiente asperiores porro dolorum quia nostrum optio.
-          Obcaecati, sunt.
+          Unexpected miracles always happen when people come together to work sincerely for a common goal. The future of organic agro-minerals is happening here, and we want to work with inspired and inspired people who want to improve the environment and human health around the world. To join our team, please contact our human resources at (608) 469-9638
         </div>
       </div>
     </section>
@@ -606,10 +1001,7 @@
         </div>
       </div>
       <div class="description text-center mx-4 px-4">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus
-        fugit sapiente delectus ducimus sint, officia omnis exercitationem
-        velit, excepturi nihil ratione provident aspernatur. Obcaecati
-        recusandae soluta cum dicta dolores debitis.
+        Using natural organic agricultural minerals is a cleaner environment protection. We look forward to working with innovators whow share our values and focus.
       </div>
     </section>
 
@@ -617,17 +1009,22 @@
       <div class="container">
         <div class="row justify-content-center align-items-center text-center">
           <div class="col-2">
-            Contact Us
+            <a href="#">
+              Contact Us
+            </a>
           </div>
           <div class="col-2">
-            Handbook guidelines
+            <a href="#">
+              Handbook guidelines
+            </a>
           </div>
           <div class="col-4">
-            &copy; <script>document.write(new Date().getFullYear())</script>
-            Heart Of Nature Inconportalbe, All Right Reserved
+            &copy; <script>document.write(new Date().getFullYear())</script> Heart Of Nature Inconportalbe, All Right Reserved
           </div>
           <div class="col-2">
-            Site map
+            <a href="#">
+              Site map
+            </a>
           </div>
           <div class="col-2 d-flex align-items-center justify-content-center">
             <div class="social rounded-circle me-2 text-center">
