@@ -59,18 +59,20 @@ $(document).ready(function () {
     singleItem: true,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 3000,
     autoplayHoverPause: true,
+    margin: 40,
     responsive: {
       0: {
         items: 2,
-        center: true,
+        margin: 20,
       },
       600: {
-        items: 3,
+        items: 4,
+        margin: 10,
       },
       1000: {
-        items: 4,
+        items: 5,
       },
     },
   });
@@ -79,6 +81,7 @@ $(document).ready(function () {
     nav: true,
     singleItem: true,
     margin: 20,
+    navText: ["<div class='nav-btn prev-slide'>Prev</div>", "<div class='nav-btn next-slide'>Next</div>"],
     responsive: {
       0: {
         items: 1,
@@ -89,6 +92,24 @@ $(document).ready(function () {
       },
       1000: {
         items: 1,
+      },
+    },
+  });
+  $(".owl-carousel-press").owlCarousel({
+    loop: false,
+    nav: true,
+    singleItem: true,
+    margin: 15,
+    responsive: {
+      0: {
+        items: 1,
+        center: true,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
       },
     },
   });
