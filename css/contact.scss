@@ -1,0 +1,70 @@
+// Colors
+$white-color: #ffffff;
+$primary-dark-color: #2a2b24;
+/* Contact */
+.section-contact {
+  iframe {
+    width: 100%;
+    height: 800px;
+  }
+  .wrap-contact {
+    background: $white-color;
+    right: 10%;
+    top: 25%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    color: $primary-dark-color;
+    border-radius: 10px;
+    padding: 40px 50px;
+    h1 {
+      font-weight: 700;
+    }
+    .text-gray {
+      opacity: 0.6;
+    }
+    a {
+      color: $primary-dark-color;  
+      opacity: 1;
+    }
+    .phone-text {
+      font-size: 24px;
+    }
+  }
+}
+// Modal form contact
+.form-contact {
+  font-family: sans-serif;
+  border-radius: 10px;
+  color: $primary-dark-color;
+  .modal-body {
+    padding: 40px 50px;
+  }
+  .form-input {
+    outline: 0;
+    border-width: 0 0 0.5px;
+    border-color: #818181;
+    border-radius: 0;
+    opacity: 0.6;
+    &:focus {
+      outline: none;
+    }
+  }
+  label {
+    opacity: 0.6;
+  }
+}
+.section-contact-content {
+  color: $white-color;
+  margin-top: -8px;
+  margin-bottom: -80px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 26px;
+    border-bottom: 1px solid $white-color;
+    padding-bottom: 10px;
+  }
+}
+/* End Contact */
