@@ -1,0 +1,67 @@
+/* Contact */
+.section-contact iframe {
+  width: 100%;
+  height: 800px;
+}
+.section-contact .wrap-contact {
+  background: #ffffff;
+  right: 10%;
+  top: 25%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  color: #2a2b24;
+  border-radius: 10px;
+  padding: 40px 50px;
+}
+.section-contact .wrap-contact h1 {
+  font-weight: 700;
+}
+.section-contact .wrap-contact .text-gray {
+  opacity: 0.6;
+}
+.section-contact .wrap-contact a {
+  color: #2a2b24;
+  opacity: 1;
+}
+.section-contact .wrap-contact .phone-text {
+  font-size: 24px;
+}
+
+.form-contact {
+  font-family: sans-serif;
+  border-radius: 10px;
+  color: #2a2b24;
+}
+.form-contact .modal-body {
+  padding: 40px 50px;
+}
+.form-contact .form-input {
+  outline: 0;
+  border-width: 0 0 0.5px;
+  border-color: #818181;
+  border-radius: 0;
+  opacity: 0.6;
+}
+.form-contact .form-input:focus {
+  outline: none;
+}
+.form-contact label {
+  opacity: 0.6;
+}
+
+.section-contact-content {
+  color: #ffffff;
+  margin-top: -8px;
+  margin-bottom: -80px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+.section-contact-content h1 {
+  font-size: 50px;
+}
+.section-contact-content p {
+  font-size: 26px;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 10px;
+}
+
+/* End Contact *//*# sourceMappingURL=contact.css.map */
