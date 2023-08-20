@@ -1109,6 +1109,13 @@ footer .container .social {
   background: #4f5c54;
 }
 
+.section-subscribe {
+  color: #ffffff;
+  margin-top: 80px;
+  margin-bottom: -80px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
 .section-subscribe p {
   opacity: 0.8;
   font-size: 16px;
@@ -1145,6 +1152,39 @@ footer .container .social {
 }
 
 /* End Applications */
+/* Documents */
+.section-report-releases .nav-link {
+  color: #2a2b24 !important;
+  opacity: 0.6 !important;
+}
+.section-report-releases .nav-link:hover {
+  color: #2a2b24 !important;
+  opacity: 1 !important;
+}
+.section-report-releases .active {
+  color: #2a2b24 !important;
+  opacity: 1 !important;
+}
+.section-report-releases .card {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background: #f9f9f9 !important;
+  border-radius: 5px;
+}
+.section-report-releases .card .card-header {
+  font-size: 16px !important;
+  font-weight: 400;
+  background: #f9f9f9 !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 20px !important;
+}
+
+.modal-document .modal-content {
+  background: #f9f9f9 !important;
+  color: #2a2b24;
+}
+
+/* End Documents */
 /* Shared */
 .bg-section-dark {
   background: #323834;
@@ -1275,6 +1315,11 @@ footer .container .social {
   font-weight: 600;
   color: #6c6c6c;
   text-align: right;
+}
+@media only screen and (max-width: 767px) {
+  .wrap-row-white .right-content-gray {
+    text-align: left;
+  }
 }
 
 .wrap-row-black {
