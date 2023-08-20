@@ -667,8 +667,7 @@ footer .container .social {
 
 .modal-tabs .modal-content {
   background: #4f5c54;
-  background: #4f5c54;
-  color: #fff;
+  color: #ffffff;
 }
 .modal-tabs .modal-content .modal-header {
   border-bottom: 1px solid #8f8f8f;
@@ -1036,6 +1035,72 @@ footer .container .social {
   color: #ffffff;
 }
 
+.modal-event .modal-content {
+  background: #ffffff;
+  color: #2a2b24;
+  border-radius: 10px;
+}
+.modal-event .modal-content .modal-header {
+  border-bottom: 1px solid #8f8f8f;
+  padding: 1rem 2rem;
+}
+.modal-event .modal-content .modal-body .content .image {
+  display: flex;
+  justify-content: center;
+}
+.modal-event .modal-content .modal-body .content .image img {
+  border-radius: 10px;
+  width: 50%;
+}
+.modal-event .modal-content .modal-body .content .main {
+  margin-top: 20px;
+}
+.modal-event .modal-content .modal-body .content .main .part {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.modal-event .modal-content .modal-body .content .main .part h4 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #2a2b24;
+}
+.modal-event .modal-content .modal-body .content .main .part p {
+  margin-top: 10px;
+  line-height: 25px;
+}
+.modal-event .modal-content .modal-body .content .main .part .part-content {
+  display: flex;
+  gap: 20px;
+}
+.modal-event .modal-content .modal-body .content .main .part .part-content p {
+  line-height: 20px;
+}
+.modal-event .modal-content .modal-body .content .form h3 {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.modal-event .modal-content .modal-body .content .form form input.form-control {
+  outline: 0;
+  border-width: 0 0 0.5px;
+  border-color: #818181;
+  border-radius: 0;
+}
+.modal-event .modal-content .modal-body .content .form form input.form-control:focus {
+  outline: none;
+}
+
+.modal-confirm-event {
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.modal-confirm-event .modal-body {
+  padding: 1rem 2rem;
+}
+.modal-confirm-event .modal-body span {
+  font-weight: 600;
+}
+
 .bg-modal-header {
   background: #58655e;
 }
@@ -1044,80 +1109,6 @@ footer .container .social {
   background: #4f5c54;
 }
 
-.section-event {
-  margin: 20px;
-  padding: 20px;
-}
-.section-event .content {
-  box-shadow: 0px 1px 20px 0px #a19d9d;
-  padding: 40px;
-  margin: 30px 10px;
-  border-radius: 10px;
-}
-.section-event .content .image {
-  display: flex;
-  justify-content: center;
-}
-.section-event .content .image img {
-  border-radius: 10px;
-  width: 100%;
-}
-.section-event .content .main {
-  margin-top: 20px;
-  padding: 40px;
-}
-.section-event .content .main h3 {
-  font-weight: 700;
-  font-size: 48px;
-}
-.section-event .content .main .part {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.section-event .content .main .part h4 {
-  font-weight: 600;
-  font-size: 40px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #2a2b24;
-}
-.section-event .content .main .part p {
-  margin-top: 10px;
-  font-size: 16px;
-  line-height: 25px;
-}
-.section-event .content .main .part .part-content {
-  display: flex;
-  gap: 20px;
-}
-.section-event .content .main .part .part-content p {
-  line-height: 20px;
-}
-.section-event .content .form h3 {
-  font-weight: 700;
-  font-size: 50px;
-  text-align: center;
-  margin-bottom: 70px;
-}
-.section-event .content .form form {
-  gap: 10px;
-}
-.section-event .content .form form input.form-control {
-  outline: 0;
-  border-width: 0 0 0.5px;
-  border-color: #818181;
-  border-radius: 0;
-}
-.section-event .content .form form input.form-control:focus {
-  outline: none;
-}
-
-.section-subscribe {
-  color: #ffffff;
-  margin-top: 80px;
-  margin-bottom: -80px;
-  padding-bottom: 80px;
-  padding-top: 80px;
-}
 .section-subscribe p {
   opacity: 0.8;
   font-size: 16px;
@@ -1144,6 +1135,16 @@ footer .container .social {
 }
 
 /* End media */
+/* Applications */
+.section-application-reports {
+  color: #ffffff;
+  margin-top: 80px;
+  margin-bottom: -80px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+/* End Applications */
 /* Shared */
 .bg-section-dark {
   background: #323834;

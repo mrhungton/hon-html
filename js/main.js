@@ -85,7 +85,6 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
-        center: true,
       },
       600: {
         items: 1,
@@ -124,4 +123,12 @@ $(document).ready(function () {
     $("#responsibility").show();
   });
   // End Responsibility
+  // Medial --Close all modal when register event
+  $("#btn_confirm_event").on("click", function(){
+    $("#confirm_event").modal("hide");
+  });
+  $("#close_all_modal").on("click", function(){
+    $(".show-modal-event").modal("hide"); // Change id here
+  });
+  // End
 });
