@@ -711,8 +711,7 @@ footer {
 .modal-tabs {
   .modal-content {
     background: #4f5c54;
-    background: #4f5c54;
-    color: #fff;
+    color: $white-color;
     .modal-header {
       border-bottom: 1px solid #8f8f8f;
       padding: 1rem 2rem;
@@ -946,6 +945,7 @@ footer {
 /* Producs */
 
 /* Media */
+// press releases shared with applications Scope of usage
 .section-press-releases {
   margin-top: 80px;
   .custom-carousel-press {
@@ -1080,16 +1080,93 @@ footer {
     display: none;
   }
 }
-// Press detail
+// Press detail modal
 .modal-press {
   color: $primary-dark-color;
   .modal-body, .modal-footer {
     background: #f9f9f9;
   }
 }
+// Modal insider
 .modal-insider {
   .modal-content {
     color: $white-color;
+  }
+}
+// Modal event
+.modal-event {
+  .modal-content {
+    background: $white-color;
+    color: $primary-dark-color;
+    border-radius: 10px;
+    .modal-header {
+      border-bottom: 1px solid #8f8f8f;
+      padding: 1rem 2rem;
+    }
+    .modal-body {
+      .content {
+        .image {
+          display: flex;
+          justify-content: center;
+          img {
+            border-radius: 10px;
+            width: 50%;
+          }
+        }
+        .main {
+          margin-top: 20px;
+          .part {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            h4 {
+              padding-bottom: 10px;
+              border-bottom: 1px solid $primary-dark-color;
+            }
+            p {
+              margin-top: 10px;
+              line-height: 25px;
+            }
+            .part-content {
+              display: flex;
+              gap: 20px;
+              p {
+                line-height: 20px;
+              }
+            }
+          }
+        }
+        .form {
+          h3 {
+            font-weight: 700;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 70px;
+          }
+          form {
+            input.form-control {
+              outline: 0;
+              border-width: 0 0 0.5px;
+              border-color: #818181;
+              border-radius: 0;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Modal confirm event
+.modal-confirm-event {
+  font-weight: 400;
+  font-family: sans-serif;
+  .modal-body {
+    padding: 1rem 2rem;
+    span {
+      font-weight: 600;
+    }
   }
 }
 .bg-modal-header {
@@ -1099,77 +1176,6 @@ footer {
   background: #4f5c54;
 }
 // End Press detail
-// Event detail
-.section-event {
-  margin: 20px;
-  padding: 20px;
-  .content {
-    box-shadow: 0px 1px 20px 0px #a19d9d;
-    padding: 40px;
-    margin: 30px 10px;
-    border-radius: 10px;
-    .image {
-      display: flex;
-      justify-content: center;
-      img {
-        border-radius: 10px;
-        width: 100%;
-      }
-    }
-    .main {
-      margin-top: 20px;
-      padding: 40px;
-      h3 {
-        font-weight: 700;
-        font-size: 48px;
-      }
-      .part {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        h4 {
-          font-weight: 600;
-          font-size: 40px;
-          padding-bottom: 10px;
-          border-bottom: 1px solid $primary-dark-color;
-        }
-        p {
-          margin-top: 10px;
-          font-size: 16px;
-          line-height: 25px;
-        }
-
-        .part-content {
-          display: flex;
-          gap: 20px;
-          p {
-            line-height: 20px;
-          }
-        }
-      }
-    }
-    .form {
-      h3 {
-        font-weight: 700;
-        font-size: 50px;
-        text-align: center;
-        margin-bottom: 70px;
-      }
-      form {
-        gap: 10px;
-        input.form-control {
-          outline: 0;
-          border-width: 0 0 0.5px;
-          border-color: #818181;
-          border-radius: 0;
-          &:focus {
-            outline: none;
-          }
-        }
-      }
-    }
-  }
-}
-// End event detail
 .section-subscribe {
   color: $white-color;
   margin-top: 80px;
@@ -1199,6 +1205,50 @@ footer {
 }
 /* End media */
 
+/* Applications */
+.section-application-reports {
+  color: $white-color;
+  margin-top: 80px;
+  margin-bottom: -80px;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+/* End Applications */
+/* Documents */
+.section-report-releases {
+  .nav-link {
+    color: #2a2b24 !important;
+    opacity: 0.6 !important;
+    &:hover {
+      color: #2a2b24 !important;
+      opacity: 1 !important;
+    }
+  }
+  .active {
+    color: #2a2b24 !important;
+    opacity: 1 !important;
+  }
+  .card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background: #f9f9f9 !important;
+    border-radius: 5px;
+    .card-header {
+      font-size: 16px !important;
+      font-weight: 400;
+      background: #f9f9f9 !important;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 20px !important;
+    }
+  }
+}
+.modal-document {
+  .modal-content {
+    background: #f9f9f9 !important;
+    color: $primary-dark-color;
+  }
+}
+/* End Documents */
 /* Shared */
 // Section tabs
 .bg-section-dark {
@@ -1337,6 +1387,9 @@ footer {
     font-weight: 600;
     color: #6c6c6c;
     text-align: right;
+    @media only screen and (max-width: 767px) {
+      text-align: left;
+    }
   }
 }
 // background black of title in section
