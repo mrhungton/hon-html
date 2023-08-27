@@ -1185,6 +1185,20 @@ footer .container .social {
 }
 
 /* End Documents */
+/* Handbook guidelines */
+.section-commit .card-commit {
+  background: #ffffff;
+  opacity: 0.9;
+  top: 40%;
+  padding: 60px;
+  width: 70%;
+  border-radius: 10px;
+}
+.section-commit .card-commit .description .text {
+  opacity: 0.9;
+}
+
+/* End Handbook guidelines */
 /* Shared */
 .bg-section-dark {
   background: #323834;
