@@ -28,6 +28,30 @@ $gradient-gold-radial: radial-gradient(
   $secondary-gold-color 50%
 );
 
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 481px) and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet-lg {
+  @media (min-width: 769px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
 // fonts
 // @mixin font-face($font-name, $font-filename, $font-weight: normal, $font-style: normal) {
 //     @font-face {
@@ -160,6 +184,9 @@ header {
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 50rem;
+  @include mobile {
+    height: 40rem;
+  }
 }
 .carousel-item > img {
   position: absolute;
@@ -167,6 +194,9 @@ header {
   left: 0;
   min-width: 100%;
   height: 70rem;
+  @include mobile {
+    height: inherit;
+  }
 }
 
 /* Since positioning the image, we need to help out the caption */
@@ -175,17 +205,32 @@ header {
   right: 0;
   top: 26%;
   left: 7%;
+  @include mobile {
+    top: 20%;
+  }
   .title-carousel {
-    font-size: 100px;
+    font-size: 84px;
     font-weight: 600;
+    @include mobile {
+      font-size: 60px;
+    }
+    @include tablet {
+      font-size: 68px;
+    }
   }
   .sub-title {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 300;
+    @include mobile {
+      font-size: 24px;
+    }
+    @include tablet {
+      font-size: 30px;
+    }
   }
   .explore-button {
     color: $white-color;
-    font-size: 1.8rem;
+    font-size: 26px;
     font-weight: 600;
     border: 3px solid $primary-gold-color;
     width: max-content;
@@ -193,6 +238,16 @@ header {
     padding: 40px 30px 40px 17px;
     background: $gradient-dark-color;
     line-height: 2rem;
+    @include mobile {
+      padding: 22px 15px 15px 15px;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+    @include tablet {
+      margin-right: 10px;
+      padding: 30px 15px 30px 15px;
+      font-size: 24px;
+    }
     .note-icon {
       background: #514935;
       border: 3px solid $primary-gold-color;
@@ -201,12 +256,29 @@ header {
       line-height: 40px;
       top: -12px;
       right: -5px;
+      @include mobile {
+        width: 35px;
+        height: 35px;
+        line-height: 28px;
+        top: -7px;
+        right: -10px;
+      }
+      @include tablet {
+        width: 40px;
+        height: 40px;
+        line-height: 30px;
+        top: -10px;
+        right: -5px;
+      }
     }
   }
   .btn-date {
     background: $gradient-dark-color;
     border: none;
     color: $white-color;
+    @include mobile {
+      font-size: 10px;
+    }
   }
   .footer-carousel {
     .commit-text {
@@ -263,20 +335,44 @@ section {
     }
   }
   .wrap-content {
-    .background-join {
-      width: 100%;
-      height: 45rem;
+    background-image: url('../images/home/Image\ HON\ mine\ 09\ -\ By\ Sonny\ -\ May\ 8\ 2023\ -\ 04.jpg');
+    width: 100%;
+    height: 45rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include tablet {
+      height: 35rem;
+    }
+    @include mobile {
+      height: 30rem;
     }
     h2 {
       bottom: 30px;
       color: #cdcdcd;
       left: 100px;
       font-size: 40px;
+      @include tablet {
+        left: 50px;
+        font-size: 28px;
+      }
+      @include mobile {
+        left: 20px;
+        font-size: 24px;
+      }
     }
     .play-button {
       cursor: pointer;
-      bottom: 50%;
+      top: 50%;
       left: 50%;
+      bottom: auto;
+      transform: translate(-50%, -50%);
+      img {
+        width: 80px;
+        @include mobile {
+          width: 60px;
+        }
+      }
     }
   }
 }
@@ -285,61 +381,109 @@ section {
 .section-story {
   margin-top: 80px;
   .left-item {
-    .image-hon {
+    .wrap-bg {
+      background-image: url('../images/home/Image\ HON\ mine\ 02\ -\ By\ Sonny\ -\ May\ 8\ 2023\ -\ 02.jpg');
+      height: 40rem;
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
-      z-index: 1;
-      position: inherit;
       box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
-        rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-        rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    }
-    .text-custom {
-      color: $white-color;
-      top: 0;
-      padding: 40px;
-      z-index: 1;
-      .title {
-        font-size: 60px;
-        font-weight: 600;
-        span {
-          font-size: 34px;
-          font-weight: 400;
+          rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+          rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      @include mobile {
+        height: 30rem;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      @include tablet {
+        height: 30rem;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      .text-custom {
+        color: $white-color;
+        padding: 40px;
+        .title {
+          font-size: 60px;
+          font-weight: 600;
+          line-height: 40px;
+          @include mobile {
+            font-size: 54px;
+          }
+          span {
+            font-size: 30px;
+            font-weight: 400;
+          }
+        }
+        .description {
+          font-size: 16px;
+          width: 70%;
+          @include mobile {
+            font-size: 12px;
+            width: 90%;
+          }
         }
       }
-      .description {
-        font-size: 16px;
-        width: 70%;
+    }
+    .bg-absolute {
+      background: #d5d9d8;
+      padding: 48px;
+      border-bottom-left-radius: 20px;
+      @include mobile {
+        display: none;
+      }
+      @include tablet {
+        display: none;
       }
     }
   }
   .right-item {
-    .hon-title {
-      font-size: 80px;
-      font-weight: 500;
-      color: #8f7250;
+    .wrap-content {
+      height: 40rem;
+      @include mobile {
+        height: 15rem;
+        margin-left: 15px;
+        margin-right: 15px;
+        background-color: #d5d9d8;
+      }
+      @include tablet {
+        height: 20rem;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      .hon-title {
+        font-size: 80px;
+        font-weight: 500;
+        color: $primary-gold-color;
+        @include mobile {
+          font-size: 60px;
+        }
+      }
+      .description {
+        font-size: 26px;
+        color: $primary-gold-color;
+        @include mobile {
+          font-size: 20px;
+        }
+      }
     }
-    .description {
-      font-size: 26px;
-      color: #8f7250;
-    }
+    
   }
-  .bg-absolute {
-    background: #ddd;
-    padding: 50px;
-    width: 50%;
-    border-bottom-left-radius: 20px;
-    bottom: -20%;
-    z-index: 0;
-  }
+  
   .text-story {
-    background: #323834;
-    color: #fff;
-    padding: 30px;
-    font-size: 24px;
-    width: 52%;
+    background: $secondary-dark-color;
+    color: $white-color;
+    padding: 32px;
+    font-size: 20px;
+    width: 100%;
+    @include mobile {
+      font-size: 16px;
+      padding: 20px;
+    }
     a {
-      color: #fff;
+      color: $white-color;
       text-decoration-line: none;
       &:hover {
         color: $primary-gold-color;
@@ -376,7 +520,7 @@ footer {
       text-decoration: none;
       color: #898989;
       &:hover {
-        color: #2a2b24;
+        color: $primary-dark-color;
       }
     }
     .social {
@@ -386,10 +530,18 @@ footer {
       line-height: 30px;
       background: $primary-dark-color;
     }
+    .custom-gap-3 {
+      @include mobile {
+        gap: 20px;
+      }
+      @include tablet {
+        gap: 20px;
+      }
+    }
   }
 }
 .footer-black {
-  background: #323834;
+  background: $primary-dark-color;
   color: $white-color;
   padding-top: 30px;
   .container {
@@ -462,7 +614,7 @@ footer {
 
 .section-leadership {
   margin-top: 80px;
-  background: #323834;
+  background: $primary-dark-color;
   .container {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -596,7 +748,7 @@ footer {
     }
   }
   .text-story {
-    background: #323834;
+    background: $primary-dark-color;
     color: #fff;
     padding: 20px;
     font-size: 24px;
@@ -612,7 +764,7 @@ footer {
 }
 .section-respond {
   margin-top: 80px;
-  background: #323834;
+  background: $primary-dark-color;
   color: $white-color;
   .container {
     padding-top: 80px;
@@ -677,7 +829,7 @@ footer {
 
 .section-employment {
   margin-top: 80px;
-  background: #323834;
+  background: $primary-dark-color;
   color: $white-color;
   .container {
     padding-top: 80px;
@@ -794,7 +946,7 @@ footer {
   }
 
   .wrap-button {
-    background: #323834;
+    background: $primary-dark-color;
     color: #fff !important;
     padding: 15px 40px;
     a {
@@ -935,7 +1087,7 @@ footer {
 }
 .section-organic {
   margin-top: 80px;
-  color: #323834;
+  color: $primary-dark-color;
   .description {
     padding-top: 40px;
     font-size: 16px;
@@ -982,7 +1134,7 @@ footer {
 }
 .section-insider {
   margin-top: 80px;
-  background: #323834;
+  background: $primary-dark-color;
   .container {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -1187,7 +1339,7 @@ footer {
     font-size: 16px;
   }
   .input-subscribe {
-    background: #323834;
+    background: $primary-dark-color;
     outline: none;
     border: none;
     border-bottom: 1px solid #c3c3c3;
@@ -1217,15 +1369,15 @@ footer {
 /* Documents */
 .section-report-releases {
   .nav-link {
-    color: #2a2b24 !important;
+    color: $primary-dark-color !important;
     opacity: 0.6 !important;
     &:hover {
-      color: #2a2b24 !important;
+      color: $primary-dark-color !important;
       opacity: 1 !important;
     }
   }
   .active {
-    color: #2a2b24 !important;
+    color: $primary-dark-color !important;
     opacity: 1 !important;
   }
   .card {
@@ -1271,7 +1423,7 @@ footer {
 /* Shared */
 // Section tabs
 .bg-section-dark {
-  background: #323834;
+  background: $gradient-dark-radial;
 }
 .bg-tabs-white {
   background: #ddd;
@@ -1283,6 +1435,12 @@ footer {
   margin-top: 80px;
   padding: 40px;
   .tabs-custom {
+    @include tablet {
+      flex-flow: column;
+    }
+    @include mobile {
+      flex-flow: column;
+    }
     .wrap-tab-lists {
       overflow: auto;
       height: 600px;
@@ -1303,6 +1461,10 @@ footer {
     .tabs-lists {
       .nav-link {
         font-weight: 600;
+        width: 80%;
+        @include mobile {
+          width: 100%;
+        }
         .number {
           font-size: 14px;
         }
@@ -1322,8 +1484,16 @@ footer {
       }
     }
     .icon-arrows {
-      left: -45px;
+      left: -35px;
       top: 40%;
+      @include tablet {
+        top: 21%;
+        left: -30px;
+      }
+      @include mobile {
+        top: 21%;
+        left: -30px;
+      }
     }
     .tab-content {
       margin-top: 30px;
@@ -1332,23 +1502,36 @@ footer {
         background: #4f5c54;
         border-radius: 10px;
         .card-header {
-          font-size: 26px;
+          font-size: 22px;
           font-weight: 400;
           background: #58655e;
           border-top-left-radius: 10px;
           border-top-right-radius: 10px;
           padding: 20px 40px;
+          @include mobile {
+            padding: 10px 20px;
+          }
         }
         .card-body {
           padding: 20px 40px;
+          @include mobile {
+            padding: 10px 20px;
+          }
           .card-title {
             font-size: 26px;
             font-weight: 600;
+            @include mobile {
+              font-size: 22px;
+            }
           }
           .card-text {
             opacity: 0.6;
           }
           .action {
+            @include mobile {
+              flex-flow: column;
+              gap: 20px;
+            }
             .avatar {
               img {
                 border: 4px solid #cecece;
@@ -1508,4 +1691,38 @@ footer {
 .text-decoration-none {
   text-decoration: none;
 }
+
+.show-tablet {
+  display: block; 
+  @include tablet-lg {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.show-mobile {
+  display: block;
+  @include tablet {
+    display: none;
+  }
+  @include tablet-lg {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.show-desktop {
+  display: block;
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+
 /* End Shared */
