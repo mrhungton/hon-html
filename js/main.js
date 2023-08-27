@@ -28,6 +28,7 @@ $(document).ready(function () {
       },
       600: {
         items: 2,
+        margin: 40,
       },
       1000: {
         items: 3,

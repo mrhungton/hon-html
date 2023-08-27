@@ -132,6 +132,7 @@ body {
   font-style: normal;
   font-weight: 400;
   background: $white-color;
+  letter-spacing: 0.8px;
 }
 
 header {
@@ -489,14 +490,15 @@ footer {
   font-family: sans-serif;
   font-size: 12px;
   padding-bottom: 30px;
-  color: #898989;
+  color: $white-color;
   margin-top: 80px;
   .container {
     border-top: 1px solid #c3c3c3;
     padding-top: 30px;
     a {
       text-decoration: none;
-      color: #898989;
+      color: $white-color;
+      font-weight: 400;
       &:hover {
         color: $primary-dark-color;
       }
@@ -519,7 +521,7 @@ footer {
   }
 }
 .footer-black {
-  background: $primary-dark-color;
+  background: $gradient-dark-radial;
   color: $white-color;
   padding-top: 30px;
   .container {
@@ -569,6 +571,9 @@ footer {
   margin-top: 80px;
   .owl-carousel-company-history {
     margin-top: 40px;
+    @include mobile {
+      margin-top: 0;
+    }
     .item-card {
       .wrap-content {
         img {
@@ -580,6 +585,10 @@ footer {
           left: 30px;
           width: 70%;
           color: $white-color;
+          h1 {
+            font-weight: 700;
+            font-size: 48px;
+          }
         }
         button {
           bottom: 30px;
@@ -592,7 +601,7 @@ footer {
 
 .section-leadership {
   margin-top: 80px;
-  background: $primary-dark-color;
+  background: $gradient-dark-radial;
   .container {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -618,10 +627,29 @@ footer {
   .card-leadership {
     margin-top: 60px;
     margin-bottom: 20px;
+    @include mobile {
+      margin-top: 0;
+    }
+    .custom-text {
+      @include mobile {
+        text-align: center;
+      }
+      @include tablet-lg {
+        margin-top: 15px;
+      }
+    }
     .left-leadership {
       height: 32rem;
       right: 5%;
       color: $white-color;
+      @include tablet {
+        right: auto;
+        height: 34rem;
+      }
+      @include mobile {
+        right: auto;
+        height: 34rem;
+      }
       .custom-card-1 {
         right: 130px;
         top: 55px;
@@ -642,15 +670,35 @@ footer {
       }
       .custom-card-3 {
         right: 0;
+        @include mobile {
+          left: 0;
+        }
+        @include tablet {
+          left: 0;
+        }
         .img-card-3 {
           border-radius: 15px;
           width: 350px;
           height: 450px;
+          @include mobile {
+            width: 100%;
+          }
         }
       }
       .title-leadership {
         top: 20px;
         left: 20px;
+        @include mobile {
+          width: 80%;
+          bottom: 15px;
+          top: auto;
+          text-align: left;
+        }
+        @include tablet {
+          width: 60%;
+          bottom: 20px;
+          top: auto;
+        }
       }
     }
   }
@@ -742,7 +790,7 @@ footer {
 }
 .section-respond {
   margin-top: 80px;
-  background: $primary-dark-color;
+  background: $gradient-dark-radial;
   color: $white-color;
   .container {
     padding-top: 80px;
@@ -750,9 +798,35 @@ footer {
   }
   .custom-respond {
     margin-top: 40px;
+    @include tablet {
+      margin-top: 0;
+    }
+    @include mobile {
+      margin-top: 0;
+    }
+    p {
+      font-weight: 300;
+    }
+    .custom-btn {
+      @include mobile {
+        text-align: center;
+      }
+    }
+    .btn-see-more {
+      text-align: center;
+    }
     img {
       border-radius: 15px;
       height: 250px;
+      @include tablet {
+        margin-bottom: 20px;
+      }
+      @include tablet-lg {
+        margin-bottom: 20px;
+      }
+      @include mobile {
+        margin-bottom: 20px;
+      }
     }
     .text-custom {
       top: 0;
@@ -761,6 +835,14 @@ footer {
       .title {
         font-size: 60px;
         font-weight: 600;
+        @include mobile {
+          line-height: 40px;
+          text-align: left;
+        }
+        @include tablet {
+          line-height: 40px;
+          text-align: left;
+        }
         span {
           font-size: 34px;
           font-weight: 400;
@@ -794,7 +876,7 @@ footer {
           padding: 20px 40px;
           .card-text {
             font-size: 13px;
-            opacity: 0.6;
+            font-weight: 300;
           }
           img {
             border-radius: 15px;
@@ -807,17 +889,40 @@ footer {
 
 .section-employment {
   margin-top: 80px;
-  background: $primary-dark-color;
+  background: $gradient-dark-radial;
   color: $white-color;
   .container {
     padding-top: 80px;
     padding-bottom: 80px;
+    @include tablet {
+      padding-top: 40px;
+      padding-bottom: 0;
+    }
+    @include mobile {
+      padding-top: 40px;
+      padding-bottom: 0;
+    }
+  }
+  h1 {
+    @include tablet {
+      text-align: center;
+    }
+    @include mobile {
+      text-align: center;
+    }
   }
   .description {
     padding-top: 80px;
-    font-size: 16px;
-    font-weight: 400;
-    opacity: 0.8;
+    font-size: 13px;
+    font-weight: 300;
+    @include tablet {
+      padding-top: 0;
+      padding-bottom: 40px;
+    }
+    @include mobile {
+      padding-top: 0;
+      padding-bottom: 20px;
+    }    
   }
 }
 
@@ -825,6 +930,9 @@ footer {
   margin-top: 80px;
   .owl-carousel-customers {
     margin-top: 80px;
+    @include mobile {
+      margin-top: 0;
+    }
     .wrap-customers {
       img {
         width: 200px;
@@ -865,7 +973,7 @@ footer {
   .wrap-company-detail {
     .company-title {
       font-size: 36px;
-      font-weight: 600;
+      font-weight: 700;
     }
     .company-description {
       font-size: 13px;
@@ -875,10 +983,6 @@ footer {
 // Custom Modal
 .modal-dialog-scrollable {
   font-weight: 400;
-  max-width: none;
-  font-family: sans-serif;
-  margin-right: 20px;
-  margin-left: 20px;
   .modal-body {
     padding: 1rem 2rem;
     &::-webkit-scrollbar {
@@ -1056,7 +1160,7 @@ footer {
           padding: 20px 40px;
           .card-text {
             font-size: 13px;
-            opacity: 0.6;
+            font-weight: 300;
           }
         }
       }
@@ -1103,7 +1207,7 @@ footer {
           padding: 20px 40px;
           .card-text {
             font-size: 13px;
-            opacity: 0.6;
+            font-weight: 300;
           }
         }
       }
@@ -1137,7 +1241,7 @@ footer {
           padding: 20px 40px;
           .card-text {
             font-size: 13px;
-            opacity: 0.6;
+            font-weight: 300;
           }
           img {
             border-radius: 15px;
@@ -1412,6 +1516,9 @@ footer {
 .section-tabs {
   margin-top: 80px;
   padding: 40px;
+  @include mobile {
+    padding: 20px;
+  }
   .tabs-custom {
     @include tablet {
       flex-flow: column;
@@ -1423,6 +1530,9 @@ footer {
       overflow: auto;
       height: 600px;
       flex-flow: column;
+      @include mobile {
+        padding-right: 40px;
+      }
       &::-webkit-scrollbar {
         width: 5px;
       }
@@ -1470,7 +1580,8 @@ footer {
       }
       @include mobile {
         top: 21%;
-        left: -30px;
+        left: -15px;
+        width: 12px;
       }
     }
     .tab-content {
@@ -1497,13 +1608,14 @@ footer {
           }
           .card-title {
             font-size: 26px;
-            font-weight: 600;
+            font-weight: 700;
+            margin-bottom: 15px;
             @include mobile {
               font-size: 22px;
             }
           }
           .card-text {
-            opacity: 0.6;
+            font-weight: 300;
           }
           .action {
             @include mobile {
@@ -1563,11 +1675,22 @@ footer {
   border-bottom: 1px solid #6c6c6c;
   padding-bottom: 20px;
   align-items: center;
-  .right-content-gray {
+  @include tablet {
+    border-bottom: none;
+  }
+  @include mobile {
+    border-bottom: none;
+  }
+  h1 {
     font-weight: 600;
+  }
+  .right-content-gray {
     color: #6c6c6c;
     text-align: right;
-    @media only screen and (max-width: 767px) {
+    @include tablet {
+      text-align: left;
+    }
+    @include mobile {
       text-align: left;
     }
   }
@@ -1578,9 +1701,23 @@ footer {
   padding-bottom: 20px;
   align-items: center;
   color: $white-color;
-  .right-content-white {
+  @include tablet {
+    border-bottom: none;
+  }
+  @include mobile {
+    border-bottom: none;
+  }
+  h1 {
     font-weight: 600;
+  }
+  .right-content-white {
     text-align: right;
+    @include tablet {
+      text-align: left;
+    }
+    @include mobile {
+      text-align: left;
+    }
   }
 }
 // Tabs horizontally
@@ -1612,6 +1749,9 @@ footer {
     }
     .header-link {
       padding: 20px;
+      @include mobile {
+        padding: 15px 17px;
+      }
     }
   }
   .tab-content {
@@ -1622,7 +1762,8 @@ footer {
         padding: 30px;
       }
       .card-text {
-        opacity: 0.8;
+        font-weight: 300;
+        font-size: 13px;
       }
     }
   }
