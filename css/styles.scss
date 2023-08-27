@@ -1249,6 +1249,25 @@ footer {
   }
 }
 /* End Documents */
+
+/* Handbook guidelines */
+.section-commit {
+  .card-commit {
+    background: $white-color;
+    opacity: 0.9;
+    top: 40%;
+    padding: 60px;
+    width: 70%;
+    border-radius: 10px;
+    .description {
+      .text {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+/* End Handbook guidelines */
+
 /* Shared */
 // Section tabs
 .bg-section-dark {
