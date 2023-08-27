@@ -452,7 +452,7 @@ header {
   }
 
   .text-story {
-    background: $secondary-dark-color;
+    background: $gradient-dark-radial;
     color: $white-color;
     padding: 32px;
     font-size: 20px;
@@ -465,7 +465,7 @@ header {
       color: $white-color;
       text-decoration-line: none;
       &:hover {
-        color: $primary-gold-color;
+        color: $secondary-gold-color;
       }
     }
   }
@@ -487,8 +487,6 @@ header {
 
 // Footer
 footer {
-  font-family: sans-serif;
-  font-size: 12px;
   padding-bottom: 30px;
   color: $white-color;
   margin-top: 80px;
@@ -1014,27 +1012,100 @@ footer {
 /* Products */
 .section-about-product {
   margin-top: 80px;
+  @include mobile {
+    margin-top: 40px;
+  }
+  h1 {
+    font-weight: 700;
+  }
   .right-content {
     width: 40%;
+    @include mobile {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+.section-products {
+  .custom-img-product {
+    @include tablet {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    @include mobile {
+      text-align: center;
+      margin-bottom: 20px;
+    }
   }
 }
 .section-natural {
   margin-top: 80px;
+  .wrap-left {
+    width: 100%;
+    .left-img {
+      width: 48%;
+      @include mobile {
+        width: 45%;
+      }
+    }
+    .right-img {
+      width: 48%;
+      @include mobile {
+        width: 45%;
+      }
+    }
+  }
   .img-1 {
     height: 450px;
+    @include mobile {
+      height: 280px;
+    }
+  }
+  .img-2 {
+    width: 250px;
+    height: 200px;
+    @include mobile {
+      width: 140px;
+      height: 140px;
+    }
+  }
+  .img-3 {
+    width: 250px;
+    height: 240px;
+    @include mobile {
+      width: 140px;
+      height: 130px;
+    }
   }
   img {
     border-radius: 15px;
+    @include mobile {
+      border-radius: 35px;
+    }
   }
-
+  .wrap-content {
+    @include tablet {
+      margin-top: 30px;
+    }
+    @include mobile {
+      margin-top: 20px;
+    }
+    h1 {
+      font-weight: 700;
+    }
+  }
   .wrap-button {
-    background: $primary-dark-color;
+    background: $gradient-dark-radial;
     color: #fff !important;
     padding: 15px 40px;
     a {
       color: #fff;
       font-size: 24px;
       text-decoration: none;
+      @include mobile {
+        font-size: 18px;
+      }
       &:hover {
         color: $secondary-gold-color;
       }
@@ -1047,15 +1118,24 @@ footer {
     .border-bottom {
       border-bottom: 2px solid #dee2e6 !important;
       padding-top: 10px;
+      @include mobile {
+        border-bottom: 2px solid $primary-dark-color !important;
+      }
     }
     .link-product-detail {
       color: $primary-dark-color;
       font-size: 24px;
       text-decoration: none;
       font-weight: 600;
-      opacity: 0.6;
+      opacity: 0.8;
+      @include mobile {
+        font-size: 16px;
+      }
       .p-number {
         font-size: 16px;
+        @include mobile {
+          font-size: 13px;
+        }
       }
       &:hover {
         color: $primary-dark-color;
@@ -1089,17 +1169,26 @@ footer {
     padding: 20px 40px 20px 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    @include tablet-lg {
+      padding: 20px;
+    }
+    @include tablet {
+      padding: 0;
+    }
+    @include mobile {
+      padding: 0;
+    }
     .product-description {
       width: 80%;
     }
     .title {
       font-size: 18px;
-      font-weight: 400;
+      font-weight: 600;
     }
     .description {
       margin-top: 20px;
       font-size: 13px;
-      opacity: 0.6;
+      font-weight: 300;
     }
     .list-attachments {
       gap: 5px;
@@ -1107,19 +1196,34 @@ footer {
       margin-top: 20px;
       .attachment-text {
         color: $white-color;
-        font-weight: 600;
-        opacity: 0.8;
+        font-weight: 400;
         text-decoration: none;
         &:hover {
-          color: $white-color;
-          opacity: 1;
+          color: $secondary-gold-color;
         }
       }
     }
+    .product-img-mobile {
+      @include tablet {
+        padding: 25px;
+      }
+      @include mobile {
+        padding: 25px;
+      }
+      .carousel {
+        margin-bottom: 0;
+      }
+    }
     .product-carousel {
-      height: 35rem;
+      height: 30rem;
+      @include tablet-lg {
+        height: 20rem;
+      }
       .carousel-item {
-        height: 35rem;
+        height: 30rem;
+        @include tablet-lg {
+          height: 20rem;
+        }
       }
       .carousel-control-prev {
         left: -12%;
@@ -1128,9 +1232,15 @@ footer {
         right: -12%;
       }
       img {
-        height: 35rem;
+        height: 30rem;
+        @include tablet-lg {
+          height: 20rem;
+        }
       }
     }
+  }
+  .btn-close {
+    color: $white-color !important;
   }
 }
 // End product detail
@@ -1140,10 +1250,21 @@ footer {
   .container {
     padding-top: 80px;
     padding-bottom: 80px;
+    @include tablet {
+      padding-top: 40px;
+      padding-bottom: 0;
+    }
+    @include mobile {
+      padding-top: 40px;
+      padding-bottom: 0;
+    }
   }
   .custom-carousel-testimonials {
     color: $white-color;
     margin-top: 40px;
+    @include mobile {
+      margin-top: 10px;
+    }
     .item-card {
       .card {
         background: #4f5c54;
@@ -1174,6 +1295,11 @@ footer {
     padding-top: 40px;
     font-size: 16px;
     font-weight: 400;
+    @include mobile {
+      margin: 0 !important;
+      padding: 0 !important;
+      text-align: left !important;
+    }
   }
 }
 /* Producs */
@@ -1532,6 +1658,7 @@ footer {
       flex-flow: column;
       @include mobile {
         padding-right: 40px;
+        height: 500px;
       }
       &::-webkit-scrollbar {
         width: 5px;
@@ -1552,9 +1679,14 @@ footer {
         width: 80%;
         @include mobile {
           width: 100%;
+          font-size: 18px;
+          padding-left: 5px;
         }
         .number {
           font-size: 14px;
+          @include mobile {
+            font-size: 13px;
+          }
         }
         font-size: 24px;
         border-radius: 0;
@@ -1591,7 +1723,7 @@ footer {
         background: #4f5c54;
         border-radius: 10px;
         .card-header {
-          font-size: 22px;
+          font-size: 16px;
           font-weight: 400;
           background: #58655e;
           border-top-left-radius: 10px;
@@ -1611,11 +1743,12 @@ footer {
             font-weight: 700;
             margin-bottom: 15px;
             @include mobile {
-              font-size: 22px;
+              font-size: 20px;
             }
           }
           .card-text {
             font-weight: 300;
+            font-size: 13px;
           }
           .action {
             @include mobile {
