@@ -52,20 +52,6 @@ $gradient-gold-radial: radial-gradient(
   }
 }
 
-// fonts
-// @mixin font-face($font-name, $font-filename, $font-weight: normal, $font-style: normal) {
-//     @font-face {
-//       font-family: $font-name;
-//       src: url('#{$font-path}#{$font-filename}.otf') format('opentype');
-//       font-weight: $font-weight;
-//       font-style: $font-style;
-//     }
-// }
-// @include font-face('Avant Garde Gothic', 'SVN-Avant Garde Gothic Demi');
-// @include font-face('Avant Garde Gothic', 'SVN-Avant Garde Gothic Demi');
-// @include font-face('Avant Garde Gothic', 'SVN-Avant Garde Gothic Demi');
-// @include font-face('Avant Garde Gothic', 'SVN-Avant Garde Gothic Demi');
-
 $font-path: "../fonts/";
 
 @mixin font-faces($fonts) {
@@ -77,13 +63,7 @@ $font-path: "../fonts/";
 
     @font-face {
       font-family: $font-name;
-      // src: url('#{$font-path}#{$font-filename}.eot');
-      // src: url('#{$font-path}#{$font-filename}.eot?#iefix') format('embedded-opentype'),
-      //      url('#{$font-path}#{$font-filename}.woff2') format('woff2'),
-      //      url('#{$font-path}#{$font-filename}.woff') format('woff'),
-      //      url('#{$font-path}#{$font-filename}.ttf') format('truetype'),
-      //      url('#{$font-path}#{$font-filename}.otf') format('opentype');
-      src: url("#{$font-path}#{$font-filename}.otf");
+      src: url("#{$font-path}#{$font-filename}.otf") format('opentype');
       font-weight: $font-weight;
       font-style: $font-style;
     }
@@ -91,33 +71,33 @@ $font-path: "../fonts/";
 }
 
 $fonts: (
-  ("HON-Regular", "SVN-Avant Garde Gothic ExtraLight", lighter, normal),
-  ("HON-Regular", "SVN-Avant Garde Gothic ExtraLight Italic", lighter, italic),
-  ("HON-Regular", "SVN-Avant Garde Gothic Book", normal, normal),
-  ("HON-Regular", "SVN-Avant Garde Gothic Book Italic", normal, italic),
+  ("HON-Regular", "SVN-Avant Garde Gothic ExtraLight", 100, normal),
+  ("HON-Regular", "SVN-Avant Garde Gothic ExtraLight Italic", 100, italic),
+  ("HON-Regular", "SVN-Avant Garde Gothic Book", 400, normal),
+  ("HON-Regular", "SVN-Avant Garde Gothic Book Italic", 400, italic),
   ("HON-Regular", "SVN-Avant Garde Gothic Medium", 600, normal),
   ("HON-Regular", "SVN-Avant Garde Gothic Medium Italic", 600, italic),
-  ("HON-Regular", "SVN-Avant Garde Gothic Demi", bold, normal),
-  ("HON-Regular", "SVN-Avant Garde Gothic Demi Italic", bold, italic),
-  ("HON-Regular", "SVN-Avant Garde Gothic Bold", bolder, normal),
-  ("HON-Regular", "SVN-Avant Garde Gothic Bold Italic", bolder, italic),
+  ("HON-Regular", "SVN-Avant Garde Gothic Demi", 700, normal),
+  ("HON-Regular", "SVN-Avant Garde Gothic Demi Italic", 700, italic),
+  ("HON-Regular", "SVN-Avant Garde Gothic Bold", 900, normal),
+  ("HON-Regular", "SVN-Avant Garde Gothic Bold Italic", 900, italic),
   (
     "HON-Condensed",
     "SVN-Avant Garde Gothic Condensed ExtraLight",
-    lighter,
+    100,
     normal
   ),
   (
     "HON-Condensed",
     "SVN-Avant Garde Gothic Condensed ExtraLight Italic",
-    lighter,
+    100,
     italic
   ),
-  ("HON-Condensed", "SVN-Avant Garde Gothic Condensed Book", normal, normal),
+  ("HON-Condensed", "SVN-Avant Garde Gothic Condensed Book", 400, normal),
   (
     "HON-Condensed",
     "SVN-Avant Garde Gothic Condensed Book Italic",
-    normal,
+    400,
     italic
   ),
   ("HON-Condensed", "SVN-Avant Garde Gothic Condensed Medium", 600, normal),
@@ -127,18 +107,18 @@ $fonts: (
     600,
     italic
   ),
-  ("HON-Condensed", "SVN-Avant Garde Gothic Condensed Demi", bold, normal),
+  ("HON-Condensed", "SVN-Avant Garde Gothic Condensed Demi", 700, normal),
   (
     "HON-Condensed",
     "SVN-Avant Garde Gothic Condensed Demi Italic",
-    bold,
+    700,
     italic
   ),
-  ("HON-Condensed", "SVN-Avant Garde Gothic Condensed Bold", bolder, normal),
+  ("HON-Condensed", "SVN-Avant Garde Gothic Condensed Bold", 900, normal),
   (
     "HON-Condensed",
     "SVN-Avant Garde Gothic Condensed Bold Italic",
-    bolder,
+    900,
     italic
   )
 );
@@ -148,9 +128,9 @@ $fonts: (
 html,
 body {
   font-size: 14px;
-  font-family: "HON-Regular", sans-serif;
+  font-family: "HON-Regular", "HON-Condensed", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   background: $white-color;
 }
 
@@ -311,11 +291,6 @@ header {
   }
 }
 
-// Hold until official font is available
-section {
-  font-family: sans-serif;
-}
-
 // Section Best soil amendment in the world
 .section-best-soil {
   h1 {
@@ -469,9 +444,9 @@ section {
         }
       }
     }
-    
+
   }
-  
+
   .text-story {
     background: $secondary-dark-color;
     color: $white-color;
@@ -1613,7 +1588,7 @@ footer {
   .rounded-custom {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-  } 
+  }
   .nav-pills {
     font-size: 16px;
     font-weight: 400;
@@ -1659,7 +1634,7 @@ footer {
     color: #c3c3c3;
     &:hover {
       color: $white-color !important;
-    } 
+    }
   }
 }
 .bg-tabs-content-dark {
@@ -1678,7 +1653,7 @@ footer {
     color: #a9a9a9;
     &:hover {
       color: $secondary-dark-color !important;
-    } 
+    }
   }
 }
 .bg-tabs-content-white {
@@ -1693,7 +1668,7 @@ footer {
 }
 
 .show-tablet {
-  display: block; 
+  display: block;
   @include tablet-lg {
     display: none;
   }
