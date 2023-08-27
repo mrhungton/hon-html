@@ -1,129 +1,129 @@
 @font-face {
   font-family: "HON-Regular";
-  src: url("../fonts/SVN-Avant Garde Gothic ExtraLight.otf");
-  font-weight: lighter;
+  src: url("../fonts/SVN-Avant Garde Gothic ExtraLight.otf") format("opentype");
+  font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: "HON-Regular";
-  src: url("../fonts/SVN-Avant Garde Gothic ExtraLight Italic.otf");
-  font-weight: lighter;
+  src: url("../fonts/SVN-Avant Garde Gothic ExtraLight Italic.otf") format("opentype");
+  font-weight: 100;
   font-style: italic;
 }
 @font-face {
   font-family: "HON-Regular";
-  src: url("../fonts/SVN-Avant Garde Gothic Book.otf");
-  font-weight: normal;
+  src: url("../fonts/SVN-Avant Garde Gothic Book.otf") format("opentype");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "HON-Regular";
-  src: url("../fonts/SVN-Avant Garde Gothic Book Italic.otf");
-  font-weight: normal;
+  src: url("../fonts/SVN-Avant Garde Gothic Book Italic.otf") format("opentype");
+  font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "HON-Regular";
-  src: url("../fonts/SVN-Avant Garde Gothic Medium.otf");
+  src: url("../fonts/SVN-Avant Garde Gothic Medium.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "HON-Regular";
-  src: url("../fonts/SVN-Avant Garde Gothic Medium Italic.otf");
+  src: url("../fonts/SVN-Avant Garde Gothic Medium Italic.otf") format("opentype");
   font-weight: 600;
   font-style: italic;
 }
 @font-face {
   font-family: "HON-Regular";
-  src: url("../fonts/SVN-Avant Garde Gothic Demi.otf");
-  font-weight: bold;
+  src: url("../fonts/SVN-Avant Garde Gothic Demi.otf") format("opentype");
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "HON-Regular";
-  src: url("../fonts/SVN-Avant Garde Gothic Demi Italic.otf");
-  font-weight: bold;
+  src: url("../fonts/SVN-Avant Garde Gothic Demi Italic.otf") format("opentype");
+  font-weight: 700;
   font-style: italic;
 }
 @font-face {
   font-family: "HON-Regular";
-  src: url("../fonts/SVN-Avant Garde Gothic Bold.otf");
-  font-weight: bolder;
+  src: url("../fonts/SVN-Avant Garde Gothic Bold.otf") format("opentype");
+  font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "HON-Regular";
-  src: url("../fonts/SVN-Avant Garde Gothic Bold Italic.otf");
-  font-weight: bolder;
+  src: url("../fonts/SVN-Avant Garde Gothic Bold Italic.otf") format("opentype");
+  font-weight: 900;
   font-style: italic;
 }
 @font-face {
   font-family: "HON-Condensed";
-  src: url("../fonts/SVN-Avant Garde Gothic Condensed ExtraLight.otf");
-  font-weight: lighter;
+  src: url("../fonts/SVN-Avant Garde Gothic Condensed ExtraLight.otf") format("opentype");
+  font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: "HON-Condensed";
-  src: url("../fonts/SVN-Avant Garde Gothic Condensed ExtraLight Italic.otf");
-  font-weight: lighter;
+  src: url("../fonts/SVN-Avant Garde Gothic Condensed ExtraLight Italic.otf") format("opentype");
+  font-weight: 100;
   font-style: italic;
 }
 @font-face {
   font-family: "HON-Condensed";
-  src: url("../fonts/SVN-Avant Garde Gothic Condensed Book.otf");
-  font-weight: normal;
+  src: url("../fonts/SVN-Avant Garde Gothic Condensed Book.otf") format("opentype");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "HON-Condensed";
-  src: url("../fonts/SVN-Avant Garde Gothic Condensed Book Italic.otf");
-  font-weight: normal;
+  src: url("../fonts/SVN-Avant Garde Gothic Condensed Book Italic.otf") format("opentype");
+  font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "HON-Condensed";
-  src: url("../fonts/SVN-Avant Garde Gothic Condensed Medium.otf");
+  src: url("../fonts/SVN-Avant Garde Gothic Condensed Medium.otf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "HON-Condensed";
-  src: url("../fonts/SVN-Avant Garde Gothic Condensed Medium Italic.otf");
+  src: url("../fonts/SVN-Avant Garde Gothic Condensed Medium Italic.otf") format("opentype");
   font-weight: 600;
   font-style: italic;
 }
 @font-face {
   font-family: "HON-Condensed";
-  src: url("../fonts/SVN-Avant Garde Gothic Condensed Demi.otf");
-  font-weight: bold;
+  src: url("../fonts/SVN-Avant Garde Gothic Condensed Demi.otf") format("opentype");
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "HON-Condensed";
-  src: url("../fonts/SVN-Avant Garde Gothic Condensed Demi Italic.otf");
-  font-weight: bold;
+  src: url("../fonts/SVN-Avant Garde Gothic Condensed Demi Italic.otf") format("opentype");
+  font-weight: 700;
   font-style: italic;
 }
 @font-face {
   font-family: "HON-Condensed";
-  src: url("../fonts/SVN-Avant Garde Gothic Condensed Bold.otf");
-  font-weight: bolder;
+  src: url("../fonts/SVN-Avant Garde Gothic Condensed Bold.otf") format("opentype");
+  font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "HON-Condensed";
-  src: url("../fonts/SVN-Avant Garde Gothic Condensed Bold Italic.otf");
-  font-weight: bolder;
+  src: url("../fonts/SVN-Avant Garde Gothic Condensed Bold Italic.otf") format("opentype");
+  font-weight: 900;
   font-style: italic;
 }
 html,
 body {
   font-size: 14px;
-  font-family: "HON-Regular", sans-serif;
+  font-family: "HON-Regular", "HON-Condensed", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   background: #ffffff;
 }
 
@@ -207,7 +207,7 @@ header .btn-primary {
 }
 .custom-caption .sub-title {
   font-size: 36px;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media (max-width: 480px) {
   .custom-caption .sub-title {
@@ -290,6 +290,7 @@ header .btn-primary {
   border-left: 1px solid #6e6e6e;
   padding-left: 20px;
   font-size: 14px;
+  font-weight: 100;
 }
 .custom-caption .footer-carousel .custom-social {
   width: 34px;
@@ -311,12 +312,9 @@ header .btn-primary {
   background-clip: padding-box;
 }
 
-section {
-  font-family: sans-serif;
-}
-
 .section-best-soil h1 {
   font-size: 50px;
+  font-weight: 600;
 }
 
 .section-video {
@@ -351,6 +349,7 @@ section {
   color: #cdcdcd;
   left: 100px;
   font-size: 40px;
+  font-weight: 600;
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .section-video .wrap-content h2 {
@@ -583,7 +582,7 @@ footer .container .social {
 }
 .section-banner .custom-content-banner .banner-title .sub-title {
   font-size: 48px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .section-banner .list-social {
   bottom: 10%;
