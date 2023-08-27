@@ -1,4 +1,30 @@
 $(document).ready(function () {
+  display_affix_nav()
+
+  $(window).scroll(function() {
+    display_affix_nav()
+  });
+
+  function display_affix_nav() {
+    if ($(document).scrollTop() > 50) {
+      $('.nav-header').addClass('affix');
+    } else {
+      $('.nav-header').removeClass('affix');
+    }
+  }
+
+  $('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    // console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+    if ($("#mainListDiv").hasClass("show_list")) {
+      $('body').css("overflow", "hidden");
+    } else {
+      $('body').css("overflow", "visible");
+    }
+  });
+
   $(".owl-carousel-company-history").owlCarousel({
     loop: false,
     nav: true,

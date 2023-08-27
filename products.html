@@ -16,32 +16,30 @@
     <script src="js/main.js"></script>
   </head>
   <body>
-    <div id="site-header-wrap">
-      <header id="site-header">
-        <div class="container">
-          <div
-            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-4 mb-4">
-            <a href="/"
-              class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-              <img src="images/logo/light.svg" height="70px" />
-            </a>
-            <ul
-              class="nav col-9 col-md-auto mb-2 justify-content-center mb-md-0">
-              <li><a href="about-us.html"
-                  class="nav-link px-4 text-white text-start">About Us</a></li>
-              <li><a href="#" class="nav-link px-4 text-white text-start">Product</a></li>
-              <li><a href="#" class="nav-link px-4 text-white text-start">Applications</a></li>
-              <li><a href="#" class="nav-link px-4 text-white text-start">Media</a></li>
-              <li><a href="#" class="nav-link px-4 text-white text-start">Document</a></li>
-            </ul>
-            <div>
-              <button type="button" class="px-4 py-2 rounded-3 btn btn-primary">Contact
-                Us</button>
-            </div>
+    <nav class="nav-header">
+      <div class="container">
+          <div class="logo">
+            <a href="#"><img src="images/logo/light.svg" /></a>
           </div>
-        </div>
-      </header>
-    </div>
+          <div id="mainListDiv" class="main_list">
+              <ul class="navlinks">
+                  <li><a href="about-us.html">About</a></li>
+                  <li><a href="products.html">Product</a></li>
+                  <li><a href="applications.html">Applications</a></li>
+                  <li><a href="media.html">Media</a></li>
+                  <li><a href="documents.html">Document</a></li>
+                  <li><a href="contact.html" class="px-4 py-2 rounded-3 btn btn-primary">
+                    Contact Us
+                  </a></li>
+              </ul>
+          </div>
+          <span class="navTrigger">
+              <i></i>
+              <i></i>
+              <i></i>
+          </span>
+      </div>
+    </nav>
 
     <section>
       <div id="myCarousel" class="carousel slide show-desktop" data-bs-ride="carousel">
@@ -1247,7 +1245,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="section-product-collapse container">
       <div class="product-item mx-4 my-4">
         <div class="border-bottom">
@@ -1261,7 +1259,7 @@
               How we make S-K-Microsource products
             </div>
             <div class="product-description">
-              S-K-Microsource (SKM) is mined from mineral deposits and screened to size 1/8 or 1/16 minus, called SKM AG, to create amendment applications. 
+              S-K-Microsource (SKM) is mined from mineral deposits and screened to size 1/8 or 1/16 minus, called SKM AG, to create amendment applications.
               <br>
               We grind (mill) the SKM ore into a powder at 4 to 8 inches to produce 44 to 10-micron size solution-grade particles called Ultra Fine (SKM UF) to create a liquid amendment.
             </div>
@@ -1301,7 +1299,7 @@
               Sales policy
             </div>
             <div class="product-description">
-              The company always is committed to stabilizing the best-selling price and on-time delivery. 
+              The company always is committed to stabilizing the best-selling price and on-time delivery.
             </div>
             <a data-bs-toggle="collapse" href="#product3" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn btn-see-more mt-4">Back</a>
           </div>
