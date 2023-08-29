@@ -19,7 +19,7 @@
   <nav class="nav-header">
     <div class="container">
         <div class="logo">
-          <a href="#"><img src="images/logo/light.svg" /></a>
+          <a href="index.html"><img src="images/logo/light.svg" /></a>
         </div>
         <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
@@ -318,13 +318,16 @@
     </div>
   </section>
 
-  <section class="section-video text-start">
+  <section class="section-video text-start" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
     <div class="py-4">
       <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="wrap-button-close">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
           <div class="modal-content">
             <iframe
-              src="https://www.youtube.com/embed/8KJzP6osUtM?autoplay=1&mute=1">
+              src="https://www.youtube.com/embed/8KJzP6osUtM?autoplay=0">
             </iframe>
           </div>
         </div>
