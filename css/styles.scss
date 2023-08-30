@@ -1503,7 +1503,7 @@ footer {
       }
       &:hover {
         color: $primary-dark-color;
-        opacity: 0.8;
+        opacity: 1;
       }
     }
     .wrap-product-detail {
@@ -1948,7 +1948,6 @@ footer {
 // Modal confirm event
 .modal-confirm-event {
   font-weight: 400;
-  font-family: sans-serif;
   .modal-body {
     padding: 1rem 2rem;
     span {

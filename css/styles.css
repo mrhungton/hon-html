@@ -1483,7 +1483,7 @@ footer .container .social {
 }
 .section-product-collapse .product-item .link-product-detail:hover {
   color: #2a2b24;
-  opacity: 0.8;
+  opacity: 1;
 }
 .section-product-collapse .product-item .wrap-product-detail {
   margin-top: 20px;
@@ -1958,7 +1958,6 @@ footer .container .social {
 
 .modal-confirm-event {
   font-weight: 400;
-  font-family: sans-serif;
 }
 .modal-confirm-event .modal-body {
   padding: 1rem 2rem;
