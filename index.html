@@ -318,15 +318,15 @@
     </div>
   </section>
 
-  <section class="section-video text-start" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+  <section class="section-video text-start" data-bs-toggle="modal" data-bs-target="#videoHon">
     <div class="py-4">
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle" style="display: none;" aria-hidden="true">
+      <div class="modal fade" id="videoHon" tabindex="-1" aria-labelledby="exampleModalCenterTitle" style="display: none;" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="wrap-button-close">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-content">
-            <iframe
+            <iframe id="playerID" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"
               src="https://www.youtube.com/embed/8KJzP6osUtM?autoplay=0">
             </iframe>
           </div>
@@ -334,7 +334,7 @@
       </div>
       <div class="wrap-content position-relative">
         <h2 class="position-absolute">Join us on a tour of <br> the Heart of Nature mine</h2>
-        <div class="play-button position-absolute" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+        <div class="play-button position-absolute" data-bs-toggle="modal" data-bs-target="#videoHon">
           <img src="images/icon/play-circle.svg" alt="">
         </div>
       </div>

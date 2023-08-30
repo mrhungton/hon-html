@@ -158,4 +158,8 @@ $(document).ready(function () {
     $(".show-modal-event").modal("hide"); // Change id here
   });
   // End
+  // Video
+  $("#videoHon").on('hidden.bs.modal', function (e) {
+    $("#videoHon iframe").attr("src", $("#videoHon iframe").attr("src"));
+  });
 });
