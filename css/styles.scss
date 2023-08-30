@@ -970,14 +970,21 @@ footer {
 
 .section-business {
   margin-top: 80px;
+  .btn-see-more {
+    margin-bottom: 15px;
+  }
   .card-leadership {
     margin-top: 60px;
     margin-bottom: 20px;
     @include mobile {
       margin-top: 0;
+      margin-bottom: 0;
     }
     .custom-text {
       @include mobile {
+        text-align: center;
+      }
+      @include tablet {
         text-align: center;
       }
       @include tablet-lg {
@@ -994,7 +1001,7 @@ footer {
       }
       @include mobile {
         right: auto;
-        height: 34rem;
+        height: 30rem;
       }
       .custom-card-1 {
         right: 130px;
@@ -1017,17 +1024,22 @@ footer {
       .custom-card-3 {
         right: 0;
         @include mobile {
-          left: 0;
+          left: 50%;
+          transform: translate(-50%, 0%);
+          right: auto;
         }
         @include tablet {
-          left: 0;
+          left: 50%;
+          transform: translate(-50%, 0%);
+          right: auto;
         }
         .img-card-3 {
           border-radius: 15px;
           width: 350px;
           height: 450px;
           @include mobile {
-            width: 100%;
+            width: 310px;
+            height: 400px;
           }
         }
       }
@@ -1041,9 +1053,10 @@ footer {
           text-align: left;
         }
         @include tablet {
-          width: 60%;
+          width: 70%;
           bottom: 20px;
           top: auto;
+          text-align: left;
         }
       }
     }
@@ -1120,7 +1133,7 @@ footer {
     }
   }
   .text-story {
-    background: $primary-dark-color;
+    background: $gradient-dark-radial;
     color: #fff;
     padding: 20px;
     font-size: 24px;
@@ -2006,15 +2019,12 @@ footer {
     background: $white-color !important;
     border-radius: 5px;
     .card-header {
-      font-size: 20px !important;
-      font-weight: 600;
+      font-size: 16px !important;
+      font-weight: 500 !important;
       background: $white-color !important;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       padding: 20px !important;
-      @include mobile {
-        font-size: 16px !important;
-      }
     }
   }
 }

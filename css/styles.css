@@ -889,6 +889,9 @@ footer .container .social {
 .section-business {
   margin-top: 80px;
 }
+.section-business .btn-see-more {
+  margin-bottom: 15px;
+}
 .section-business .card-leadership {
   margin-top: 60px;
   margin-bottom: 20px;
@@ -896,9 +899,15 @@ footer .container .social {
 @media (max-width: 480px) {
   .section-business .card-leadership {
     margin-top: 0;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 480px) {
+  .section-business .card-leadership .custom-text {
+    text-align: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
   .section-business .card-leadership .custom-text {
     text-align: center;
   }
@@ -922,7 +931,7 @@ footer .container .social {
 @media (max-width: 480px) {
   .section-business .card-leadership .left-leadership {
     right: auto;
-    height: 34rem;
+    height: 30rem;
   }
 }
 .section-business .card-leadership .left-leadership .custom-card-1 {
@@ -948,12 +957,16 @@ footer .container .social {
 }
 @media (max-width: 480px) {
   .section-business .card-leadership .left-leadership .custom-card-3 {
-    left: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    right: auto;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .section-business .card-leadership .left-leadership .custom-card-3 {
-    left: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    right: auto;
   }
 }
 .section-business .card-leadership .left-leadership .custom-card-3 .img-card-3 {
@@ -963,7 +976,8 @@ footer .container .social {
 }
 @media (max-width: 480px) {
   .section-business .card-leadership .left-leadership .custom-card-3 .img-card-3 {
-    width: 100%;
+    width: 310px;
+    height: 400px;
   }
 }
 .section-business .card-leadership .left-leadership .title-leadership {
@@ -980,9 +994,10 @@ footer .container .social {
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .section-business .card-leadership .left-leadership .title-leadership {
-    width: 60%;
+    width: 70%;
     bottom: 20px;
     top: auto;
+    text-align: left;
   }
 }
 .section-business .owl-nav {
@@ -1050,7 +1065,7 @@ footer .container .social {
   left: 10px;
 }
 .business-detail .text-story {
-  background: #2a2b24;
+  background: radial-gradient(circle at top right, #2a2b24, #434d47 50%);
   color: #fff;
   padding: 20px;
   font-size: 24px;
@@ -2021,17 +2036,12 @@ footer .container .social {
   border-radius: 5px;
 }
 .section-report-releases .card .card-header {
-  font-size: 20px !important;
-  font-weight: 600;
+  font-size: 16px !important;
+  font-weight: 500 !important;
   background: #ffffff !important;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 20px !important;
-}
-@media (max-width: 480px) {
-  .section-report-releases .card .card-header {
-    font-size: 16px !important;
-  }
 }
 
 .modal-document .modal-content {
