@@ -240,7 +240,11 @@ body {
   text-decoration: none;
   color: #fff;
   line-height: 75px;
-  font-size: 1.2rem;
+  font-size: 14px;
+  opacity: 1;
+}
+.nav-header div.main_list ul li a.active {
+  color: #ecc256;
 }
 .nav-header div.main_list ul li a.btn {
   line-height: normal;
@@ -256,6 +260,7 @@ body {
 .affix {
   padding: 0;
   background: linear-gradient(to right, #2a2b24, #434d47);
+  opacity: 0.9;
 }
 .affix div.logo a img {
   height: 65px;
@@ -263,6 +268,10 @@ body {
 .affix .btn.btn-primary {
   background: radial-gradient(circle at top right, #937b3d, #ecc256 50%) !important;
   border: #937b3d !important;
+  opacity: 1;
+}
+.affix .btn.btn-primary:hover {
+  color: #2a2b24;
 }
 
 .navTrigger {
@@ -622,6 +631,16 @@ body {
 .section-story {
   margin-top: 80px;
 }
+@media (min-width: 481px) and (max-width: 768px) {
+  .section-story .d-flex {
+    flex-flow: column;
+  }
+}
+@media (max-width: 480px) {
+  .section-story .d-flex {
+    flex-flow: column;
+  }
+}
 .section-story .left-item .wrap-bg {
   background-image: url("../images/home/Image HON mine 02 - By Sonny - May 8 2023 - 02.jpg");
   height: 40rem;
@@ -650,6 +669,11 @@ body {
   color: #ffffff;
   padding: 40px;
 }
+@media (max-width: 480px) {
+  .section-story .left-item .wrap-bg .text-custom {
+    padding: 25px;
+  }
+}
 .section-story .left-item .wrap-bg .text-custom .title {
   font-size: 60px;
   font-weight: 600;
@@ -663,6 +687,11 @@ body {
 .section-story .left-item .wrap-bg .text-custom .title span {
   font-size: 30px;
   font-weight: 400;
+}
+@media (max-width: 480px) {
+  .section-story .left-item .wrap-bg .text-custom .title span {
+    font-size: 24px;
+  }
 }
 .section-story .left-item .wrap-bg .text-custom .description {
   font-size: 16px;
@@ -749,6 +778,9 @@ body {
 
 .section-contact {
   margin-top: 80px;
+}
+.section-contact h1 {
+  font-weight: 700;
 }
 .section-contact .button-contact {
   background: #ecc256;
@@ -1826,14 +1858,17 @@ footer .container .social {
   top: 20px;
   left: 20px;
   font-size: 24px;
+  font-weight: 500;
 }
 .section-events .card-leadership h1 {
   font-size: 24px;
+  font-weight: 700;
 }
 .section-events .card-leadership p {
   font-size: 13px;
 }
 .section-events .event-title {
+  text-decoration: none;
   color: #434d47;
 }
 .section-events .event-title:hover {

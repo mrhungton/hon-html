@@ -325,7 +325,11 @@ body {
           text-decoration: none;
           color: #fff;
           line-height: 75px;
-          font-size: 1.2rem;
+          font-size: 14px;
+          opacity: 1;
+          &.active {
+            color: $secondary-gold-color;
+          }
           &.btn {
             line-height: normal;
             &.btn-primary {
@@ -346,6 +350,7 @@ body {
 .affix {
   padding: 0;
   background: $gradient-dark-color;
+  opacity: 0.9;
 
   div.logo a img {
     height: 65px;
@@ -354,6 +359,10 @@ body {
   .btn.btn-primary {
     background: $gradient-gold-radial !important;
     border: $primary-gold-color !important;
+    opacity: 1;
+    &:hover {
+      color: $primary-dark-color;
+    }
   }
 }
 
@@ -706,6 +715,14 @@ body {
 // Section story about Hon
 .section-story {
   margin-top: 80px;
+  .d-flex {
+    @include tablet {
+      flex-flow: column;
+    }
+    @include mobile {
+      flex-flow: column;
+    }
+  }
   .left-item {
     .wrap-bg {
       background-image: url('../images/home/Image\ HON\ mine\ 02\ -\ By\ Sonny\ -\ May\ 8\ 2023\ -\ 02.jpg');
@@ -731,6 +748,9 @@ body {
       .text-custom {
         color: $white-color;
         padding: 40px;
+        @include mobile {
+          padding: 25px;
+        }
         .title {
           font-size: 60px;
           font-weight: 600;
@@ -741,6 +761,9 @@ body {
           span {
             font-size: 30px;
             font-weight: 400;
+            @include mobile {
+              font-size: 24px;
+            }
           }
         }
         .description {
@@ -821,6 +844,9 @@ body {
 // Section contact
 .section-contact {
   margin-top: 80px;
+  h1 {
+    font-weight: 700;
+  }
   .button-contact {
     background: $secondary-gold-color;
     color: $primary-dark-color;
@@ -1811,16 +1837,19 @@ footer {
         top: 20px;
         left: 20px;
         font-size: 24px;
+        font-weight: 500;
       }
     }
     h1 {
       font-size: 24px;
+      font-weight: 700;
     }
     p {
       font-size: 13px;
     }
   }
   .event-title {
+    text-decoration: none;
     color: $secondary-dark-color;
     &:hover {
       color: $primary-dark-color;
