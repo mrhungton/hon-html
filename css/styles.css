@@ -204,7 +204,6 @@ body {
   float: left;
   width: auto;
   height: auto;
-  padding-left: 3rem;
   line-height: 65px;
 }
 .nav-header div.logo a {
@@ -917,6 +916,9 @@ footer .container .social {
   width: 70%;
   color: #ffffff;
 }
+.section-leadership .owl-carousel-leadership .item-card .wrap-content .insert-text h3 {
+  font-size: 20px;
+}
 
 .section-business {
   margin-top: 80px;
@@ -951,7 +953,6 @@ footer .container .social {
 }
 .section-business .card-leadership .left-leadership {
   height: 32rem;
-  right: 5%;
   color: #ffffff;
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -965,24 +966,6 @@ footer .container .social {
     right: auto;
     height: 30rem;
   }
-}
-.section-business .card-leadership .left-leadership .custom-card-1 {
-  right: 130px;
-  top: 55px;
-}
-.section-business .card-leadership .left-leadership .custom-card-1 .img-card-1 {
-  border-radius: 15px;
-  width: 300px;
-  height: 350px;
-}
-.section-business .card-leadership .left-leadership .custom-card-2 {
-  right: 70px;
-  top: 30px;
-}
-.section-business .card-leadership .left-leadership .custom-card-2 .img-card-2 {
-  border-radius: 15px;
-  width: 320px;
-  height: 400px;
 }
 .section-business .card-leadership .left-leadership .custom-card-3 {
   right: 0;
@@ -1218,17 +1201,12 @@ footer .container .social {
   border-radius: 10px;
 }
 .section-development .custom-carousel-development .item-card .card .card-header {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   background: #58655e;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 20px 40px;
-}
-@media (max-width: 480px) {
-  .section-development .custom-carousel-development .item-card .card .card-header {
-    font-size: 16px;
-  }
 }
 .section-development .custom-carousel-development .item-card .card .card-body {
   padding: 20px 40px;

@@ -286,7 +286,6 @@ body {
     float: left;
     width: auto;
     height: auto;
-    padding-left: 3rem;
     line-height: 65px;
 
     a {
@@ -988,6 +987,9 @@ footer {
         .insert-text {
           width: 70%;
           color: $white-color;
+          h3 {
+            font-size: 20px;
+          }
         }
       }
     }
@@ -1019,7 +1021,6 @@ footer {
     }
     .left-leadership {
       height: 32rem;
-      right: 5%;
       color: $white-color;
       @include tablet {
         right: auto;
@@ -1028,24 +1029,6 @@ footer {
       @include mobile {
         right: auto;
         height: 30rem;
-      }
-      .custom-card-1 {
-        right: 130px;
-        top: 55px;
-        .img-card-1 {
-          border-radius: 15px;
-          width: 300px;
-          height: 350px;
-        }
-      }
-      .custom-card-2 {
-        right: 70px;
-        top: 30px;
-        .img-card-2 {
-          border-radius: 15px;
-          width: 320px;
-          height: 400px;
-        }
       }
       .custom-card-3 {
         right: 0;
@@ -1256,15 +1239,12 @@ footer {
         background: #4f5c54;
         border-radius: 10px;
         .card-header {
-          font-size: 20px;
+          font-size: 16px;
           font-weight: 600;
           background: #58655e;
           border-top-left-radius: 10px;
           border-top-right-radius: 10px;
           padding: 20px 40px;
-          @include mobile {
-            font-size: 16px;
-          }
         }
         .card-body {
           padding: 20px 40px;
