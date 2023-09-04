@@ -1108,26 +1108,29 @@ footer {
   .card-leadership {
     .left-leadership {
       height: 35rem !important;
+      .position-absolute {
+        @include tablet {
+          left: 0 !important;
+          right: auto !important;
+        }
+        h1 {
+          @include tablet {
+            padding-left: 20px;
+          }
+        }
+      }
+      @include mobile {
+        height: 30rem !important;
+      }
     }
   }
   .img-detail-1 {
     border-radius: 15px;
-    width: 100%;
-    height: 500px;
-  }
-  .play-button {
-    position: absolute;
-    width: 60px;
-    top: 48%;
-    left: 45%;
-    cursor: pointer;
-  }
-  .modal-dialog {
-    max-width: 75% !important;
-    .modal-content {
-      iframe {
-        height: 500px;
-      }
+    width: 405px;
+    height: 35rem;
+    @include mobile {
+      width: 100%;
+      height: 30rem;
     }
   }
   .sub-card {
@@ -1164,6 +1167,9 @@ footer {
     padding: 20px;
     font-size: 24px;
     width: 100%;
+    @include mobile {
+      font-size: 16px;
+    }
     a {
       color: #fff;
       text-decoration-line: none;
@@ -1280,7 +1286,7 @@ footer {
   background: $gradient-dark-radial;
   color: $white-color;
   .container {
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 80px;
     @include tablet {
       padding-top: 40px;
@@ -1317,20 +1323,17 @@ footer {
 .section-customers {
   margin-top: 80px;
   .owl-carousel-customers {
-    margin-top: 80px;
+    margin-top: 40px;
     @include mobile {
       margin-top: 0;
     }
-    .wrap-customers {
-      img {
-        width: 200px;
-        height: 160px;
-        border: 2px solid #d1d1d1;
-      }
+    .owl-stage {
+      display: flex;
+      align-items: center;
     }
   }
   .description {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 // Modal tabs
@@ -1509,7 +1512,7 @@ footer {
       border-bottom: 2px solid #dee2e6 !important;
       padding-top: 10px;
       @include mobile {
-        border-bottom: 2px solid $primary-dark-color !important;
+        border-bottom: 2px solid $secondary-dark-color !important;
       }
     }
     .link-product-detail {
@@ -1540,7 +1543,7 @@ footer {
       padding: 40px;
       .wrap-content {
         .product-title {
-          font-size: 36px;
+          font-size: 30px;
           font-weight: 600;
           @include tablet {
             font-size: 24px;
@@ -2007,10 +2010,12 @@ footer {
     border-bottom: 1px solid #c3c3c3;
     color: $white-color;
     padding: 10px;
-    width: 300px;
+    width: 280px;
+    border-radius: 0;
     &::placeholder {
       color: $white-color;
       font-style: italic;
+      opacity: 0.8;
     }
   }
   .btn-subscribe {
@@ -2066,14 +2071,47 @@ footer {
 
 /* Handbook guidelines */
 .section-commit {
+  .wrap-image {
+    background-image: url('../images/handbook/Image\ HON\ mine\ 09\ -\ By\ Sonny\ -\ May\ 8\ 2023\ -\ 02.png');
+    width: 100%;
+    height: 45rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include tablet {
+      height: 40rem;
+    }
+    @include mobile {
+      height: 35rem;
+    }
+  }
   .card-commit {
     background: $white-color;
     opacity: 0.9;
-    top: 40%;
+    top: 30%;
     padding: 60px;
     width: 70%;
     border-radius: 10px;
+    @include tablet {
+      width: 90%;
+      top: 10%;
+      padding: 30px;
+    }
+    @include mobile {
+      width: 90%;
+      top: 10%;
+      padding: 30px;
+    }
+    .title {
+      font-weight: 600;
+      font-size: 24px;
+    }
     .description {
+      .icon  {
+        @include mobile {
+          display: none;
+        }
+      }
       .text {
         opacity: 0.9;
       }
@@ -2260,7 +2298,8 @@ footer {
 }
 
 .owl-dots {
-  margin-top: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 // background white of title in section
 .wrap-row-white {
@@ -2433,6 +2472,15 @@ footer {
   }
   @include tablet {
     display: none;
+  }
+}
+
+.breadcrumb {
+  .breadcrumb-item a {
+    color: $white-color;
+    &:hover {
+      color: $secondary-gold-color;
+    }
   }
 }
 
