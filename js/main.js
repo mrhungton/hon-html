@@ -162,4 +162,12 @@ $(document).ready(function () {
   $("#videoHon").on('hidden.bs.modal', function (e) {
     $("#videoHon iframe").attr("src", $("#videoHon iframe").attr("src"));
   });
+
+  $(".nav-link").on("click", function(){
+    $(".icon-arrows").addClass("brightness");
+    setTimeout(function() {
+        $(".icon-arrows").removeClass("brightness");
+    }, 500);
+  });
+  
 });
