@@ -859,6 +859,10 @@ footer .container .social {
 }
 
 /* About Us */
+.section-about-menu .tabs-custom {
+  padding-bottom: 10px;
+}
+
 .section-banner {
   color: #ffffff;
 }
@@ -1226,6 +1230,7 @@ footer .container .social {
 .section-development .custom-carousel-development .item-card .card {
   background: #4f5c54;
   border-radius: 10px;
+  height: 450px;
 }
 .section-development .custom-carousel-development .item-card .card .card-header {
   font-size: 16px;
@@ -1243,6 +1248,12 @@ footer .container .social {
 }
 .section-development .custom-carousel-development .item-card .card .card-body img {
   border-radius: 15px;
+}
+.section-development .custom-carousel-development .item-card .card .card-body a {
+  color: #ecc256;
+}
+.section-development .custom-carousel-development .item-card .card .card-body a:hover {
+  color: #ffffff;
 }
 
 .section-employment {
@@ -1395,6 +1406,18 @@ footer .container .social {
   }
 }
 
+.section-products .wrap-tab-lists {
+  height: 450px !important;
+  width: auto !important;
+}
+.section-products .wrap-tab-lists .nav-link {
+  width: 90% !important;
+}
+@media (max-width: 480px) {
+  .section-products .wrap-tab-lists {
+    width: 100% !important;
+  }
+}
 .section-products .container {
   margin-bottom: 20px;
 }
@@ -1436,6 +1459,19 @@ footer .container .social {
 
 .section-natural {
   margin-top: 30px;
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .section-natural .custom-flex {
+    flex-flow: column;
+  }
+}
+@media (max-width: 480px) {
+  .section-natural .custom-flex {
+    flex-flow: column;
+  }
+}
+.section-natural .wrap-content {
+  width: 80%;
 }
 .section-natural .wrap-left {
   width: 100%;
@@ -2137,6 +2173,16 @@ footer .container .social {
   height: auto !important;
 }
 
+.modal-policy .modal-body {
+  word-break: break-all;
+}
+.modal-policy .modal-body a {
+  color: #ffffff !important;
+}
+.modal-policy .modal-body a:hover {
+  color: #ecc256 !important;
+}
+
 /* End Handbook guidelines */
 /* Shared */
 .bg-section-dark {
@@ -2178,12 +2224,14 @@ footer .container .social {
 }
 .section-tabs .tabs-custom .wrap-tab-lists {
   overflow: auto;
-  height: 500px;
+  height: auto;
   flex-flow: column;
+  width: 100%;
 }
 @media (max-width: 480px) {
   .section-tabs .tabs-custom .wrap-tab-lists {
     height: 300px !important;
+    padding-right: 10px;
   }
 }
 .section-tabs .tabs-custom .wrap-tab-lists::-webkit-scrollbar {
@@ -2205,7 +2253,7 @@ footer .container .social {
   border-radius: 0;
   color: #ffffff;
   opacity: 0.5;
-  padding: 25px 0;
+  padding: 20px 0;
 }
 @media (max-width: 480px) {
   .section-tabs .tabs-custom .tabs-lists .nav-link {
@@ -2232,20 +2280,13 @@ footer .container .social {
   border-bottom: 1px solid #ffffff;
 }
 .section-tabs .tabs-custom .icon-arrows {
-  left: -55px;
-  top: 40%;
-}
-@media (min-width: 481px) and (max-width: 768px) {
-  .section-tabs .tabs-custom .icon-arrows {
-    top: 16%;
-    left: -30px;
-  }
+  margin-right: 15px;
 }
 @media (max-width: 480px) {
   .section-tabs .tabs-custom .icon-arrows {
-    top: 10%;
-    left: -15px;
-    width: 12px;
+    margin-right: 15px;
+    margin-left: -20px;
+    width: 14px;
   }
 }
 .section-tabs .tabs-custom .tab-content {
@@ -2421,10 +2462,10 @@ footer .container .social {
   white-space: nowrap;
 }
 .custom-tabs .nav-pills::-webkit-scrollbar {
-  height: 4px;
+  height: 6px;
 }
 .custom-tabs .nav-pills::-webkit-scrollbar-track {
-  background: #b8b8b8;
+  background: #d4d4d4;
 }
 .custom-tabs .nav-pills::-webkit-scrollbar-thumb {
   background: #888;

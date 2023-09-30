@@ -923,6 +923,11 @@ footer {
 }
 
 /* About Us */
+.section-about-menu {
+  .tabs-custom {
+    padding-bottom: 10px;
+  }
+}
 .section-banner {
   color: $white-color;
   .custom-content-banner {
@@ -1261,6 +1266,7 @@ footer {
       .card {
         background: #4f5c54;
         border-radius: 10px;
+        height: 450px;
         .card-header {
           font-size: 16px;
           font-weight: 600;
@@ -1276,6 +1282,12 @@ footer {
           }
           img {
             border-radius: 15px;
+          }
+          a {
+            color: $secondary-gold-color;
+            &:hover {
+              color: $white-color;
+            }
           }
         }
       }
@@ -1424,6 +1436,16 @@ footer {
   }
 }
 .section-products {
+  .wrap-tab-lists {
+    height: 450px !important;
+    width: auto !important;
+    .nav-link  {
+      width: 90% !important;
+    }
+    @include mobile {
+      width: 100% !important;
+    }
+  }
   .container {
     margin-bottom: 20px;
     @include mobile {
@@ -1461,6 +1483,17 @@ footer {
 }
 .section-natural {
   margin-top: 30px;
+  .custom-flex {
+    @include tablet {
+      flex-flow: column;
+    }
+    @include mobile {
+      flex-flow: column;
+    }
+  }
+  .wrap-content {
+    width: 80%;
+  }
   .wrap-left {
     width: 100%;
     gap: 7px;
@@ -2115,6 +2148,17 @@ footer {
     height: auto !important;
   }
 }
+.modal-policy {
+  .modal-body {
+    word-break: break-all;
+    a {
+      color: $white-color !important;
+      &:hover {
+        color: $secondary-gold-color !important;
+      }
+    }
+  }
+}
 /* End Handbook guidelines */
 
 /* Shared */
@@ -2147,10 +2191,12 @@ footer {
     }
     .wrap-tab-lists {
       overflow: auto;
-      height: 500px;
+      height: auto;
       flex-flow: column;
+      width: 100%;
       @include mobile {
         height: 300px !important;
+        padding-right: 10px;
       }
       &::-webkit-scrollbar {
         width: 5px;
@@ -2185,7 +2231,7 @@ footer {
         border-radius: 0;
         color: $white-color;
         opacity: 0.5;
-        padding: 25px 0;
+        padding: 20px 0;
         &.active {
           color: $white-color;
           opacity: 1;
@@ -2197,16 +2243,11 @@ footer {
       }
     }
     .icon-arrows {
-      left: -55px;
-      top: 40%;
-      @include tablet {
-        top: 16%;
-        left: -30px;
-      }
+      margin-right: 15px;
       @include mobile {
-        top: 10%;
-        left: -15px;
-        width: 12px;
+        margin-right: 15px;
+        margin-left: -20px;
+        width: 14px;
       }
     }
     .tab-content {
@@ -2366,10 +2407,10 @@ footer {
     padding: 20px;
     white-space: nowrap;
     &::-webkit-scrollbar {
-      height: 4px;
+      height: 6px;
     }
     &::-webkit-scrollbar-track {
-      background: #b8b8b8;
+      background: #d4d4d4;
     }
     &::-webkit-scrollbar-thumb {
       background: #888;
