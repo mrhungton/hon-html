@@ -905,9 +905,13 @@ footer .container .social {
     margin-top: 0;
   }
 }
+.section-company-history .owl-carousel-company-history .item-card {
+  padding: 20px;
+}
 .section-company-history .owl-carousel-company-history .item-card .wrap-content img {
   height: 300px;
   border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 15px 2px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .section-company-history .owl-carousel-company-history .item-card .wrap-content .insert-text {
   top: 30px;

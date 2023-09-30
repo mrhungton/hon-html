@@ -969,10 +969,12 @@ footer {
       margin-top: 0;
     }
     .item-card {
+      padding: 20px;
       .wrap-content {
         img {
           height: 300px;
           border-radius: 10px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 15px 2px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         }
         .insert-text {
           top: 30px;
