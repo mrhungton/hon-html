@@ -1,27 +1,27 @@
 $(document).ready(function () {
-  display_affix_nav()
+  display_affix_nav();
 
-  $(window).scroll(function() {
-    display_affix_nav()
+  $(window).scroll(function () {
+    display_affix_nav();
   });
 
   function display_affix_nav() {
     if ($(document).scrollTop() > 50) {
-      $('.nav-header').addClass('affix');
+      $(".nav-header").addClass("affix");
     } else {
-      $('.nav-header').removeClass('affix');
+      $(".nav-header").removeClass("affix");
     }
   }
 
-  $('.navTrigger').click(function () {
-    $(this).toggleClass('active');
+  $(".navTrigger").click(function () {
+    $(this).toggleClass("active");
     // console.log("Clicked menu");
     $("#mainListDiv").toggleClass("show_list");
     $("#mainListDiv").fadeIn();
     if ($("#mainListDiv").hasClass("show_list")) {
-      $('body').css("overflow", "hidden");
+      $("body").css("overflow", "hidden");
     } else {
-      $('body').css("overflow", "visible");
+      $("body").css("overflow", "visible");
     }
   });
 
@@ -108,7 +108,10 @@ $(document).ready(function () {
     nav: true,
     singleItem: true,
     margin: 20,
-    navText: ["<div class='nav-btn prev-slide'>Prev</div>", "<div class='nav-btn next-slide'>Next</div>"],
+    navText: [
+      "<div class='nav-btn prev-slide'>Prev</div>",
+      "<div class='nav-btn next-slide'>Next</div>",
+    ],
     responsive: {
       0: {
         items: 1,
@@ -151,23 +154,35 @@ $(document).ready(function () {
   });
   // End Responsibility
   // Medial --Close all modal when register event
-  $("#btn_confirm_event").on("click", function(){
+  $("#btn_confirm_event").on("click", function () {
     $("#confirm_event").modal("hide");
   });
-  $("#close_all_modal").on("click", function(){
+  $("#close_all_modal").on("click", function () {
     $(".show-modal-event").modal("hide"); // Change id here
   });
   // End
   // Video
-  $("#videoHon").on('hidden.bs.modal', function (e) {
+  $("#videoHon").on("hidden.bs.modal", function (e) {
     $("#videoHon iframe").attr("src", $("#videoHon iframe").attr("src"));
   });
 
-  $(".nav-link").on("click", function(){
+  $(".nav-link").on("click", function () {
     $(".icon-arrows").addClass("brightness");
-    setTimeout(function() {
-        $(".icon-arrows").removeClass("brightness");
+    setTimeout(function () {
+      $(".icon-arrows").removeClass("brightness");
     }, 500);
   });
+
+  // URL PDF
+  $(".insider-link").on("click", function () {
+    let url = $(this).data("url");
+    $("a#download_link_insider").attr("href", url);
+  });
+  $(".insider-link.active").click();
   
+  $(".press-link").on("click", function () {
+    let url = $(this).data("url");
+    $("a#download_link_press").attr("href", url);
+  });
+  $(".press-link.active").click();
 });
