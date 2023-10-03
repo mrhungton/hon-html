@@ -1129,7 +1129,7 @@ footer {
         }
         .img-card-3 {
           border-radius: 15px;
-          width: 350px;
+          width: 400px;
           height: 450px;
           box-shadow: rgba(0, 0, 0, 0.5) 5px 8px 22px -11px;
           @include mobile {
@@ -1156,22 +1156,22 @@ footer {
       }
     }
   }
-  .owl-nav {
-    margin-top: 20px;
-    display: block;
-    button.owl-next, button.owl-prev {
-      padding: 4px 12px !important;
-      font-size: 16px;
-      margin: 10px;
-      &:hover {
-        background: $secondary-gold-color;
-        color: $primary-dark-color;
-      }
-    }
-  }
-  .owl-dots {
-    display: none;
-  }
+  // .owl-nav {
+  //   margin-top: 20px;
+  //   display: block;
+  //   button.owl-next, button.owl-prev {
+  //     padding: 4px 12px !important;
+  //     font-size: 16px;
+  //     margin: 10px;
+  //     &:hover {
+  //       background: $secondary-gold-color;
+  //       color: $primary-dark-color;
+  //     }
+  //   }
+  // }
+  // .owl-dots {
+  //   display: none;
+  // }
 }
 .business-detail {
   .card-leadership {
@@ -1389,7 +1389,7 @@ footer {
     }
   }
   .description {
-    padding-top: 80px;
+    padding-top: 30px;
     font-size: 15px;
     font-weight: 300;
     @include tablet {
@@ -1549,6 +1549,9 @@ footer {
     @include mobile {
       text-align: center;
       margin-bottom: 20px;
+    }
+    img {
+      width: 200px;
     }
   }
   .action {
@@ -1740,13 +1743,18 @@ footer {
         margin-bottom: 0;
       }
     }
-    .product-carousel {
-     
-   
+    .owl-carousel-one-items {
+      .item-product {
+        text-align: -webkit-center;
+        img {
+          width: 220px;
+        }
+      }
+      .owl-dots {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
     }
-  }
-  .btn-close {
-    color: $white-color !important;
   }
 }
 // End product detail

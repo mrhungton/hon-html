@@ -1072,7 +1072,7 @@ footer .container .social {
 }
 .section-business .card-leadership .left-leadership .custom-card-3 .img-card-3 {
   border-radius: 15px;
-  width: 350px;
+  width: 400px;
   height: 450px;
   box-shadow: rgba(0, 0, 0, 0.5) 5px 8px 22px -11px;
 }
@@ -1101,22 +1101,6 @@ footer .container .social {
     top: auto;
     text-align: left;
   }
-}
-.section-business .owl-nav {
-  margin-top: 20px;
-  display: block;
-}
-.section-business .owl-nav button.owl-next, .section-business .owl-nav button.owl-prev {
-  padding: 4px 12px !important;
-  font-size: 16px;
-  margin: 10px;
-}
-.section-business .owl-nav button.owl-next:hover, .section-business .owl-nav button.owl-prev:hover {
-  background: #ecc256;
-  color: #2a2b24;
-}
-.section-business .owl-dots {
-  display: none;
 }
 
 .business-detail .card-leadership .left-leadership {
@@ -1359,7 +1343,7 @@ footer .container .social {
   }
 }
 .section-employment .description {
-  padding-top: 80px;
+  padding-top: 30px;
   font-size: 15px;
   font-weight: 300;
 }
@@ -1529,6 +1513,9 @@ footer .container .social {
     text-align: center;
     margin-bottom: 20px;
   }
+}
+.section-products .custom-img-product img {
+  width: 200px;
 }
 .section-products .action {
   padding-top: 0px !important;
@@ -1748,8 +1735,15 @@ footer .container .social {
 .product-line-detail .product-content .product-img-mobile .carousel {
   margin-bottom: 0;
 }
-.product-line-detail .btn-close {
-  color: #ffffff !important;
+.product-line-detail .product-content .owl-carousel-one-items .item-product {
+  text-align: -webkit-center;
+}
+.product-line-detail .product-content .owl-carousel-one-items .item-product img {
+  width: 220px;
+}
+.product-line-detail .product-content .owl-carousel-one-items .owl-dots {
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .section-testimonials {

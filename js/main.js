@@ -108,10 +108,10 @@ $(document).ready(function () {
     nav: true,
     singleItem: true,
     margin: 20,
-    navText: [
-      "<div class='nav-btn prev-slide'>Prev</div>",
-      "<div class='nav-btn next-slide'>Next</div>",
-    ],
+    // navText: [
+    //   "<div class='nav-btn prev-slide'>Prev</div>",
+    //   "<div class='nav-btn next-slide'>Next</div>",
+    // ],
     responsive: {
       0: {
         items: 1,
