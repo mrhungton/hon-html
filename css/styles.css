@@ -1623,6 +1623,7 @@ footer .container .social {
   text-decoration: none;
   font-weight: 600;
   opacity: 0.8;
+  display: block;
 }
 @media (max-width: 480px) {
   .section-product-collapse .product-item .link-product-detail {

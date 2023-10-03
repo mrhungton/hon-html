@@ -1645,6 +1645,7 @@ footer {
       text-decoration: none;
       font-weight: 600;
       opacity: 0.8;
+      display: block;
       @include mobile {
         font-size: 16px;
       }
