@@ -2,8 +2,8 @@
 
 // colours
 $white-color: #ffffff;
-$primary-dark-color: #2a2b24;
-$secondary-dark-color: #434d47;
+$primary-dark-color: #0a3161;
+$secondary-dark-color: #0e3b71;
 $gradient-dark-color: linear-gradient(
   to right,
   $primary-dark-color,
@@ -15,8 +15,8 @@ $gradient-dark-radial: radial-gradient(
   $secondary-dark-color 50%
 );
 
-$primary-gold-color: #937b3d;
-$secondary-gold-color: #ecc256;
+$primary-gold-color: #b31942;
+$secondary-gold-color: #cc305a;
 $gradient-gold-color: linear-gradient(
   to right,
   $primary-gold-color,
@@ -315,10 +315,9 @@ body {
       padding: 0;
 
       li {
-        width: auto;
-        height: 65px;
+        position: relative;
         padding: 0;
-        padding-right: 3rem;
+        margin-right: 3rem;
 
         a {
           text-decoration: none;
@@ -328,6 +327,10 @@ body {
           opacity: 1;
           &.active {
             color: $secondary-gold-color;
+            font-weight: 600;
+            &:before {
+              width: 100%;
+            }
           }
           &.btn {
             line-height: normal;
@@ -339,6 +342,19 @@ body {
 
           &:hover {
             color: $secondary-gold-color;
+            font-weight: 600;
+            &:before {
+              width: 100%;
+            }
+          }
+          &.btn {
+            &:hover {
+              color: $white-color;
+              font-weight: 400;
+            }
+            &:before {
+              width: 0;
+            }
           }
         }
       }
@@ -355,12 +371,32 @@ body {
     height: 65px;
   }
 
+  div.main_list ul li a {
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 0;
+      height: 2px;
+      margin: auto;
+      display: block;
+      background-color: #E91E63;
+      -webkit-transition: .5s ease;
+      -moz-transition: .5s ease;
+      -ms-transition: .5s ease;
+      -o-transition: .5s ease;
+      transition: .5s ease;
+    }
+  }
+
   .btn.btn-primary {
     background: $gradient-gold-radial !important;
     border: $primary-gold-color !important;
     opacity: 1;
     &:hover {
-      color: $primary-dark-color;
+      color: $white-color;
     }
   }
 }
@@ -529,12 +565,16 @@ body {
         li {
           width: 100%;
           text-align: right;
+          padding-right: 20px;
 
           a {
             text-align: center;
             width: 100%;
             font-size: 3rem;
             padding: 20px;
+            &.active:before, &:hover:before {
+              width: 0;
+            }
           }
         }
       }
@@ -544,10 +584,10 @@ body {
       display: none;
       position: fixed;
       left: 0;
-      opacity: 0.94;
+      opacity: 1;
 
       a.btn {
-        width: 85%;
+        width: 80%;
         margin-top: 30px;
         background: $gradient-gold-radial !important;
         border: $primary-gold-color !important;
@@ -556,6 +596,10 @@ body {
     div.media_button {
       display: block;
     }
+  }
+
+  .affix {
+    opacity: 1;
   }
 }
 
@@ -899,7 +943,7 @@ body {
     padding: 30px;
     font-size: 24px;
     width: 100%;
-    
+
     @include mobile {
       font-size: 20px;
       padding: 20px;
@@ -927,7 +971,7 @@ body {
   }
   .button-contact {
     background: $secondary-gold-color;
-    color: $primary-dark-color;
+    color: $white-color;
     border: none;
     padding: 10px 40px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
@@ -1399,7 +1443,7 @@ footer {
     @include mobile {
       padding-top: 0;
       padding-bottom: 40px;
-    }    
+    }
   }
 }
 
@@ -2390,7 +2434,7 @@ footer {
 // Button see more
 .btn-see-more {
   background: $secondary-gold-color;
-  color: $primary-dark-color;
+  color: $white-color;
   border: none;
   padding: 8px 25px;
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
@@ -2405,7 +2449,7 @@ footer {
   width: 35px;
   height: 3px;
   margin: 3px;
-  background: #ecc256;
+  background: $primary-gold-color;
 }
 
 .owl-theme .owl-dots .owl-dot span {
